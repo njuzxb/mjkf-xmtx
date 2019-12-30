@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.mjkf</groupId>
+    <artifactId>xmtx</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>xmtx-module</module>
+        <module>xmtx-common</module>
+        <module>xmtx-provider</module>
+        <module>xmtx-provider-api</module>
+        <module>xmtx-gateway</module>
+        <module>xmtx-eureka</module>
+    </modules>
+
+    <!-- 打包方式  pom-->
+    <packaging>pom</packaging>
+
+    <properties>
+        <spring-cloud-dependencies.version>Hoxton.SR1</spring-cloud-dependencies.version>
+        <spring-boot.version>2.2.1.RELEASE</spring-boot.version>
+        <mysql-connector-java.version>5.1.38</mysql-connector-java.version>
+        <druid.version>1.1.21</druid.version>
+        <mybatis-spring-boot-starter.version>2.1.1</mybatis-spring-boot-starter.version>
+        <junit.version>4.12</junit.version>
+        <lombok.version>1.16.18</lombok.version>
+        <log4j.version>1.2.17</log4j.version>
+        <logback-core.version>1.2.3</logback-core.version>
+
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- SpringCloud 依赖-->
+            <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-dependencies -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud-dependencies.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!--spring boot 依赖-->
+            <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
+            <!--数据库-->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql-connector-java.version}</version>
+            </dependency>
+            <!--数据源-->
+            <!-- https://mvnrepository.com/artifact/com.alibaba/druid -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+            <!--SpringBoot启动器-->
+            <!-- https://mvnrepository.com/artifact/org.mybatis.spring.boot/mybatis-spring-boot-starter -->
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${mybatis-spring-boot-starter.version}</version>
+            </dependency>
+            <!--junit-->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+            </dependency>
+            <!--lomnok-->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+            <!--log4j-->
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>${log4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-core</artifactId>
+                <version>${logback-core.version}</version>
+            </dependency>
+
+
+
+
+        </dependencies>
+    </dependencyManagement>
+
+
+</project>
