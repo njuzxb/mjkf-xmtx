@@ -8,9 +8,9 @@
 
 ————————mjkf-xmtx-common  公共项目
 
-————————mjkf-xmtx-module  实体类
-
 ————————mjkf-xmtx-provider  提供服务
+
+————————————mjkf-xmtx-provider-model  数据库服务
 
 ————————mjkf-xmtx-provider  服务暴露的接口
 
