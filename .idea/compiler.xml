@@ -6,8 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="xmtx" />
+        <module name="xmtx-common" />
+        <module name="xmtx-eureka" />
+        <module name="xmtx-gateway" />
+        <module name="xmtx-provider-model" />
+        <module name="xmtx-provider-api" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="xmtx-model" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

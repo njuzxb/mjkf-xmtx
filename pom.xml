@@ -8,7 +8,6 @@
     <artifactId>xmtx</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>xmtx-module</module>
         <module>xmtx-common</module>
         <module>xmtx-provider</module>
         <module>xmtx-provider-api</module>
@@ -22,7 +21,7 @@
     <properties>
         <spring-cloud-dependencies.version>Hoxton.SR1</spring-cloud-dependencies.version>
         <spring-boot.version>2.2.1.RELEASE</spring-boot.version>
-        <mysql-connector-java.version>5.1.38</mysql-connector-java.version>
+        <mysql-connector-java.version>8.0.15</mysql-connector-java.version>
         <druid.version>1.1.21</druid.version>
         <mybatis-spring-boot-starter.version>2.1.1</mybatis-spring-boot-starter.version>
         <junit.version>4.12</junit.version>
