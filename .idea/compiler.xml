@@ -9,7 +9,7 @@
         <module name="xmtx-common" />
         <module name="xmtx-eureka" />
         <module name="xmtx-gateway" />
-        <module name="xmtx-provider-model" />
+        <module name="xmtx-provider-admin" />
         <module name="xmtx-provider-api" />
       </profile>
     </annotationProcessing>

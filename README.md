@@ -4,13 +4,17 @@
 
 ————mjkf-xmtx-geteway   网关
 
-————mjkf-xmtx-eureka    注册中心
+————mjkf-xmtx-eureka    注册中心:port:1000
 
 ————mjkf-xmtx-common  公共项目
 
 ————mjkf-xmtx-provider  提供服务
 
-————————mjkf-xmtx-provider-model  数据库服务
+——————mjkf-xmtx-provider-admin  管理员服务:提供用户管理、招聘会管理等服务。port：2001
 
 ————mjkf-xmtx-provider  服务暴露的接口
+
+## 当前任务：（优先级从高到低）
+1. 完善数据库表结构和内容
+2. 完善权限系统
 

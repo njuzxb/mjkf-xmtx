@@ -1,0 +1,20 @@
+server:
+  port: 2001
+
+# spring配置
+spring:
+  application:
+    name: xmtx-provider-model
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/db_mj4x?serverTimezone=GMT&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 123
+
+# eureka配置
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka/
