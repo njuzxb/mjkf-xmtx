@@ -14,9 +14,11 @@
 
 ——————mjkf-xmtx-provider-user   用户服务：提供用户管理（包括普通用户和企业）port：2002
 
-——————mjkf-xmtx-provider-jobFair    招聘会服务：提供招聘会管理服务 port：2003
+——————mjkf-xmtx-provider-jobfair    招聘会服务：提供招聘会管理服务 port：2003
 
-——————mjkf-xmtx-provider-forum   论坛服务：提供论坛服务 port：2004
+——————mjkf-xmtx-provider-jobfairComment    招聘会评论服务：提供招聘会评论管理服务 port：2004
+
+——————mjkf-xmtx-provider-forum   论坛服务：提供论坛服务 port：2005
 
 ————mjkf-xmtx-provider  服务暴露的接口
 
