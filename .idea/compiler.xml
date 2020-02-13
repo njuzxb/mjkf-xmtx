@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="xmtx-common" />
+        <module name="xmtx-provider-jobfair" />
+        <module name="xmtx-provider-api" />
+        <module name="xmtx-provider-admin" />
+        <module name="xmtx-provider-jobfairComment" />
         <module name="xmtx-eureka" />
         <module name="xmtx-gateway" />
-        <module name="xmtx-provider-admin" />
-        <module name="xmtx-provider-api" />
+        <module name="xmtx-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

@@ -12,7 +12,9 @@
     <artifactId>xmtx-provider</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>xmtx-provider-model</module>
+        <module>xmtx-provider-admin</module>
+        <module>xmtx-provider-jobfair</module>
+        <module>xmtx-provider-jobfairComment</module>
     </modules>
 
 

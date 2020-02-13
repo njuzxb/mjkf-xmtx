@@ -10,7 +10,13 @@
 
 ————mjkf-xmtx-provider  提供服务
 
-——————mjkf-xmtx-provider-admin  管理员服务:提供用户管理、招聘会管理等服务。port：2001
+——————mjkf-xmtx-provider-admin  管理员服务:提供用户管理、权限管理和招聘会管理等服务。port：2001
+
+——————mjkf-xmtx-provider-user   用户服务：提供用户管理（包括普通用户和企业）port：2002
+
+——————mjkf-xmtx-provider-jobFair    招聘会服务：提供招聘会管理服务 port：2003
+
+——————mjkf-xmtx-provider-forum   论坛服务：提供论坛服务 port：2004
 
 ————mjkf-xmtx-provider  服务暴露的接口
 
