@@ -72,4 +72,9 @@ public class JobFairController {
         return ResultVOUtil.success(map);
     }
 
+    @PostMapping("/delete")
+    public ResultVO<String> delete(Integer id){
+        jobFairService.job_fair_delete(id);
+        return ResultVOUtil.success("删除成功");
+    }
 }
