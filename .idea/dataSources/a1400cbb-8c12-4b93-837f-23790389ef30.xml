@@ -899,79 +899,84 @@
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="223" parent="205" name="PRIMARY">
+    <column id="223" parent="205" name="enabled">
+      <Position>7</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="224" parent="205" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="224" parent="206" name="id">
+    <column id="225" parent="206" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="225" parent="206" name="eid">
+    <column id="226" parent="206" name="eid">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="226" parent="206" name="promoter">
+    <column id="227" parent="206" name="promoter">
       <Position>3</Position>
       <DataType>char(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="227" parent="206" name="meeting_time">
+    <column id="228" parent="206" name="meeting_time">
       <Position>4</Position>
       <Comment>宣讲会时间</Comment>
       <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="228" parent="206" name="address">
+    <column id="229" parent="206" name="address">
       <Position>5</Position>
       <Comment>宣讲会地址</Comment>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="229" parent="206" name="title">
+    <column id="230" parent="206" name="title">
       <Position>6</Position>
       <Comment>标题</Comment>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="230" parent="206" name="label">
+    <column id="231" parent="206" name="label">
       <Position>7</Position>
       <Comment>标签</Comment>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="231" parent="206" name="enabled">
+    <column id="232" parent="206" name="enabled">
       <Position>8</Position>
       <Comment>官网</Comment>
       <DataType>tinyint(1)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="232" parent="206" name="db_source">
+    <column id="233" parent="206" name="db_source">
       <Position>9</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="233" parent="206" name="content">
+    <column id="234" parent="206" name="content">
       <Position>10</Position>
       <DataType>text|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="234" parent="206" name="fk_enterprise_on_cid">
+    <index id="235" parent="206" name="fk_enterprise_on_cid">
       <ColNames>eid</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="235" parent="206" name="PRIMARY">
+    <key id="236" parent="206" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="236" parent="206" name="fk_enterprise_on_cid">
+    <foreign-key id="237" parent="206" name="fk_enterprise_on_cid">
       <ColNames>eid</ColNames>
       <RefSchemaName>db_mj4x</RefSchemaName>
       <RefTableName>enterprise_info</RefTableName>
@@ -979,46 +984,40 @@
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>set-null</OnDelete>
     </foreign-key>
-    <column id="237" parent="207" name="id">
+    <column id="238" parent="207" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="238" parent="207" name="jobId">
+    <column id="239" parent="207" name="jobid">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="239" parent="207" name="userId">
+    <column id="240" parent="207" name="username">
       <Position>3</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
+      <DataType>char(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="240" parent="207" name="content">
+    <column id="241" parent="207" name="content">
       <Position>4</Position>
       <DataType>longtext|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="241" parent="207" name="pubtime">
+    <column id="242" parent="207" name="pubtime">
       <Position>5</Position>
-      <DataType>datetime|0s</DataType>
+      <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="242" parent="207" name="state">
+    <column id="243" parent="207" name="state">
       <Position>6</Position>
       <DataType>tinyint(4)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="243" parent="207" name="prove">
+    <column id="244" parent="207" name="prove">
       <Position>7</Position>
-      <DataType>int(11)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="244" parent="207" name="db_source">
-      <Position>8</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>

@@ -1,17 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="12410394-81c6-4cf3-ab1b-2e38dd436410" name="Default Changelist" comment="1. update framework:update &quot;model&quot; module to &quot;admin&quot;&#10;2. build register center:eureka&#10;3. build admin module framework">
-      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/xmtx-provider-jobfair.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/xmtx-provider-jobfairComment.iml" afterDir="false" />
+    <list default="true" id="12410394-81c6-4cf3-ab1b-2e38dd436410" name="Default Changelist" comment="1. 完成jobfairComment模块业务，提供">
+      <change afterPath="$PROJECT_DIR$/API.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/admin/AdminProviderApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/admin/VO/ResultVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/admin/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/admin/enums/AdminStatusEnums.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/admin/model/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/admin/repository/AdminRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/admin/service/AdminService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/admin/service/impl/AdminServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/test/java/com/xmtx/admin/AdminApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/test/java/com/xmtx/admin/repository/AdminRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/test/java/com/xmtx/admin/service/AdminServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/JobCommentProviderApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/VO/ResultVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/controller/JobCommentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/dataobject/JobFairComment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/enums/CommentStatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/enums/ResultEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/repository/JobFairCommentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/service/JobCommentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/service/impl/JobCommentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/utils/ResultVOUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/test/java/com/xmtx/jobfairComment/JobCommentProviderApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/test/java/com/xmtx/jobfairComment/repository/JobFairCommentRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/xmtx-provider-user.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/a1400cbb-8c12-4b93-837f-23790389ef30.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a1400cbb-8c12-4b93-837f-23790389ef30.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_mj4x.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db_mj4x.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xmtx-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/provider/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/provider/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/provider/AdminProviderApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/provider/VO/ResultVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/provider/controller/AdminController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/provider/enums/AdminStatusEnums.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/provider/model/Admin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/provider/repository/AdminRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/provider/service/AdminService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/provider/service/impl/AdminServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/test/java/com/xmtx/provider/AdminApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/test/java/com/xmtx/provider/repository/AdminRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/test/java/com/xmtx/provider/service/AdminServiceTest.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,6 +60,7 @@
     <ignored path="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/target/" />
     <ignored path="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/target/" />
     <ignored path="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/target/" />
+    <ignored path="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +116,15 @@
         <item name="db_mj4x" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="db_mj4x: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="admin: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - jdbc:mysql:" type="cc8827a6:DatabaseStructure$DbGroup" />
+        <item name="localhost:3306" type="cc8827a6:DatabaseStructure$DbGroup" />
+        <item name="db_mj4x" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="db_mj4x: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="enterprise_info: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
       <path>
@@ -118,28 +163,55 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/pom.xml">
+        <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/repository/JobFairCommentRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="668">
-              <caret line="68" column="19" selection-start-line="13" selection-start-column="4" selection-end-line="68" selection-end-column="19" />
+            <state relative-caret-position="225">
+              <caret line="9" column="78" selection-start-line="9" selection-start-column="78" selection-end-line="9" selection-end-column="78" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/pom.xml">
+        <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/service/JobCommentService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="743">
-              <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+            <state relative-caret-position="-75">
+              <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/pom.xml">
+        <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="54" column="21" lean-forward="true" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+            <state relative-caret-position="275">
+              <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="6" column="38" lean-forward="true" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/service/impl/JobCommentServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="543">
+              <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -152,6 +224,7 @@
         <option value="Interface" />
         <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -162,20 +235,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a1400cbb-8c12-4b93-837f-23790389ef30/console.sql" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-model/src/main/java/com/xmtx/provider/model/admin.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-model/src/main/resources/application-dev.yml" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-model/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-model/src/main/resources/mybatis/mybatis-config.xml" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-model/src/main/java/com/xmtx/provider/SpringBootApplication.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-model/src/main/java/com/xmtx/provider/ModelProviderApplication.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-model/src/main/java/com/xmtx/provider/mapper/adminMapper.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-model/src/test/java/com/xmtx/provider/mapper/adminMapperTest.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-model/src/main/java/com/xmtx/provider/model/Admin.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-model/src/main/java/com/xmtx/provider/mapper/AdminMapper.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-model/src/main/java/com/xmtx/provider/mapper/AdminRepository.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-model/src/test/java/com/xmtx/provider/mapper/AdminMapperTest.java" />
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-model/src/test/java/com/xmtx/provider/repository/AdminRepositoryTest.java" />
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-model/pom.xml" />
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/provider/ModelProviderApplication.java" />
@@ -193,7 +252,6 @@
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/pom.xml" />
         <option value="$PROJECT_DIR$/xmtx-eureka/src/main/java/com/xmtx/eureka/EurekaApplication.java" />
         <option value="$PROJECT_DIR$/xmtx-eureka/pom.xml" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/xmtx-eureka/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com.xmtx.provider/controller/AdminController.java" />
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-model/src/main/java/com/xmtx/provider/repository/AdminRepository.java" />
@@ -203,6 +261,31 @@
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/provider/controller/AdminController.java" />
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/pom.xml" />
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/pom.xml" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/provider/JobCommentProviderApplication.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/provider/dataobject/JobfairComment.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/dataobject/JobfairComment.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/repository/JobfairCommentRepository.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/enums/CommentStatus.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/test/java/com/xmtx/jobfairComment/JobCommentProviderApplicationTests.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/test/java/com/xmtx/admin/AdminApplicationTests.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/test/java/com/xmtx/jobfairComment/repository/JobfairCommentRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/dataobject/JobFairComment.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/test/java/com/xmtx/jobfairComment/repository/JobFairCommentRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/form/CommentForm.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/admin/model/Admin.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/VO/ResultVO.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/pom.xml" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/repository/JobFairCommentRepository.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/service/JobCommentService.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/utils/ResultVOUtil.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/service/impl/JobCommentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/enums/ResultEnum.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/controller/JobCommentController.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/enums/CommentStatusEnum.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/resources/application.yml" />
       </list>
     </option>
   </component>
@@ -213,9 +296,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="947" />
-    <option name="width" value="981" />
-    <option name="height" value="1089" />
+    <option name="x" value="951" />
+    <option name="width" value="977" />
+    <option name="height" value="548" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -239,6 +322,201 @@
               <item name="xmtx" type="462c0819:PsiDirectoryNode" />
               <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-jobfair" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-jobfair" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-jobfair" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-jobfair" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-jobfairComment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-jobfairComment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-jobfairComment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-jobfairComment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-jobfairComment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jobfairComment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-jobfairComment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jobfairComment" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-jobfairComment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jobfairComment" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-jobfairComment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jobfairComment" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-jobfairComment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jobfairComment" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-jobfairComment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jobfairComment" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-jobfairComment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jobfairComment" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-jobfairComment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jobfairComment" type="462c0819:PsiDirectoryNode" />
+              <item name="VO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-jobfairComment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-jobfairComment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-jobfairComment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-jobfairComment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jobfairComment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-jobfairComment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jobfairComment" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -257,16 +535,17 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com.xmtx.provider" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.ignored.files" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.xmtx.jobfairComment.repository" />
       <recent name="com.xmtx.provider.service" />
       <recent name="com.xmtx.provider.service.impl" />
       <recent name="com.xmtx.provider.repository" />
@@ -286,7 +565,15 @@
       <recent name="C:\Users\Think\IdeaProjects\xmtx\xmtx-provider\xmtx-provider-model\src\main\resources" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Think\IdeaProjects\xmtx" />
+      <recent name="C:\Users\Think\IdeaProjects\xmtx\xmtx-provider\xmtx-provider-user\src\main\resources" />
+      <recent name="C:\Users\Think\IdeaProjects\xmtx\xmtx-provider\xmtx-provider-jobfairComment\src\main\resources" />
       <recent name="C:\Users\Think\IdeaProjects\xmtx\xmtx-provider\xmtx-provider-admin\src\main\java\com.xmtx.provider" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.xmtx.jobfairComment.VO" />
+      <recent name="com.xmtx.jobfairComment" />
+      <recent name="com.xmtx.provider" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.xmtx.provider.service.impl" />
@@ -304,17 +591,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AdminProviderApplication">
+  <component name="RunManager" selected="Spring Boot.JobCommentProviderApplication">
     <configuration name="AdminRepositoryTest.findAllByEnabled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="xmtx-provider-admin" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xmtx.provider.mapper.*" />
+          <option name="PATTERN" value="com.xmtx.admin.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.xmtx.provider.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.xmtx.provider.mapper.AdminRepositoryTest" />
+      <option name="PACKAGE_NAME" value="com.xmtx.admin.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.xmtx.admin.repository.AdminRepositoryTest" />
       <option name="METHOD_NAME" value="findAllByEnabled" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -337,17 +624,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AdminServiceTest.findAllWait" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="xmtx-provider-admin" />
+    <configuration name="JobFairCommentRepositoryTest.testSave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xmtx-provider-jobfairComment" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xmtx.provider.service.*" />
+          <option name="PATTERN" value="com.xmtx.jobfairComment.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.xmtx.provider.service" />
-      <option name="MAIN_CLASS_NAME" value="com.xmtx.provider.service.AdminServiceTest" />
-      <option name="METHOD_NAME" value="findAllWait" />
+      <option name="PACKAGE_NAME" value="com.xmtx.jobfairComment.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.xmtx.jobfairComment.repository.JobFairCommentRepositoryTest" />
+      <option name="METHOD_NAME" value="testSave" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -357,11 +644,11 @@
       <module name="xmtx-provider-admin" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xmtx.provider.*" />
+          <option name="PATTERN" value="com.xmtx.jobfairComment.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xmtx.provider.AdminProviderApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xmtx.jobfairComment.AdminProviderApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -379,12 +666,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JobCommentProviderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="xmtx-provider-jobfairComment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xmtx.jobfairComment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xmtx.jobfairComment.JobCommentProviderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.AdminProviderApplication" />
+        <item itemvalue="Spring Boot.JobCommentProviderApplication" />
         <item itemvalue="Spring Boot.EurekaApplication" />
-        <item itemvalue="JUnit.AdminServiceTest.findAllWait" />
+        <item itemvalue="JUnit.JobFairCommentRepositoryTest.testSave" />
         <item itemvalue="JUnit.AdminRepositoryTest.findAllByEnabled" />
+        <item itemvalue="Spring Boot.AdminProviderApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -407,7 +708,7 @@
       <workItem from="1578022262052" duration="5488000" />
       <workItem from="1578198558267" duration="2212000" />
       <workItem from="1581507196614" duration="3228000" />
-      <workItem from="1581568836898" duration="1723000" />
+      <workItem from="1581568836898" duration="36836000" />
     </task>
     <task id="LOCAL-00001" summary="initial project framework">
       <created>1577694032761</created>
@@ -437,43 +738,50 @@
       <option name="project" value="LOCAL" />
       <updated>1578023091682</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="1、增加两个模块：jobfair（招聘发布模块）和jobfairComment（招聘贴的评论模块）；">
+      <created>1581575280163</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1581575280163</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AdminMapperTest_findAllByEnabled - 2020.01.02 at 17h 34m 22s.xml">
-      <configuration name="AdminMapperTest.findAllByEnabled" configurationId="JUnit" />
+    <history-entry file="JobFairCommentRepositoryTest_testSave - 2020.02.15 at 01h 27m 08s.xml">
+      <configuration name="JobFairCommentRepositoryTest.testSave" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AdminMapperTest_findAllByEnabled - 2020.01.02 at 17h 35m 24s.xml">
-      <configuration name="AdminMapperTest.findAllByEnabled" configurationId="JUnit" />
+    <history-entry file="JobFairCommentRepositoryTest_testSave - 2020.02.15 at 01h 30m 38s.xml">
+      <configuration name="JobFairCommentRepositoryTest.testSave" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AdminMapperTest_findAllByEnabled - 2020.01.02 at 17h 38m 16s.xml">
-      <configuration name="AdminMapperTest.findAllByEnabled" configurationId="JUnit" />
+    <history-entry file="JobFairCommentRepositoryTest_testSave - 2020.02.15 at 01h 34m 22s.xml">
+      <configuration name="JobFairCommentRepositoryTest.testSave" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AdminRepositoryTest_findAllByEnabled_(1) - 2020.01.02 at 18h 07m 19s.xml">
-      <configuration name="AdminRepositoryTest.findAllByEnabled (1)" configurationId="JUnit" />
+    <history-entry file="JobFairCommentRepositoryTest_testSave - 2020.02.15 at 01h 37m 37s.xml">
+      <configuration name="JobFairCommentRepositoryTest.testSave" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AdminRepositoryTest_findAllByEnabled_(1) - 2020.01.02 at 21h 24m 12s.xml">
-      <configuration name="AdminRepositoryTest.findAllByEnabled (1)" configurationId="JUnit" />
+    <history-entry file="JobFairCommentRepositoryTest_testSave - 2020.02.15 at 01h 40m 19s.xml">
+      <configuration name="JobFairCommentRepositoryTest.testSave" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AdminServiceTest_findAllWait - 2020.01.02 at 22h 11m 38s.xml">
-      <configuration name="AdminServiceTest.findAllWait" configurationId="JUnit" />
+    <history-entry file="AdminRepositoryTest_findAllByEnabled - 2020.02.15 at 01h 42m 31s.xml">
+      <configuration name="AdminRepositoryTest.findAllByEnabled" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AdminServiceTest_findAllWait - 2020.01.02 at 22h 13m 32s.xml">
-      <configuration name="AdminServiceTest.findAllWait" configurationId="JUnit" />
+    <history-entry file="JobFairCommentRepositoryTest_testSave - 2020.02.15 at 01h 47m 48s.xml">
+      <configuration name="JobFairCommentRepositoryTest.testSave" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AdminServiceTest_findAllWait - 2020.01.02 at 22h 16m 48s.xml">
-      <configuration name="AdminServiceTest.findAllWait" configurationId="JUnit" />
+    <history-entry file="JobFairCommentRepositoryTest_testSave - 2020.02.15 at 01h 51m 03s.xml">
+      <configuration name="JobFairCommentRepositoryTest.testSave" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AdminServiceTest_findAllWait - 2020.01.03 at 11h 34m 55s.xml">
-      <configuration name="AdminServiceTest.findAllWait" configurationId="JUnit" />
+    <history-entry file="JobFairCommentRepositoryTest_testSave - 2020.02.15 at 01h 53m 01s.xml">
+      <configuration name="JobFairCommentRepositoryTest.testSave" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AdminServiceTest_findAllWait - 2020.01.03 at 11h 35m 41s.xml">
-      <configuration name="AdminServiceTest.findAllWait" configurationId="JUnit" />
+    <history-entry file="JobFairCommentRepositoryTest_testSave - 2020.02.16 at 20h 48m 30s.xml">
+      <configuration name="JobFairCommentRepositoryTest.testSave" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52849000" />
+    <option name="totallyTimeSpent" value="87962000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -488,7 +796,7 @@
     <frame x="-8" y="-8" width="1723" height="976" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26246247" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21561562" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -497,21 +805,21 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32977462" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31672597" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32858837" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31316727" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.34519574" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32977462" />
       <window_info anchor="bottom" id="Database Console" order="7" weight="0.32977462" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32977462" />
+      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32977462" />
       <window_info anchor="bottom" id="Database Changes" order="10" weight="0.32977462" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32977462" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32977462" />
       <window_info anchor="bottom" id="Spring" order="13" weight="0.32977462" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.32977462" />
-      <window_info anchor="bottom" id="Messages" order="15" weight="0.32977462" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.32858837" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24984986" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -520,7 +828,7 @@
       <window_info anchor="right" id="Maven" order="5" weight="0.24144144" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" visible="true" weight="0.18258259" />
+      <window_info anchor="right" id="Database" order="8" visible="true" weight="0.2822823" />
       <window_info anchor="right" id="Bean Validation" order="9" weight="0.32972974" />
     </layout>
     <layout-to-restore>
@@ -607,7 +915,8 @@
     <MESSAGE value="initial project framework" />
     <MESSAGE value="update framework：&#10;1. delete xmtx-module&#10;2. add new module(xmtx-provider-model) in xmtx-provider&#10;3. add a new class:Admin,the entity class of admin" />
     <MESSAGE value="1. update framework:update &quot;model&quot; module to &quot;admin&quot;&#10;2. build register center:eureka&#10;3. build admin module framework" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. update framework:update &quot;model&quot; module to &quot;admin&quot;&#10;2. build register center:eureka&#10;3. build admin module framework" />
+    <MESSAGE value="1、增加两个模块：jobfair（招聘发布模块）和jobfairComment（招聘贴的评论模块）；" />
+    <option name="LAST_COMMIT_MESSAGE" value="1、增加两个模块：jobfair（招聘发布模块）和jobfairComment（招聘贴的评论模块）；" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -625,16 +934,22 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/test/java/com/xmtx/provider/repository/AdminRepositoryTest.java</url>
+          <url>file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/test/java/com/xmtx/admin/repository/AdminRepositoryTest.java</url>
           <line>23</line>
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/test/java/com/xmtx/provider/service/AdminServiceTest.java</url>
+          <url>file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/test/java/com/xmtx/admin/service/AdminServiceTest.java</url>
           <line>20</line>
           <properties />
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/test/java/com/xmtx/jobfairComment/repository/JobFairCommentRepositoryTest.java</url>
+          <line>14</line>
+          <properties field="jobfairCommentRepository" class="com.xmtx.jobfairComment.repository.JobFairCommentRepositoryTest" />
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -644,36 +959,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/xmtx-module/pom.xml" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a1400cbb-8c12-4b93-837f-23790389ef30/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="55" column="56" lean-forward="true" selection-start-line="55" selection-start-column="56" selection-end-line="55" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-model/src/main/resources/application-dev.yml" />
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-model/xmtx-provider-admin.iml" />
-    <entry file="file://$PROJECT_DIR$/xmtx-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-gateway/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-model/src/main/resources/mybatis/mybatis-config.xml" />
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-model/src/test/java/com/xmtx/provider/mapper/AdminMapperTest.java" />
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-model/src/main/java/com/xmtx/provider/model/Admin.java" />
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-model/src/main/resources/application.yml" />
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-model/src/main/java/com/xmtx/provider/ModelProviderApplication.java" />
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-model/src/test/java/com/xmtx/provider/repository/AdminRepositoryTest.java" />
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-model/pom.xml" />
     <entry file="das://a1400cbb-8c12-4b93-837f-23790389ef30/schema/db_mj4x/table/admin">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state projectRestartId="206af0d8-724a-4386-8e65-a3293d687fe7">
@@ -684,16 +969,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/test/java/com/xmtx/provider/service/impl/AdminServiceImplTest.java" />
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/test/java/com/xmtx/provider/AdminApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/resources/mybatis/mybatis-config.xml" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-commons/2.2.1.RELEASE/spring-cloud-commons-2.2.1.RELEASE.jar!/org/springframework/cloud/client/discovery/EnableDiscoveryClient.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -727,24 +1002,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-eureka/src/main/java/com/xmtx/eureka/EurekaApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="68" selection-start-line="3" selection-start-column="68" selection-end-line="3" selection-end-column="68" />
-          <folding>
-            <element signature="e#158#159#0" expanded="true" />
-            <element signature="e#190#191#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-eureka/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-netflix-eureka-client/2.2.1.RELEASE/spring-cloud-netflix-eureka-client-2.2.1.RELEASE-sources.jar!/org/springframework/cloud/netflix/eureka/EurekaClientConfigBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
@@ -752,24 +1009,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/provider/service/AdminService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/provider/model/Admin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/provider/enums/AdminStatusEnums.java">
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/admin/enums/AdminStatusEnums.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
@@ -777,47 +1017,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-model/src/main/java/com/xmtx/provider/repository/AdminRepository.java" />
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/test/java/com/xmtx/provider/repository/AdminRepositoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/test/java/com/xmtx/provider/service/AdminServiceTest.java">
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/test/java/com/xmtx/admin/service/AdminServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/provider/repository/AdminRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/provider/AdminProviderApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -838,15 +1044,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://a1400cbb-8c12-4b93-837f-23790389ef30/schema/db_mj4x/table/job_fair_comment">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="7a8b78e8-5d3b-4b8c-905a-d6f871e15fed">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://a1400cbb-8c12-4b93-837f-23790389ef30/schema/db_mj4x/table/job_fair">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state projectRestartId="7a8b78e8-5d3b-4b8c-905a-d6f871e15fed">
@@ -856,14 +1053,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/provider/VO/ResultVO.java">
+    <entry file="file://$PROJECT_DIR$/xmtx-eureka/src/main/java/com/xmtx/eureka/EurekaApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+        <state relative-caret-position="200">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/provider/service/impl/AdminServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/xmtx-eureka/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="67" column="21" lean-forward="true" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/admin/AdminProviderApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.16.18/lombok-1.16.18.pom">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/test/java/com/xmtx/admin/AdminApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a1400cbb-8c12-4b93-837f-23790389ef30/schema/db_mj4x/table/job_fair_comment">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="38778bd2-bf18-4c3d-a98c-04329454c2af">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/test/java/com/xmtx/admin/repository/AdminRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/admin/service/AdminService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/admin/service/impl/AdminServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/form/CommentForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/admin/controller/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
@@ -873,34 +1150,211 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/provider/controller/AdminController.java">
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/admin/VO/ResultVO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="350">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/admin/model/Admin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="618">
+          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/pom.xml">
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/test/java/com/xmtx/jobfairComment/JobCommentProviderApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="668">
-          <caret line="68" column="19" selection-start-line="13" selection-start-column="4" selection-end-line="68" selection-end-column="19" />
+        <state relative-caret-position="325">
+          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/pom.xml">
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/java/com/xmtx/admin/repository/AdminRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="743">
+        <state relative-caret-position="225">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/dataobject/JobFairComment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
           <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="55" column="20" lean-forward="true" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="54" column="21" lean-forward="true" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+        <state relative-caret-position="154">
+          <caret line="57" column="38" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://a1400cbb-8c12-4b93-837f-23790389ef30/schema/db_mj4x/table/enterprise_info">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="38778bd2-bf18-4c3d-a98c-04329454c2af">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/test/java/com/xmtx/jobfairComment/repository/JobFairCommentRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="24" column="50" lean-forward="true" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/repository/JobFairCommentRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="78" selection-start-line="9" selection-start-column="78" selection-end-line="9" selection-end-column="78" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/service/JobCommentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/service/impl/JobCommentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/JobCommentProviderApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/utils/ResultVOUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/VO/ResultVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db_mj4x.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/enums/CommentStatusEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/enums/ResultEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/controller/JobCommentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="57" column="35" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="38" lean-forward="true" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -956,7 +1410,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>xmtx-provider-api</last-edited>
+          <last-edited>xmtx-provider-jobfair</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

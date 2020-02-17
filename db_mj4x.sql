@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50516
 File Encoding         : 65001
 
-Date: 2020-02-12 20:25:27
+Date: 2020-02-17 13:41:28
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -47,13 +47,14 @@ CREATE TABLE `enterprise_info` (
   `description` varchar(255) DEFAULT NULL COMMENT '简介',
   `website` varchar(255) DEFAULT NULL COMMENT '官网',
   `address` varchar(255) DEFAULT NULL COMMENT '地址',
+  `enabled` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of enterprise_info
 -- ----------------------------
-INSERT INTO `enterprise_info` VALUES ('1', '1', '1', '1', '1', '1');
+INSERT INTO `enterprise_info` VALUES ('1', '1', '1', '1', '1', '1', null);
 
 -- ----------------------------
 -- Table structure for `job_fair`
@@ -84,20 +85,20 @@ CREATE TABLE `job_fair` (
 -- ----------------------------
 DROP TABLE IF EXISTS `job_fair_comment`;
 CREATE TABLE `job_fair_comment` (
-  `id` int(11) NOT NULL,
-  `jobId` int(11) NOT NULL,
-  `userId` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `jobid` int(11) DEFAULT NULL,
+  `username` char(255) DEFAULT NULL,
   `content` longtext,
-  `pubtime` datetime DEFAULT NULL,
+  `pubtime` date DEFAULT NULL,
   `state` tinyint(4) DEFAULT NULL,
   `prove` int(11) DEFAULT NULL,
-  `db_source` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of job_fair_comment
 -- ----------------------------
+INSERT INTO `job_fair_comment` VALUES ('3', '1', 'test', '招聘会现场可以投简历吗？', '2020-02-16', '0', '0');
 
 -- ----------------------------
 -- Table structure for `user`

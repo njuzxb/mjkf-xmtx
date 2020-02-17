@@ -15,6 +15,7 @@
         <module>xmtx-provider-admin</module>
         <module>xmtx-provider-jobfair</module>
         <module>xmtx-provider-jobfairComment</module>
+        <module>xmtx-provider-user</module>
     </modules>
 
 
