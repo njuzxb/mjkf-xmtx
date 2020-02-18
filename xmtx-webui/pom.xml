@@ -9,12 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>xmtx-provider-api</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>xmtx-provider-api-jobfair</module>
-        <module>xmtx-provider-api-jobfairComment</module>
-    </modules>
+    <artifactId>xmtx-webui</artifactId>
 
 
 </project>

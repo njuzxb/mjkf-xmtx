@@ -6,6 +6,7 @@ import lombok.experimental.Accessors;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.io.Serializable;
 
@@ -16,7 +17,7 @@ import java.io.Serializable;
 public class Admin implements Serializable {    //admin实体类
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id; //主键
 
     private String username;

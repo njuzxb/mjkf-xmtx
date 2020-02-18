@@ -24,6 +24,7 @@ public class JobCommentServiceImpl implements JobCommentService {
      * @param jobFairComment
      * @return
      */
+    @Override
     public JobFairComment comment(JobFairComment jobFairComment){
         //TODO 增加招聘文章评论数（调用招聘会服务）（暂定）
 
@@ -42,6 +43,7 @@ public class JobCommentServiceImpl implements JobCommentService {
      * @param jobid
      * @return
      */
+    @Override
     public List<JobFairComment> findUpCommentByJobid(Integer jobid){
         // 从数据库获取数据
 
@@ -53,6 +55,7 @@ public class JobCommentServiceImpl implements JobCommentService {
      * 根据id查找
      * @param id
      */
+    @Override
     public JobFairComment findById(Integer id){
 
         return jobFairCommentRepository.findById(id).get();
@@ -62,6 +65,7 @@ public class JobCommentServiceImpl implements JobCommentService {
      * 根据id删除评论（用户）
      * @param id
      */
+    @Override
     public void deleteByUser(Integer id){
 
 

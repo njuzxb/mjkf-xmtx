@@ -13,6 +13,7 @@
         <module>xmtx-provider-api</module>
         <module>xmtx-gateway</module>
         <module>xmtx-eureka</module>
+        <module>xmtx-webui</module>
     </modules>
 
     <!-- 打包方式  pom-->
