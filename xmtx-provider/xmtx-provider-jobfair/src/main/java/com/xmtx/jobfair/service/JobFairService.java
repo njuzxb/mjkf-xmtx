@@ -13,9 +13,10 @@ import java.util.List;
  */
 public interface JobFairService {
     /*
-     * 招聘会信息查看
+     * 招聘会列表信息查看
      * */
     List<JobFair> job_fair_showAll();
+
     /*
      * 招聘会发布
      * */
@@ -23,7 +24,7 @@ public interface JobFairService {
     /*
      * 招聘会信息修改
      * */
-    void job_fair_update();
+    void job_fair_update(JobFair jobFair);
     /*
      * 招聘会信息删除
      * */

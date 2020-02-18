@@ -13,7 +13,7 @@ import javax.validation.constraints.NotNull;
  * @Version: $
  */
 @Data
-public class JobFairForm {
+public class JobFairForm_Release {
     @NotNull(message = "企业id必填")
     private Integer eid;
 

@@ -19,7 +19,6 @@ import java.util.Date;
 @Entity
 public class JobFair {
     @Id
-    @Getter@Setter
     private Integer id;
     /**  公司ID **/
     private Integer eid;

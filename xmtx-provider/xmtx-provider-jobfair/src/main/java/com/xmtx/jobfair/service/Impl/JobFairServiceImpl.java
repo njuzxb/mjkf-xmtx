@@ -53,8 +53,23 @@ public class JobFairServiceImpl implements JobFairService {
         jobFairRepository.save(jobFair);
     }
 
+
     @Override
-    public void job_fair_update() {
+    public void job_fair_update(JobFair jobFair) {
+        int eid = jobFair.getEid();
+        //根据eid判断公司是否存在
+        Optional<EnterpriseInfo> enterpriseInfoOptional = enterpriseInfoRepository.findById(eid);
+        if(!enterpriseInfoOptional.isPresent()){
+            throw new JobFairException(ResultEnum.JOBFAIR_NOT_EXIST);
+        }
+        System.out.println("存在该公司");
+        //判断该公司的Enable字段是否为true，若为false。则没有发布招聘会的资格
+        EnterpriseInfo enterpriseInfo = enterpriseInfoOptional.get();
+        if(!enterpriseInfo.isEnabled() || !jobFair.isEnabled()){
+            throw new JobFairException(JobFairStatusEnum.DISABLE);
+        }
+        System.out.println(JobFairStatusEnum.ENABLE.getMsg());
+        jobFairRepository.save(jobFair);
     }
 
     @Override
