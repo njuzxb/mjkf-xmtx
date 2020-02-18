@@ -20,7 +20,11 @@
 
 ——————mjkf-xmtx-provider-forum   论坛服务：提供论坛服务 port：2005
 
-————mjkf-xmtx-provider  服务暴露的接口
+————mjkf-xmtx-provider-api  服务暴露的接口
+
+——————mjkf-xmtx-provider-api-jobfair  招聘会服务接口   port：3001
+
+——————mjkf-xmtx-provider-api-jobfairComment  招聘会评论服务接口  port：3002
 
 ## 当前任务：（优先级从高到低）
 1. 完成招聘信息发布功能
