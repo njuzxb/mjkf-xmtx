@@ -14,16 +14,16 @@ import java.math.BigDecimal;
  */
 @Data
 public class JobFairInfoVO {
-    @JsonProperty("id")
+//    @JsonProperty("id")
     private Integer jobfairId;
-    @JsonProperty("name")
+//    @JsonProperty("name")
     private String enterpriseName;
-    @JsonProperty("address")
+//    @JsonProperty("address")
     private String jobfairAddress;
-    @JsonProperty("title")
+//    @JsonProperty("title")
     private String jobfairTitle;
-    @JsonProperty("label")
+//    @JsonProperty("label")
     private String jobfairLabel;
-    @JsonProperty("content")
+//    @JsonProperty("content")
     private String jobfairContent;
 }

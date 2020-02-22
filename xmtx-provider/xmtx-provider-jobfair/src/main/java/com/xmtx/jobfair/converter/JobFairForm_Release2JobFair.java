@@ -3,7 +3,6 @@ package com.xmtx.jobfair.converter;
 import com.xmtx.jobfair.dataObject.JobFair;
 import com.xmtx.jobfair.form.JobFairForm_Release;
 import com.xmtx.jobfair.utils.KeyUtil;
-import lombok.extern.slf4j.Slf4j;
 
 import java.util.Date;
 
@@ -14,7 +13,6 @@ import java.util.Date;
  * @ Modified By：
  * @Version: $
  */
-@Slf4j
 public class JobFairForm_Release2JobFair {
     public static JobFair convert(JobFairForm_Release form){
         JobFair jobFair = new JobFair();

@@ -2,7 +2,6 @@ package com.xmtx.jobfair.converter;
 
 import com.xmtx.jobfair.dataObject.JobFair;
 import com.xmtx.jobfair.vo.JobFairInfoVO;
-import lombok.extern.slf4j.Slf4j;
 
 /**
  * @ Author     ：djq.
@@ -11,7 +10,6 @@ import lombok.extern.slf4j.Slf4j;
  * @ Modified By：
  * @Version: $
  */
-@Slf4j
 public class JobFair2JobFairInfoVO {
     public static JobFairInfoVO convert(JobFair jobFair){
         JobFairInfoVO tmpJFVO = new JobFairInfoVO();

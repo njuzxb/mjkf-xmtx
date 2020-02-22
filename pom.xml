@@ -15,19 +15,6 @@
         <module>xmtx-eureka</module>
         <module>xmtx-webui</module>
     </modules>
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-netflix-eureka-server</artifactId>
-            <version>2.2.1.RELEASE</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-autoconfigure</artifactId>
-            <version>2.2.4.RELEASE</version>
-        </dependency>
-    </dependencies>
 
     <!-- 打包方式  pom-->
     <packaging>pom</packaging>
@@ -121,6 +108,16 @@
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-context-support</artifactId>
                 <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-redis</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.session</groupId>
+                <artifactId>spring-session-data-redis</artifactId>
+                <version>${spring-boot.version}</version>
             </dependency>
             <!--数据库-->
             <dependency>

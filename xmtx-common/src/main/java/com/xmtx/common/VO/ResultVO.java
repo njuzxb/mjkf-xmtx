@@ -1,6 +1,8 @@
-package com.xmtx.jobfair.common;
+package com.xmtx.common.VO;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * @ Author     ：djq.
@@ -10,6 +12,8 @@ import lombok.Data;
  * @Version: $
  */
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class ResultVO<T> {
     /*
      *   错误码正常返回为0

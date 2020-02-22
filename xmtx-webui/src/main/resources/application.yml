@@ -1,0 +1,29 @@
+server:
+  port: 80
+
+# spring配置
+spring:
+  application:
+    name: xmtx-webui
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
+#  redis:
+#    host: 192.168.56.150
+#    jedis:
+#      pool:
+#        max-idle: 100
+#  session:
+#    store-type: redis
+
+
+# eureka配置
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka/
+    register-with-eureka: false
+  instance:
+    prefer-ip-address: true

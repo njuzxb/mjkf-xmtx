@@ -1,0 +1,416 @@
+/*
+Template Name: Osahanin - Job Portal & Social Network HTML Template
+Author: Askbootstrap
+Author URI: https://themeforest.net/user/askbootstrap
+Version: 1.0
+*/
+/*
+    -- body
+    -- Slider
+    -- Top Nav
+    -- Card Design
+    -- Tab Design
+    -- Login Page Designs
+    -- People List
+    -- Job List
+    -- Network Item
+    -- Extra
+*/
+ @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap');
+/* body */
+ body {
+     background: #edf2f6;
+     font-size: 13px;
+     font-family: 'Ubuntu', sans-serif;
+}
+ p{
+     color: #888da8 
+}
+/* End body */
+/* Slider */
+ .slick-arrow:before {
+     color: #000;
+     z-index: 99999;
+}
+ .slick-prev {
+     left: 0;
+     display: none;
+}
+ .slick-next {
+     right: 9px;
+     z-index: 9;
+     background: #fff;
+     border-radius: 50px;
+     box-shadow: 0 6px 22px 0 rgba(0,0,0,0.08) !important;
+}
+/* End Slider */
+/* Top Nav */
+ .navbar-dark .navbar-nav .nav-link {
+     color: rgba(255,255,255,.8);
+}
+ .osahan-nav-top .container {
+     padding: 0 16px;
+}
+ .osahan-nav-top .img-profile {
+     width: 30px;
+     height: 30px;
+}
+ .osahan-nav-top .osahan-list-dropdown .nav-link i {
+     font-size: 16px;
+}
+ .osahan-nav-top .osahan-list-dropdown .nav-link .badge {
+     position: absolute;
+     border-radius: 50px;
+     min-width: 15px;
+     height: 15px;
+     font-size: 9px;
+     padding: 0px;
+     right: 1px;
+     line-height: 15px;
+     top: 11px;
+}
+ .osahan-nav-top .nav-link {
+     position: relative;
+     height: 55px;
+     display: flex;
+     align-items: center;
+}
+ .osahan-nav-top .navbar-search .form-control {
+     background: #132028;
+}
+ .osahan-nav-top .navbar-search .btn {
+     background: #132028 !important;
+     color: #74828e;
+}
+ .dropdown-list .dropdown-item {
+     white-space: normal;
+     padding-top: .5rem;
+     padding-bottom: .5rem;
+     border-left: 1px solid #e3e6f0;
+     border-right: 1px solid #e3e6f0;
+     border-bottom: 1px solid #e3e6f0;
+     line-height: 1.3rem;
+}
+ .dropdown-list {
+     padding: 0;
+     border: none;
+     overflow: hidden;
+     width: 20rem!important;
+}
+ .dropdown-list .dropdown-header {
+     background-color: #1d2f38;
+     border: 1px solid #1d2f38;
+     color: #fff;
+     font-weight: 800;
+     font-size: 14px;
+     padding: .8rem 1rem;
+}
+ .dropdown-list .icon-circle {
+     height: 2.5rem;
+     width: 2.5rem;
+     border-radius: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+/* End Top Nav */
+/* Card Design */
+ .box.border {
+     border: 1px solid #ffffff !important;
+}
+ .shadow-sm {
+     box-shadow: 0 6px 22px 0 rgba(0,0,0,0.08) !important;
+}
+/* End Card Design */
+/* Tab Design */
+ .osahan-line-tab .nav-link {
+     font-size: 14px;
+     font-weight: 500;
+     padding: 1rem!important;
+     color:#888da8;
+     position: relative;
+}
+ .osahan-line-tab .nav-link.active {
+     color: #007bff;
+}
+ .osahan-line-tab .nav-link.active:after {
+     content: "";
+     background: -moz-linear-gradient(194deg, #00c9e4 0%, #007bff 100%);
+    /* ff3.6+ */
+     background: -webkit-gradient(linear, left top, right top, color-stop(0%, #007bff), color-stop(100%, #00c9e4));
+    /* safari4+,chrome */
+     background: -webkit-linear-gradient(194deg, #00c9e4 0%, #007bff 100%);
+    /* safari5.1+,chrome10+ */
+     background: -o-linear-gradient(194deg, #00c9e4 0%, #007bff 100%);
+    /* opera 11.10+ */
+     background: -ms-linear-gradient(194deg, #00c9e4 0%, #007bff 100%);
+    /* ie10+ */
+     background: linear-gradient(256deg, #00c9e4 0%, #007bff 100%);
+    /* w3c */
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007bff', endColorstr='#00c9e4',GradientType=1 );
+    /* ie6-9 */
+     height: 3px;
+     position: absolute;
+     bottom: -2px;
+     left: 0;
+     right: 0;
+}
+/* End Tab */
+/* Login Page Designs */
+ .osahan-login .form-control {
+     background: #f8fafc;
+     border-color: #eaebec;
+}
+ .icon-form-control i {
+     display: flex;
+     top: 0;
+     bottom: 0;
+     align-items: center;
+     font-size: 16px;
+     justify-content: center;
+     width: 40px;
+}
+ .icon-form-control .form-control {
+     padding-left: 40px;
+}
+ label {
+     font-weight: 500;
+}
+ .custom-control label {
+     line-height: 22px;
+     font-weight: 400;
+}
+ .btn-outline-instagram {
+     border-color: #2a5b83;
+     background-color: #2a5b83;
+     color: #fff;
+}
+ .btn-outline-linkedin {
+     border-color: #187fb9;
+     background-color: #187fb9;
+     color: #fff;
+}
+ .btn-outline-facebook {
+     border-color: #43619d;
+     background-color: #43619d;
+     color: #fff;
+}
+/* End Login Page Designs */
+/* People List */
+ .people-list .font-weight-bold {
+     font-weight: 500 !important;
+     word-break: break-all;
+     overflow: hidden;
+     white-space: nowrap;
+}
+ .people-list .btn-sm {
+     font-size: .800rem;
+}
+ .people-list .font-weight-bold div {
+     text-overflow: ellipsis;
+     overflow: hidden;
+}
+/* End People List */
+/* Job List */
+ .job-item-header .img-fluid, .job-item-2 .img-fluid {
+     width: 40px;
+     height: 40px;
+}
+/* End Job List */
+/* Network Item */
+ .overlap-rounded-circle .rounded-circle {
+     width: 22px;
+     height: 22px;
+     border: 2px solid #fff;
+     margin: 0 0 0 -9px;
+}
+ .overlap-rounded-circle {
+     margin-right: 9px;
+     padding-left: 9px;
+}
+ .image-overlap-2 .img-fluid {
+     width: 75px;
+     height: 75px;
+     border: 4px solid #fff;
+     margin: 0 -12px;
+}
+/* End Network Item */
+/* Extra */
+ a{
+     text-decoration: none !important;
+}
+ div, a{
+     outline: none !important;
+}
+ .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+     padding-right: 8px;
+     padding-left: 8px;
+}
+ .row {
+     margin-right: -8px;
+     margin-left: -8px;
+}
+ .osahan-share-post textarea {
+     resize: none;
+}
+ .text-success {
+     color: #00c9a7 !important;
+}
+ .text-danger {
+     color: #de4437 !important;
+}
+ .text-warning {
+     color: #ffc107 !important;
+}
+ .text-info {
+     color: #00dffc !important;
+}
+ .bg-success {
+     background-color: #00c9a7 !important;
+}
+ .bg-danger {
+     background-color: #de4437 !important;
+}
+ .bg-warning {
+     background-color: #ffc107 !important;
+}
+ .bg-info {
+     background-color: #00dffc !important;
+}
+ .badge-success {
+     color: #fff;
+     background-color: #00c9a7;
+}
+ .badge-danger {
+     color: #fff;
+     background-color: #de4437;
+}
+ .badge-warning {
+     color: #1e2022;
+     background-color: #ffc107;
+}
+ .badge-info {
+     color: #1e2022;
+     background-color: #00dffc;
+}
+ .border, .card {
+     border: 1px solid #eaebec!important;
+}
+ .border-top {
+     border-top: 1px solid #eaebec!important;
+}
+ .border-bottom {
+     border-bottom: 1px solid #eaebec!important;
+}
+ .border-left {
+     border-left: 1px solid #eaebec!important;
+}
+ .border-right {
+     border-right: 1px solid #eaebec!important;
+}
+ .list-group-item{
+     border-color: #eaebec!important;
+}
+ .btn-light {
+     color: #007bff;
+     background-color: #ebf2ff;
+     border-color: #ebf2ff;
+}
+ .btn-light:hover {
+     color: #007bff;
+     background-color: #ffffff;
+     border-color: #007bff;
+}
+ .btn-primary{
+     background: -moz-linear-gradient(194deg, #00c9e4 0%, #007bff 100%);
+    /* ff3.6+ */
+     background: -webkit-gradient(linear, left top, right top, color-stop(0%, #007bff), color-stop(100%, #00c9e4));
+    /* safari4+,chrome */
+     background: -webkit-linear-gradient(194deg, #00c9e4 0%, #007bff 100%);
+    /* safari5.1+,chrome10+ */
+     background: -o-linear-gradient(194deg, #00c9e4 0%, #007bff 100%);
+    /* opera 11.10+ */
+     background: -ms-linear-gradient(194deg, #00c9e4 0%, #007bff 100%);
+    /* ie10+ */
+     background: linear-gradient(256deg, #00c9e4 0%, #007bff 100%);
+    /* w3c */
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007bff', endColorstr='#00c9e4',GradientType=1 );
+    /* ie6-9 */
+     border-color: #007bff;
+}
+ .text-gold {
+     color: #d3ac2b;
+}
+ .btn-outline-gold {
+     color: #d3ac2b;
+     border-color: #d3ac2b;
+}
+ .btn-outline-gold:hover {
+     color: #ffffff;
+     background-color: #d3ac2b;
+     border-color: #d3ac2b;
+}
+ .form-control{
+     border-color: #b7b9cc;
+}
+ .dropdown-menu{
+     border-color: #eaebec;
+}
+ .dropdown-item {
+     padding: 6px 1rem;
+}
+ .btn-outline-secondary {
+     color: #b7b9cc;
+     border-color: #b7b9cc;
+}
+ .btn-outline-secondary:hover, .btn-outline-secondary:focus {
+     color: #ffffff;
+     border-color: #b7b9cc;
+     background-color: #b7b9cc;
+}
+ .bg-dark {
+     background: #1d2f38 !important;
+}
+ .form-control, .btn {
+     font-size: 14px;
+}
+ .text-dark {
+     color: #1d2f38 !important;
+}
+ .small, small {
+     font-size: 12px;
+}
+ .no-arrow .dropdown-toggle::after {
+     display: none;
+}
+ .text-truncate {
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+}
+ .dropdown .dropdown-menu {
+     font-size: .85rem;
+}
+ .text-gray-500 {
+     color: #b7b9cc!important;
+}
+ .dropdown-list-image {
+     position: relative;
+     height: 2.5rem;
+     width: 2.5rem;
+}
+ .dropdown-list-image img {
+     height: 2.5rem;
+     width: 2.5rem;
+}
+ .dropdown-list-image .status-indicator {
+     background-color: #eaecf4;
+     height: .75rem;
+     width: .75rem;
+     border-radius: 100%;
+     position: absolute;
+     bottom: 0;
+     right: 0;
+     border: .125rem solid #fff;
+}
+/* Extra End */

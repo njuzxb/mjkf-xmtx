@@ -2,7 +2,6 @@ package com.xmtx.jobfair.controller;
 
 import com.xmtx.jobfair.converter.JobFair2JobFairInfoVO;
 import com.xmtx.jobfair.converter.JobFairForm_Release2JobFair;
-import com.xmtx.jobfair.converter.JobFairForm_Update2JobFair;
 import com.xmtx.jobfair.dataObject.EnterpriseInfo;
 import com.xmtx.jobfair.dataObject.JobFair;
 import com.xmtx.jobfair.enums.ResultEnum;
@@ -23,7 +22,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.naming.Binding;
 import javax.validation.Valid;
 import java.util.*;
 
