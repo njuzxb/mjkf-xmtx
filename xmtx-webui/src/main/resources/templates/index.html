@@ -6,13 +6,13 @@
       <meta name="description" content=""/>
       <meta name="author" content=""/>
 
-      <link rel="icon" type="image/png" href="img/fav.png"/>
+      <link rel="icon" type="image/png" th:href="@{/img/fav.png}"/>
       <title></title>
       <!-- Slick Slider -->
-      <link rel="stylesheet" type="text/css" href="vendor/slick/slick.min.css"/>
-      <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.min.css"/>
+      <link rel="stylesheet" type="text/css" th:href="@{/vendor/slick/slick.min.css}"/>
+      <link rel="stylesheet" type="text/css" th:href="@{vendor/slick/slick-theme.min.css}"/>
       <!-- Feather Icon-->
-      <link href="vendor/icons/feather.css" rel="stylesheet" type="text/css">
+      <link th:href="@{vendor/icons/feather.css}" rel="stylesheet" type="text/css">
       <!-- Bootstrap core CSS -->
       <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
       <!-- Custom styles for this template -->
@@ -22,7 +22,7 @@
       <!-- Navigation -->
       <nav class="navbar navbar-expand navbar-dark bg-dark osahan-nav-top p-0">
          <div class="container">
-            <a class="navbar-brand mr-2" href="index.html"><img src="img/logo.png" alt="">
+            <a class="navbar-brand mr-2" href="index.html"><img th:src="@{/img/logo.png}" alt="">
             </a>
             <form class="d-none d-sm-inline-block form-inline mr-auto my-2 my-md-0 mw-100 navbar-search">
                <div class="input-group">

@@ -6,8 +6,8 @@ spring:
   application:
     name: xmtx-webui
   thymeleaf:
-    prefix: classpath:/templates/
-    suffix: .html
+    # prefix: classpath:/templates/  默认
+    # suffix: .html   默认
     cache: false
 #  redis:
 #    host: 192.168.56.150

@@ -19,7 +19,7 @@ import java.util.Map;
  * @ Modified By：
  * @Version: $
  */
-@FeignClient(name = "jobfair")
+@FeignClient(name = "xmtx-provider-jobfair")
 public interface JobFairClient {
 
     @GetMapping("/jobfair/list")
