@@ -29,6 +29,10 @@
             <scope>test</scope>
         </dependency>
         <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+        </dependency>
+        <dependency>
             <groupId>com.mjkf</groupId>
             <artifactId>xmtx-common</artifactId>
             <version>1.0-SNAPSHOT</version>

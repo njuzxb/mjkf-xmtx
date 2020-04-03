@@ -1,14 +1,30 @@
 package com.xmtx.redis.client;
 
+import com.xmtx.common.DTO.TopNDTO;
 import com.xmtx.common.VO.ResultVO;
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.util.List;
 
 
 @FeignClient(name = "xmtx-provider-redis")
 public interface RedisClient {
+
+
+    /*
+     * 查询key是否存在
+     * */
+    @RequestMapping("/get/normal/string/key/value")
+    public boolean exists(@RequestParam("normalKey") String normalKey);
+
+    /*
+     * 把list存入zset中
+     * */
+    @RequestMapping("/save/zset")
+    ResultVO saveListInZset(@RequestParam("topList") String topList);
 
     /**
      * 将字符串类型的键值对保存到Redis时调用的远程方法

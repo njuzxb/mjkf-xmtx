@@ -15,6 +15,7 @@
         <module>xmtx-provider-api-jobfair</module>
         <module>xmtx-provider-api-jobfairComment</module>
         <module>xmtx-provider-api-redis</module>
+        <module>xmtx-provider-api-history</module>
     </modules>
     <dependencies>
         <dependency>

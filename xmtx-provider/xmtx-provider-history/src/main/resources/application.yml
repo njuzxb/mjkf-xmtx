@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: xmtx-provider-history
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/db_mj4x?characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: 123
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka/
+server:
+  port: 2006

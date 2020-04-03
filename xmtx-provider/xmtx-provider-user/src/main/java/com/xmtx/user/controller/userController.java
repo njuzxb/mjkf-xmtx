@@ -37,7 +37,6 @@ public class userController {
         if (user == null) {
             return ResultVOUtil.error(ResultEnum.USER_NOT_EXIST);
         }
-
         // 获取从数据库查询得到的密码
         String userpswdDatabase = user.getPassword();
 
@@ -47,7 +46,6 @@ public class userController {
         if(!matcheResult) {
             return ResultVOUtil.error(ResultEnum.PSW_ERROR);
         }
-
         // 生成token
         String token = CommonUtils.generateToken();
 
@@ -65,7 +63,6 @@ public class userController {
         UserSignSuccessVO userSignSuccessVO = new UserSignSuccessVO();
 
         BeanUtils.copyProperties(user, userSignSuccessVO);
-
         userSignSuccessVO.setToken(token);
 
         // 1返回结果

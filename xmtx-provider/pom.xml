@@ -17,6 +17,7 @@
         <module>xmtx-provider-jobfairComment</module>
         <module>xmtx-provider-user</module>
         <module>xmtx-provider-redis</module>
+        <module>xmtx-provider-history</module>
     </modules>
 
 

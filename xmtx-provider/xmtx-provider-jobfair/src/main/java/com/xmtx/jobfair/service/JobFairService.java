@@ -3,6 +3,7 @@ package com.xmtx.jobfair.service;
 import com.xmtx.jobfair.dataObject.JobFair;
 
 import java.util.List;
+import java.util.Optional;
 
 /**
  * @ Author     ：djq.
@@ -12,10 +13,18 @@ import java.util.List;
  * @Version: $
  */
 public interface JobFairService {
+
+
+    /*
+    * 根据id查找招聘信息
+    * */
+    Optional<JobFair> job_fair_findById(Integer id);
+
+
     /*
      * 招聘会列表信息查看
      * */
-    List<JobFair> job_fair_showAll();
+    List<JobFair> job_fair_showAll(Integer pn);
 
     /*
      * 招聘会发布

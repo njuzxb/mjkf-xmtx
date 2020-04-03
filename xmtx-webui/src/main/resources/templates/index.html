@@ -525,7 +525,7 @@
          //查询所有项目
          function to_page() {
             $.ajax({
-               url: "/jobfair/getCommentList",
+               url: "/jobfair/getCommentList?pn=0",
                type: "GET",
                success: function (result) {
                   //console.log(result);

@@ -11,8 +11,12 @@ import lombok.Getter;
  */
 @Getter
 public enum ResultEnum {
+    /*
+    * */
     JOBFAIR_NOT_EXIST(1,"该公司不存在"),
-    PARAM_ERROR(2,"参数错误");
+    PARAM_ERROR(2,"参数错误"),
+    JOBFARI_IS_DEL(3,"招聘信息已被删除" )
+    ;
 
     private Integer code;
     private String msg;

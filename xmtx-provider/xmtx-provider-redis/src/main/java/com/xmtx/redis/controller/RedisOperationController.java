@@ -1,14 +1,23 @@
 package com.xmtx.redis.controller;
 
+import java.io.Serializable;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import com.alibaba.fastjson.JSON;
+import com.xmtx.common.DTO.TopNDTO;
 import com.xmtx.common.VO.ResultVO;
 import com.xmtx.common.enums.ResultEnum;
 import com.xmtx.common.utils.CommonUtils;
 import com.xmtx.common.utils.ResultVOUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.DefaultTypedTuple;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
+import org.springframework.data.redis.core.ZSetOperations;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,6 +28,41 @@ public class RedisOperationController {
 	
 	@Autowired
 	private StringRedisTemplate redisTemplate;
+
+
+
+	/*
+	* TODO 从zset中读取数据
+	* */
+
+	/*
+	* 把list存入zset中
+	* */
+	@RequestMapping("/save/zset")
+	ResultVO saveListInZset(@RequestParam("topList") String topList){  // 默认是RequestBody
+		List<TopNDTO> list = JSON.parseArray(topList,TopNDTO.class);
+		ZSetOperations operations = redisTemplate.opsForZSet();
+
+		if(list.size() < 1 || list.isEmpty()){
+		    return ResultVOUtil.error("列表为空");
+        }
+
+		HashSet<DefaultTypedTuple<String>> hashSet = new HashSet<DefaultTypedTuple<String>>();
+		HashSet<String> strings = new HashSet<String>();
+		for(TopNDTO topNDTO : list){
+			hashSet.add(new DefaultTypedTuple<String>(topNDTO.getJobid().toString(),-topNDTO.getBrowsingNum().doubleValue()));
+			strings.add(topNDTO.getJobid().toString());
+		}
+		operations.add("topN-jobid",hashSet);
+		Set<String> set = operations.range("topN-jobid", 0, -1);
+		System.err.println(set);
+		for(String s : set){
+			if(!strings.contains(s)){
+				operations.remove("topN-jobid",s);
+			}
+		}
+		return ResultVOUtil.success();
+	}
 	
 	/**
 	 * 将字符串类型的键值对保存到Redis时调用的远程方法
@@ -73,7 +117,16 @@ public class RedisOperationController {
 		
 		return ResultVOUtil.success();
 	}
-	
+
+
+	/*
+	* 查询key是否存在
+	* */
+	@RequestMapping("/get/normal/string/key/value")
+	public boolean exists(@RequestParam("normalKey") String normalKey) {
+		return redisTemplate.hasKey(normalKey);
+	}
+
 	/**
 	 * 根据key查询对应value时调用的远程方法
 	 * @param normalKey

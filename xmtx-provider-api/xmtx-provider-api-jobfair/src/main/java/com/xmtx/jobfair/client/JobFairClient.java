@@ -23,7 +23,7 @@ import java.util.Map;
 public interface JobFairClient {
 
     @GetMapping("/jobfair/list")
-    public ResultVO list();
+    public ResultVO list(@RequestParam("pn") Integer pn);
 
     @PostMapping("/jobfair/release")
     public ResultVO<Map<String,Integer>> release(@RequestParam("input") ReleaseInput releaseInput, @RequestParam("result") BindingResult bindingResult);

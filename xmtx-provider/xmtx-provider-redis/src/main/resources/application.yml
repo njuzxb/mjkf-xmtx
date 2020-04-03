@@ -6,6 +6,7 @@ spring:
     password: mf1932245
 
 
+
 eureka:
   client:
     service-url:

@@ -20,8 +20,8 @@ public interface JobFairRepository extends JpaRepository<JobFair,Integer> {
     @Override
     List<JobFair> findAll();
 
-    @Override
-    Optional<JobFair> findById(Integer integer);
+
+    Optional<JobFair> findByIdAndEnabled(Integer jobid, Integer enabled);
 
     @Override
     void deleteById(Integer id);

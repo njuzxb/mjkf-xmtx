@@ -2,39 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12410394-81c6-4cf3-ab1b-2e38dd436410" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/enums/ResultEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/utils/CommonConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/utils/CommonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-redis/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-redis/src/main/java/com/xmtx/redis/client/RedisClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/src/main/java/com/xmtx/redis/RedisApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/src/main/java/com/xmtx/redis/controller/RedisOperationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/UserApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/VO/UserSignSuccessVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/controller/userController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/dataobject/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/enums/RoleEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Think.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/DTO/TopNDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/utils/EntityUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-history/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-history/src/main/java/com/xmtx/history/client/HistoryClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-history/xmtx-provider-api-history.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/java/com/xmtx/history/HistoryApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/java/com/xmtx/history/controller/BrowsingHistoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/java/com/xmtx/history/dataObject/BrowsingHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/java/com/xmtx/history/repository/BrowsingHistoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/java/com/xmtx/history/service/BrowsingHistoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/java/com/xmtx/history/service/impl/BrowsingHistoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/a1400cbb-8c12-4b93-837f-23790389ef30.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a1400cbb-8c12-4b93-837f-23790389ef30.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/utils/ResultVOUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/utils/ResultVOUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/utils/CommonUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xmtx-provider-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider-api/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-jobfair/src/main/java/com/xmtx/jobfair/client/JobFairClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-jobfair/src/main/java/com/xmtx/jobfair/client/JobFairClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-redis/src/main/java/com/xmtx/redis/client/RedisClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-redis/src/main/java/com/xmtx/redis/client/RedisClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xmtx-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/service/impl/JobCommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/service/impl/JobCommentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-webui/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-webui/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/controller/JobFairController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/controller/JobFairController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/converter/JobFairForm_Release2JobFair.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/converter/JobFairForm_Release2JobFair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/dataObject/JobFair.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/dataObject/JobFair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/enums/ResultEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/enums/ResultEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/jobfairApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/JobfairApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/repository/JobFairRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/repository/JobFairRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/service/Impl/JobFairServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/service/Impl/JobFairServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/service/JobFairService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/service/JobFairService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/utils/ResultVOUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/utils/ResultVOUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/src/main/java/com/xmtx/redis/controller/RedisOperationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/src/main/java/com/xmtx/redis/controller/RedisOperationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/controller/userController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/controller/userController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/controller/jobfairController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/controller/jobfairController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/webuiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/webuiApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -55,6 +63,8 @@
     <ignored path="$PROJECT_DIR$/xmtx-webui/target/" />
     <ignored path="$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/target/" />
     <ignored path="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-redis/target/" />
+    <ignored path="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/target/" />
+    <ignored path="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-history/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,43 +120,7 @@
         <item name="db_mj4x" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="db_mj4x: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="admin: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - jdbc:mysql:" type="cc8827a6:DatabaseStructure$DbGroup" />
-        <item name="localhost:3306" type="cc8827a6:DatabaseStructure$DbGroup" />
-        <item name="db_mj4x" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="db_mj4x: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="enterprise_info: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - jdbc:mysql:" type="cc8827a6:DatabaseStructure$DbGroup" />
-        <item name="localhost:3306" type="cc8827a6:DatabaseStructure$DbGroup" />
-        <item name="db_mj4x" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="db_mj4x: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="job_fair: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - jdbc:mysql:" type="cc8827a6:DatabaseStructure$DbGroup" />
-        <item name="localhost:3306" type="cc8827a6:DatabaseStructure$DbGroup" />
-        <item name="db_mj4x" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="db_mj4x: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="job_fair_comment: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - jdbc:mysql:" type="cc8827a6:DatabaseStructure$DbGroup" />
-        <item name="localhost:3306" type="cc8827a6:DatabaseStructure$DbGroup" />
-        <item name="db_mj4x" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="db_mj4x: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="user: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="browsing_history: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -157,43 +131,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/controller/userController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="73" column="4" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-redis/src/main/java/com/xmtx/redis/client/RedisClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/utils/CommonConstant.java">
+        <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/controller/JobFairController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="175">
-              <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/src/main/java/com/xmtx/redis/controller/RedisOperationController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2180">
-              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+              <caret line="142" column="52" lean-forward="true" selection-start-line="142" selection-start-column="52" selection-end-line="142" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -217,59 +161,65 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-jobfair/src/main/java/com/xmtx/jobfair/common/ResultVO.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-jobfair/src/main/java/com/xmtx/jobfair/common/JobFairInfoOutput.java" />
-        <option value="$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/VO/JobFairInfoVO.java" />
-        <option value="$PROJECT_DIR$/xmtx-common/pom.xml" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/controller/JobFairController.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/converter/JobFair2JobFairInfoVO.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/utils/ResultVOUtil.java" />
-        <option value="$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/utils/ResultVOUtil.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/vo/JobFairInfoVO.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/VO/ResultVO.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-jobfair/pom.xml" />
-        <option value="$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/controller/jobfairController.java" />
-        <option value="$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/webuiApplication.java" />
-        <option value="$PROJECT_DIR$/xmtx-gateway/pom.xml" />
-        <option value="$PROJECT_DIR$/xmtx-provider-api/pom.xml" />
-        <option value="$PROJECT_DIR$/xmtx-webui/pom.xml" />
-        <option value="$PROJECT_DIR$/xmtx-eureka/pom.xml" />
-        <option value="$PROJECT_DIR$/xmtx-webui/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/JobCommentProviderApplication.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/dataobject/User.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/service/UserService.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/enums/RoleEnum.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/repository/UserRepository.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/VO/ResultVO.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/utils/ResultVOUtil.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/enums/ResultEnum.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/utils/CrowdConstant.java" />
-        <option value="$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/utils/CrowdConstant.java" />
-        <option value="$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/utils/CrowdUtils.java" />
-        <option value="$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/utils/commonUtils.java" />
-        <option value="$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/utils/CommonConstant.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/pom.xml" />
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/src/main/java/com/xmtx/redis/RedisApplication.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/pom.xml" />
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/pom.xml" />
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/service/impl/JobCommentServiceImpl.java" />
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/pom.xml" />
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/UserApplication.java" />
         <option value="$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/enums/ResultEnum.java" />
         <option value="$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/utils/ResultVOUtil.java" />
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/VO/UserSignSuccessVO.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-jobfair/src/main/java/com/xmtx/jobfair/client/JobFairClient.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-redis/src/main/java/com/xmtx/redis/client/RedisClient.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/src/main/java/com/xmtx/redis/controller/RedisOperationController.java" />
+        <option value="$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/utils/CommonUtils.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/controller/jobfairController.java" />
+        <option value="$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/controller/userController.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/service/JobFairService.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/enums/ResultEnum.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/utils/ResultVOUtil.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/repository/JobFairRepository.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/converter/JobFairForm_Release2JobFair.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/java/historyApplication.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/dataobject/JobFairComment.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/java/com/xmtx/history/repository/HistoryRepository.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/java/com/xmtx/history/historyApplication.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/java/com/xmtx/history/dataObject/BrowsingHistory.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/java/com/xmtx/history/vo/TopNVO.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/jobfairApplication.java" />
+        <option value="$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/webuiApplication.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-jobfair/src/main/java/com/xmtx/jobfair/client/JobFairClient.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/enums/ResultEnum.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-history/src/main/java/com/xmtx/history/client/HistoryClient.java" />
+        <option value="$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/utils/EntityUtils.java" />
+        <option value="$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/DTO/TopNDTO.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/java/com/xmtx/history/service/BrowsingHistoryService.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/java/com/xmtx/history/repository/BrowsingHistoryRepository.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/java/com/xmtx/history/service/impl/BrowsingHistoryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/pom.xml" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/java/com/xmtx/history/HistoryApplication.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/java/com/xmtx/history/controller/BrowsingHistoryController.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-redis/src/main/java/com/xmtx/redis/client/RedisClient.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/src/main/java/com/xmtx/redis/controller/RedisOperationController.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/JobfairApplication.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/service/Impl/JobFairServiceImpl.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/dataObject/JobFair.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/controller/JobFairController.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/pom.xml" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/resources/application.yml" />
       </list>
     </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -289,7 +239,7 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-54" />
+    <option name="x" value="315" />
     <option name="width" value="1611" />
     <option name="height" value="1089" />
   </component>
@@ -301,7 +251,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -312,7 +261,123 @@
             <path>
               <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
               <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="DTO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="VO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
               <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-history" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-history" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-history" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-history" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-history" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="history" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-history" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="history" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
@@ -364,6 +429,40 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="jobfair" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-jobfair" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jobfair" type="462c0819:PsiDirectoryNode" />
+              <item name="dataObject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-jobfair" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jobfair" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-jobfair" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jobfair" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="Impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
@@ -477,156 +576,64 @@
             <path>
               <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
               <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-api" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-api-jobfair" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-api" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-api-jobfair" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-api" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-api-jobfair" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-api" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-api-jobfair" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-user" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-api" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-api-jobfair" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jobfair" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-api" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-api-jobfair" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jobfair" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-api" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-api-redis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-api" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-api-redis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-api" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-api-redis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-api" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-api-redis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-api" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-api-redis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-webui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-webui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-webui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-webui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-webui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="webui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-webui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="webui" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
               <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-webui" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-api" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-api-redis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-api" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-api-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-api" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-api-redis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-api" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-api-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-api" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-api-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -642,14 +649,14 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -666,22 +673,23 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
       <recent name="com.xmtx.provider" />
       <recent name="com.xmtx.provider.repository" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Think\IdeaProjects\xmtx\xmtx-provider\xmtx-provider-history\src\main\resources" />
       <recent name="C:\Users\Think\IdeaProjects\xmtx\xmtx-provider\xmtx-provider-redis\src\main\resources" />
       <recent name="C:\Users\Think\IdeaProjects\xmtx\xmtx-provider\xmtx-provider-redis\src\main\java\com\xmtx\redis\controller" />
       <recent name="C:\Users\Think\IdeaProjects\xmtx\xmtx-common\src\main\java\com\xmtx\common\utils" />
       <recent name="C:\Users\Think\IdeaProjects\xmtx\xmtx-provider\xmtx-provider-user\src\main\java\com\xmtx\user\utils" />
-      <recent name="C:\Users\Think\IdeaProjects\xmtx\xmtx-provider\xmtx-provider-user\src\main\java\com\xmtx\user" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.xmtx.history" />
       <recent name="com.xmtx.redis" />
       <recent name="com.xmtx.common.enums" />
       <recent name="com.xmtx.user" />
       <recent name="com.xmtx.common.VO" />
-      <recent name="com.xmtx.common.utils" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Think\IdeaProjects\xmtx\xmtx-provider\xmtx-provider-admin" />
@@ -706,34 +714,9 @@
         </RuleState>
       </list>
     </option>
-    <option name="contentProportion" value="0.2101405" />
+    <option name="contentProportion" value="0.19609042" />
   </component>
-  <component name="RunManager" selected="Spring Boot.UserApplication">
-    <configuration name="xmtx [clean]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="clean" />
-              </list>
-            </option>
-            <option name="pomFileName" value="pom.xml" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.HistoryApplication">
     <configuration name="AdminProviderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="xmtx-provider-admin" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.xmtx.admin.AdminProviderApplication" />
@@ -750,6 +733,20 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.xmtx.eureka.EurekaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HistoryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="xmtx-provider-history" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xmtx.history.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xmtx.history.HistoryApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -789,7 +786,7 @@
     </configuration>
     <configuration name="jobfairApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="xmtx-provider-jobfair" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xmtx.jobfair.jobfairApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xmtx.jobfair.JobfairApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -807,13 +804,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.AdminProviderApplication" />
+      <item itemvalue="Spring Boot.JobCommentProviderApplication" />
+      <item itemvalue="Spring Boot.jobfairApplication" />
+      <item itemvalue="Spring Boot.EurekaApplication" />
+      <item itemvalue="Spring Boot.HistoryApplication" />
+      <item itemvalue="Spring Boot.RedisApplication" />
+      <item itemvalue="Spring Boot.UserApplication" />
+      <item itemvalue="Spring Boot.webuiApplication" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.UserApplication" />
+        <item itemvalue="Spring Boot.HistoryApplication" />
         <item itemvalue="Spring Boot.RedisApplication" />
-        <item itemvalue="Spring Boot.webuiApplication" />
         <item itemvalue="Spring Boot.EurekaApplication" />
-        <item itemvalue="Maven.xmtx [clean]" />
+        <item itemvalue="Spring Boot.UserApplication" />
+        <item itemvalue="Spring Boot.webuiApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -845,7 +852,8 @@
       <workItem from="1582262855130" duration="24704000" />
       <workItem from="1582697885609" duration="809000" />
       <workItem from="1583340314893" duration="28813000" />
-      <workItem from="1583568588158" duration="12413000" />
+      <workItem from="1583568588158" duration="19503000" />
+      <workItem from="1584798873888" duration="76067000" />
     </task>
     <task id="LOCAL-00001" summary="initial project framework">
       <created>1577694032761</created>
@@ -896,7 +904,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582341060190</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="1.完成redis模块搭建并连接redis服务器&#10;2.完成用户登陆模块：使用token+bcrypt确保安全">
+      <created>1583818705098</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1583818705098</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -932,7 +947,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="185190000" />
+    <option name="totallyTimeSpent" value="268347000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -947,7 +962,7 @@
     <frame x="-8" y="-8" width="1723" height="976" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49823323" visible="true" weight="0.24264264" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49823323" visible="true" weight="0.24564564" />
       <window_info id="Structure" order="1" sideWeight="0.5017668" side_tool="true" weight="0.23483483" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -970,8 +985,8 @@
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5003003" side_tool="true" weight="0.32977462" />
       <window_info anchor="bottom" id="Spring" order="13" sideWeight="0.4996997" weight="0.32977462" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" sideWeight="0.4996997" weight="0.32977462" />
-      <window_info anchor="bottom" id="Messages" order="15" sideWeight="0.4978979" weight="0.32858837" />
-      <window_info anchor="bottom" id="Run Dashboard" order="16" sideWeight="0.4978979" visible="true" weight="0.15895611" />
+      <window_info anchor="bottom" id="Messages" order="15" sideWeight="0.4978979" weight="0.40806642" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="16" sideWeight="0.4978979" visible="true" weight="0.3440095" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24984986" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -980,7 +995,7 @@
       <window_info anchor="right" id="Maven" order="5" weight="0.3981982" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" visible="true" weight="0.24804805" />
+      <window_info anchor="right" id="Database" order="8" weight="0.24804805" />
       <window_info anchor="right" id="Bean Validation" order="9" weight="0.32972974" />
     </layout>
     <layout-to-restore>
@@ -1072,7 +1087,8 @@
     <MESSAGE value="1. 完成jobfairComment模块业务，提供评论增、删、查功能&#10;2. 更新了sql文件，数据库有稍微修改&#10;3. 上传了API文件" />
     <MESSAGE value="迭代1" />
     <MESSAGE value="1.完成前后端对接" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.完成前后端对接" />
+    <MESSAGE value="1.完成redis模块搭建并连接redis服务器&#10;2.完成用户登陆模块：使用token+bcrypt确保安全" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.完成redis模块搭建并连接redis服务器&#10;2.完成用户登陆模块：使用token+bcrypt确保安全" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1103,21 +1119,21 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/controller/jobfairController.java</url>
-          <line>23</line>
+          <line>24</line>
           <properties />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/controller/jobfairController.java</url>
-          <line>25</line>
+          <line>26</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/vo/JobFairInfoVO.java</url>
-          <line>24</line>
+          <url>file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/src/main/java/com/xmtx/redis/controller/RedisOperationController.java</url>
+          <line>49</line>
           <properties />
-          <option name="timeStamp" value="21" />
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/test/java/com/xmtx/jobfairComment/repository/JobFairCommentRepositoryTest.java</url>
@@ -1131,392 +1147,248 @@
           <properties field="data" class="com.xmtx.webui.VO.ResultVO" />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/index.html</url>
-          <line>532</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/index.html</url>
-          <line>546</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="list" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand>
+      <path>
+        <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+        <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/enums/ResultEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/VO/ResultVO.java">
+    <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/utils/ResultVOUtil.java">
+    <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/controller/jobfairController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        <state relative-caret-position="50">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/utils/CrowdConstant.java" />
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/utils/CrowdUtils.java" />
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/pom.xml">
+    <entry file="file://$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-jobfair/src/main/java/com/xmtx/jobfair/client/JobFairClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/TimeUnit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-928">
-          <caret line="70" column="12" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-dependencies/2.2.1.RELEASE/spring-boot-dependencies-2.2.1.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9875">
-          <caret line="395" column="39" selection-start-line="395" selection-start-column="39" selection-end-line="395" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1600">
-          <caret line="64" column="39" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1450">
-          <caret line="58" column="4" selection-start-line="58" selection-end-line="61" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="42" selection-start-line="42" selection-start-column="4" selection-end-line="45" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/com/netflix/eureka/eureka-client/1.9.13/eureka-client-1.9.13.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://MAVEN/com.mjkf:xmtx-provider-redis:1.0-SNAPSHOT">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>MAVEN</ID>
-          <OriginalElement>com.mjkf:xmtx-provider-redis:1.0-SNAPSHOT</OriginalElement>
-          <nodes>
-            <node x="" y="">com.mjkf:xmtx-provider-redis:1.0-SNAPSHOT</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot:jar:2.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-autoconfigure:jar:2.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.2.1.RELEASE/ch.qos.logback:logback-classic:jar:1.2.3</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.2.1.RELEASE/ch.qos.logback:logback-classic:jar:1.2.3/ch.qos.logback:logback-core:jar:1.2.3</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.2.1.RELEASE/org.apache.logging.log4j:log4j-to-slf4j:jar:2.12.1</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.2.1.RELEASE/org.apache.logging.log4j:log4j-to-slf4j:jar:2.12.1/org.apache.logging.log4j:log4j-api:jar:2.12.1</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.2.1.RELEASE/org.slf4j:jul-to-slf4j:jar:1.7.29</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.2.1.RELEASE/jakarta.annotation:jakarta.annotation-api:jar:1.3.5</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.2.1.RELEASE/org.yaml:snakeyaml:jar:1.25</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.2.1.RELEASE/org.springframework.data:spring-data-redis:jar:2.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.2.1.RELEASE/org.springframework.data:spring-data-redis:jar:2.2.1.RELEASE/org.springframework.data:spring-data-keyvalue:jar:2.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.2.1.RELEASE/org.springframework.data:spring-data-redis:jar:2.2.1.RELEASE/org.springframework.data:spring-data-keyvalue:jar:2.2.1.RELEASE/org.springframework.data:spring-data-commons:jar:2.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.2.1.RELEASE/org.springframework.data:spring-data-redis:jar:2.2.1.RELEASE/org.springframework:spring-tx:jar:5.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.2.1.RELEASE/org.springframework.data:spring-data-redis:jar:2.2.1.RELEASE/org.springframework:spring-oxm:jar:5.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.2.1.RELEASE/org.springframework.data:spring-data-redis:jar:2.2.1.RELEASE/org.springframework:spring-aop:jar:5.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.2.1.RELEASE/org.springframework.data:spring-data-redis:jar:2.2.1.RELEASE/org.springframework:spring-context-support:jar:5.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.2.1.RELEASE/org.springframework.data:spring-data-redis:jar:2.2.1.RELEASE/org.slf4j:slf4j-api:jar:1.7.29</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.2.1.RELEASE/io.lettuce:lettuce-core:jar:5.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.2.1.RELEASE/io.lettuce:lettuce-core:jar:5.2.1.RELEASE/io.netty:netty-common:jar:4.1.43.Final</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.2.1.RELEASE/io.lettuce:lettuce-core:jar:5.2.1.RELEASE/io.netty:netty-handler:jar:4.1.43.Final</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.2.1.RELEASE/io.lettuce:lettuce-core:jar:5.2.1.RELEASE/io.netty:netty-handler:jar:4.1.43.Final/io.netty:netty-buffer:jar:4.1.43.Final</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.2.1.RELEASE/io.lettuce:lettuce-core:jar:5.2.1.RELEASE/io.netty:netty-handler:jar:4.1.43.Final/io.netty:netty-codec:jar:4.1.43.Final</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.2.1.RELEASE/io.lettuce:lettuce-core:jar:5.2.1.RELEASE/io.netty:netty-transport:jar:4.1.43.Final</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.2.1.RELEASE/io.lettuce:lettuce-core:jar:5.2.1.RELEASE/io.netty:netty-transport:jar:4.1.43.Final/io.netty:netty-resolver:jar:4.1.43.Final</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.2.1.RELEASE/io.lettuce:lettuce-core:jar:5.2.1.RELEASE/io.projectreactor:reactor-core:jar:3.3.0.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-data-redis:jar:2.2.1.RELEASE/io.lettuce:lettuce-core:jar:5.2.1.RELEASE/io.projectreactor:reactor-core:jar:3.3.0.RELEASE/org.reactivestreams:reactive-streams:jar:1.0.3</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.2.1.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.10.0</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.2.1.RELEASE/com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.10.0</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.2.1.RELEASE/com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.10.0</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.2.1.RELEASE/com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.10.0</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:2.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:2.2.1.RELEASE/org.apache.tomcat.embed:tomcat-embed-core:jar:9.0.27</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:2.2.1.RELEASE/org.apache.tomcat.embed:tomcat-embed-el:jar:9.0.27</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:2.2.1.RELEASE/org.apache.tomcat.embed:tomcat-embed-websocket:jar:9.0.27</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-starter-validation:jar:2.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-starter-validation:jar:2.2.1.RELEASE/jakarta.validation:jakarta.validation-api:jar:2.0.1</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-starter-validation:jar:2.2.1.RELEASE/org.hibernate.validator:hibernate-validator:jar:6.0.18.Final</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-starter-validation:jar:2.2.1.RELEASE/org.hibernate.validator:hibernate-validator:jar:6.0.18.Final/org.jboss.logging:jboss-logging:jar:3.4.1.Final</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-starter-validation:jar:2.2.1.RELEASE/org.hibernate.validator:hibernate-validator:jar:6.0.18.Final/com.fasterxml:classmate:jar:1.5.1</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.1.RELEASE/org.springframework:spring-web:jar:5.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.1.RELEASE/org.springframework:spring-web:jar:5.2.1.RELEASE/org.springframework:spring-beans:jar:5.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.1.RELEASE/org.springframework:spring-webmvc:jar:5.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.1.RELEASE/org.springframework:spring-webmvc:jar:5.2.1.RELEASE/org.springframework:spring-context:jar:5.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.2.1.RELEASE/org.springframework:spring-webmvc:jar:5.2.1.RELEASE/org.springframework:spring-expression:jar:5.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter:jar:2.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-context:jar:2.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-context:jar:2.2.1.RELEASE/org.springframework.security:spring-security-crypto:jar:5.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-commons:jar:2.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter:jar:2.2.1.RELEASE/org.springframework.security:spring-security-rsa:jar:1.0.9.RELEASE</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter:jar:2.2.1.RELEASE/org.springframework.security:spring-security-rsa:jar:1.0.9.RELEASE/org.bouncycastle:bcpkix-jdk15on:jar:1.64</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter:jar:2.2.1.RELEASE/org.springframework.security:spring-security-rsa:jar:1.0.9.RELEASE/org.bouncycastle:bcpkix-jdk15on:jar:1.64/org.bouncycastle:bcprov-jdk15on:jar:1.64</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-netflix-hystrix:jar:2.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-netflix-hystrix:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-starter-aop:jar:2.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-netflix-hystrix:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-starter-aop:jar:2.2.1.RELEASE/org.aspectj:aspectjweaver:jar:1.9.4</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-netflix-eureka-client:jar:2.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.netflix.eureka:eureka-client:jar:1.9.13</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.netflix.eureka:eureka-client:jar:1.9.13/org.codehaus.jettison:jettison:jar:1.3.7</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.netflix.eureka:eureka-client:jar:1.9.13/org.codehaus.jettison:jettison:jar:1.3.7/stax:stax-api:jar:1.0.1</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.netflix.eureka:eureka-client:jar:1.9.13/com.netflix.netflix-commons:netflix-eventbus:jar:0.3.0</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.netflix.eureka:eureka-client:jar:1.9.13/com.netflix.netflix-commons:netflix-eventbus:jar:0.3.0/com.netflix.netflix-commons:netflix-infix:jar:0.3.0</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.netflix.eureka:eureka-client:jar:1.9.13/com.netflix.netflix-commons:netflix-eventbus:jar:0.3.0/com.netflix.netflix-commons:netflix-infix:jar:0.3.0/commons-jxpath:commons-jxpath:jar:1.3</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.netflix.eureka:eureka-client:jar:1.9.13/com.netflix.netflix-commons:netflix-eventbus:jar:0.3.0/com.netflix.netflix-commons:netflix-infix:jar:0.3.0/joda-time:joda-time:jar:2.10.5</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.netflix.eureka:eureka-client:jar:1.9.13/com.netflix.netflix-commons:netflix-eventbus:jar:0.3.0/com.netflix.netflix-commons:netflix-infix:jar:0.3.0/org.antlr:antlr-runtime:jar:3.4</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.netflix.eureka:eureka-client:jar:1.9.13/com.netflix.netflix-commons:netflix-eventbus:jar:0.3.0/com.netflix.netflix-commons:netflix-infix:jar:0.3.0/org.antlr:antlr-runtime:jar:3.4/org.antlr:stringtemplate:jar:3.2.1</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.netflix.eureka:eureka-client:jar:1.9.13/com.netflix.netflix-commons:netflix-eventbus:jar:0.3.0/com.netflix.netflix-commons:netflix-infix:jar:0.3.0/org.antlr:antlr-runtime:jar:3.4/antlr:antlr:jar:2.7.7</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.netflix.eureka:eureka-client:jar:1.9.13/com.netflix.netflix-commons:netflix-eventbus:jar:0.3.0/com.netflix.netflix-commons:netflix-infix:jar:0.3.0/com.google.guava:guava:jar:14.0.1</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.netflix.eureka:eureka-client:jar:1.9.13/com.netflix.netflix-commons:netflix-eventbus:jar:0.3.0/com.netflix.netflix-commons:netflix-infix:jar:0.3.0/com.google.code.gson:gson:jar:2.8.6</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.netflix.eureka:eureka-client:jar:1.9.13/com.netflix.netflix-commons:netflix-eventbus:jar:0.3.0/org.apache.commons:commons-math:jar:2.2</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.netflix.eureka:eureka-client:jar:1.9.13/com.netflix.archaius:archaius-core:jar:0.7.6</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.netflix.eureka:eureka-client:jar:1.9.13/com.netflix.archaius:archaius-core:jar:0.7.6/com.google.guava:guava:jar:16.0</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.netflix.eureka:eureka-client:jar:1.9.13/javax.ws.rs:jsr311-api:jar:1.1.1</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.netflix.eureka:eureka-client:jar:1.9.13/com.netflix.servo:servo-core:jar:0.12.21</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.netflix.eureka:eureka-client:jar:1.9.13/com.netflix.servo:servo-core:jar:0.12.21/com.google.guava:guava:jar:19.0</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.netflix.eureka:eureka-client:jar:1.9.13/com.sun.jersey:jersey-core:jar:1.19.1</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.netflix.eureka:eureka-client:jar:1.9.13/com.sun.jersey:jersey-client:jar:1.19.1</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.netflix.eureka:eureka-client:jar:1.9.13/com.sun.jersey.contribs:jersey-apache-client4:jar:1.19.1</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.netflix.eureka:eureka-client:jar:1.9.13/org.apache.httpcomponents:httpclient:jar:4.5.10</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.netflix.eureka:eureka-client:jar:1.9.13/org.apache.httpcomponents:httpclient:jar:4.5.10/org.apache.httpcomponents:httpcore:jar:4.4.12</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.netflix.eureka:eureka-client:jar:1.9.13/org.apache.httpcomponents:httpclient:jar:4.5.10/commons-codec:commons-codec:jar:1.13</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.netflix.eureka:eureka-client:jar:1.9.13/com.google.inject:guice:jar:4.1.0</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.netflix.eureka:eureka-client:jar:1.9.13/com.google.inject:guice:jar:4.1.0/javax.inject:javax.inject:jar:1</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.netflix.eureka:eureka-client:jar:1.9.13/com.google.inject:guice:jar:4.1.0/aopalliance:aopalliance:jar:1.0</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.netflix.eureka:eureka-client:jar:1.9.13/com.google.inject:guice:jar:4.1.0/com.google.guava:guava:jar:16.0</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.netflix.eureka:eureka-client:jar:1.9.13/com.fasterxml.jackson.core:jackson-annotations:jar:2.10.0</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.netflix.eureka:eureka-client:jar:1.9.13/com.fasterxml.jackson.core:jackson-core:jar:2.10.0</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.netflix.eureka:eureka-core:jar:1.9.13</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.netflix.eureka:eureka-core:jar:1.9.13/com.fasterxml.woodstox:woodstox-core:jar:5.2.1</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.netflix.eureka:eureka-core:jar:1.9.13/com.fasterxml.woodstox:woodstox-core:jar:5.2.1/org.codehaus.woodstox:stax2-api:jar:4.2</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter-netflix-archaius:jar:2.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter-netflix-archaius:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-netflix-ribbon:jar:2.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter-netflix-archaius:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-netflix-archaius:jar:2.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter-netflix-archaius:jar:2.2.1.RELEASE/commons-configuration:commons-configuration:jar:1.8</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter-netflix-archaius:jar:2.2.1.RELEASE/commons-configuration:commons-configuration:jar:1.8/commons-lang:commons-lang:jar:2.6</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter-netflix-ribbon:jar:2.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter-netflix-ribbon:jar:2.2.1.RELEASE/com.netflix.ribbon:ribbon:jar:2.3.0</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter-netflix-ribbon:jar:2.2.1.RELEASE/com.netflix.ribbon:ribbon:jar:2.3.0/com.netflix.ribbon:ribbon-transport:jar:2.3.0</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter-netflix-ribbon:jar:2.2.1.RELEASE/com.netflix.ribbon:ribbon:jar:2.3.0/com.netflix.ribbon:ribbon-transport:jar:2.3.0/io.reactivex:rxnetty-contexts:jar:0.4.9</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter-netflix-ribbon:jar:2.2.1.RELEASE/com.netflix.ribbon:ribbon:jar:2.3.0/com.netflix.ribbon:ribbon-transport:jar:2.3.0/io.reactivex:rxnetty-servo:jar:0.4.9</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter-netflix-ribbon:jar:2.2.1.RELEASE/com.netflix.ribbon:ribbon:jar:2.3.0/com.netflix.ribbon:ribbon-transport:jar:2.3.0/com.google.guava:guava:jar:16.0.1</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter-netflix-ribbon:jar:2.2.1.RELEASE/com.netflix.ribbon:ribbon:jar:2.3.0/com.netflix.hystrix:hystrix-core:jar:1.5.18</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter-netflix-ribbon:jar:2.2.1.RELEASE/com.netflix.ribbon:ribbon:jar:2.3.0/com.netflix.hystrix:hystrix-core:jar:1.5.18/org.hdrhistogram:HdrHistogram:jar:2.1.9</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter-netflix-ribbon:jar:2.2.1.RELEASE/com.netflix.ribbon:ribbon:jar:2.3.0/io.reactivex:rxnetty:jar:0.4.9</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter-netflix-ribbon:jar:2.2.1.RELEASE/com.netflix.ribbon:ribbon:jar:2.3.0/com.google.guava:guava:jar:16.0</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter-netflix-ribbon:jar:2.2.1.RELEASE/com.netflix.ribbon:ribbon-core:jar:2.3.0</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter-netflix-ribbon:jar:2.2.1.RELEASE/com.netflix.ribbon:ribbon-httpclient:jar:2.3.0</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter-netflix-ribbon:jar:2.2.1.RELEASE/com.netflix.ribbon:ribbon-httpclient:jar:2.3.0/commons-collections:commons-collections:jar:3.2.2</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter-netflix-ribbon:jar:2.2.1.RELEASE/com.netflix.ribbon:ribbon-httpclient:jar:2.3.0/com.google.guava:guava:jar:16.0</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter-netflix-ribbon:jar:2.2.1.RELEASE/com.netflix.ribbon:ribbon-httpclient:jar:2.3.0/com.netflix.netflix-commons:netflix-commons-util:jar:0.3.0</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter-netflix-ribbon:jar:2.2.1.RELEASE/com.netflix.ribbon:ribbon-loadbalancer:jar:2.3.0</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter-netflix-ribbon:jar:2.2.1.RELEASE/com.netflix.ribbon:ribbon-loadbalancer:jar:2.3.0/com.netflix.netflix-commons:netflix-statistics:jar:0.1.1</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter-netflix-ribbon:jar:2.2.1.RELEASE/com.netflix.ribbon:ribbon-loadbalancer:jar:2.3.0/com.google.guava:guava:jar:16.0</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter-netflix-ribbon:jar:2.2.1.RELEASE/io.reactivex:rxjava:jar:1.3.8</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter-loadbalancer:jar:2.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter-loadbalancer:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-loadbalancer:jar:2.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter-loadbalancer:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-loadbalancer:jar:2.2.1.RELEASE/io.projectreactor.addons:reactor-extra:jar:3.3.0.RELEASE</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter-loadbalancer:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-starter-cache:jar:2.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/org.springframework.cloud:spring-cloud-starter-loadbalancer:jar:2.2.1.RELEASE/com.stoyanr:evictor:jar:1.0.0</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.netflix.ribbon:ribbon-eureka:jar:2.3.0</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.thoughtworks.xstream:xstream:jar:1.4.11.1</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.thoughtworks.xstream:xstream:jar:1.4.11.1/xmlpull:xmlpull:jar:1.1.3.1</node>
-            <node x="" y="">org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:2.2.1.RELEASE/com.thoughtworks.xstream:xstream:jar:1.4.11.1/xpp3:xpp3_min:jar:1.1.4c</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-test:jar:2.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.1.RELEASE/org.springframework.boot:spring-boot-test-autoconfigure:jar:2.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.1.RELEASE/com.jayway.jsonpath:json-path:jar:2.4.0</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.1.RELEASE/com.jayway.jsonpath:json-path:jar:2.4.0/net.minidev:json-smart:jar:2.3</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.1.RELEASE/com.jayway.jsonpath:json-path:jar:2.4.0/net.minidev:json-smart:jar:2.3/net.minidev:accessors-smart:jar:1.2</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.1.RELEASE/com.jayway.jsonpath:json-path:jar:2.4.0/net.minidev:json-smart:jar:2.3/net.minidev:accessors-smart:jar:1.2/org.ow2.asm:asm:jar:5.0.4</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.1.RELEASE/jakarta.xml.bind:jakarta.xml.bind-api:jar:2.3.2</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.1.RELEASE/jakarta.xml.bind:jakarta.xml.bind-api:jar:2.3.2/jakarta.activation:jakarta.activation-api:jar:1.2.1</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.1.RELEASE/org.junit.jupiter:junit-jupiter:jar:5.5.2</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.1.RELEASE/org.junit.jupiter:junit-jupiter:jar:5.5.2/org.junit.jupiter:junit-jupiter-api:jar:5.5.2</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.1.RELEASE/org.junit.jupiter:junit-jupiter:jar:5.5.2/org.junit.jupiter:junit-jupiter-api:jar:5.5.2/org.opentest4j:opentest4j:jar:1.2.0</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.1.RELEASE/org.junit.jupiter:junit-jupiter:jar:5.5.2/org.junit.jupiter:junit-jupiter-api:jar:5.5.2/org.junit.platform:junit-platform-commons:jar:1.5.2</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.1.RELEASE/org.junit.jupiter:junit-jupiter:jar:5.5.2/org.junit.jupiter:junit-jupiter-params:jar:5.5.2</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.1.RELEASE/org.junit.jupiter:junit-jupiter:jar:5.5.2/org.junit.jupiter:junit-jupiter-engine:jar:5.5.2</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.1.RELEASE/org.junit.vintage:junit-vintage-engine:jar:5.5.2</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.1.RELEASE/org.junit.vintage:junit-vintage-engine:jar:5.5.2/org.apiguardian:apiguardian-api:jar:1.1.0</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.1.RELEASE/org.junit.vintage:junit-vintage-engine:jar:5.5.2/org.junit.platform:junit-platform-engine:jar:1.5.2</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.1.RELEASE/org.junit.vintage:junit-vintage-engine:jar:5.5.2/junit:junit:jar:4.12</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.1.RELEASE/org.mockito:mockito-junit-jupiter:jar:3.1.0</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.1.RELEASE/org.assertj:assertj-core:jar:3.13.2</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.1.RELEASE/org.hamcrest:hamcrest:jar:2.1</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.1.RELEASE/org.mockito:mockito-core:jar:3.1.0</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.1.RELEASE/org.mockito:mockito-core:jar:3.1.0/net.bytebuddy:byte-buddy:jar:1.10.2</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.1.RELEASE/org.mockito:mockito-core:jar:3.1.0/net.bytebuddy:byte-buddy-agent:jar:1.10.2</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.1.RELEASE/org.mockito:mockito-core:jar:3.1.0/org.objenesis:objenesis:jar:2.6</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.1.RELEASE/org.skyscreamer:jsonassert:jar:1.5.0</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.1.RELEASE/org.skyscreamer:jsonassert:jar:1.5.0/com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.1.RELEASE/org.springframework:spring-core:jar:5.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.1.RELEASE/org.springframework:spring-core:jar:5.2.1.RELEASE/org.springframework:spring-jcl:jar:5.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.1.RELEASE/org.springframework:spring-test:jar:5.2.1.RELEASE</node>
-            <node x="" y="">org.springframework.boot:spring-boot-starter-test:jar:2.2.1.RELEASE/org.xmlunit:xmlunit-core:jar:2.6.3</node>
-            <node x="" y="">com.mjkf:xmtx-common:jar:1.0-SNAPSHOT</node>
-            <node x="" y="">com.mjkf:xmtx-common:jar:1.0-SNAPSHOT/org.projectlombok:lombok:jar:1.16.18</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.1190529875986472" x="886.9326012492444" y="3697.4238363892805" />
-          <SelectedNodes />
-          <Categories />
-          <VISIBILITY>All</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-750">
-          <caret line="76" column="61" selection-start-line="76" selection-start-column="61" selection-end-line="76" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-data-redis/2.2.1.RELEASE/spring-boot-starter-data-redis-2.2.1.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/controller/JobCommentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="39" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="39" />
+        <state relative-caret-position="329">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/service/impl/JobCommentServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/vo/ResultVO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="8" />
+        <state relative-caret-position="330">
+          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/converter/JobFairForm_Release2JobFair.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/service/JobCommentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/service/Impl/JobFairServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="37" column="13" lean-forward="true" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/service/JobFairService.java">
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/enums/JobFairStatusEnum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-jobfair/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-468" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-redis/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/webuiApplication.java">
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/exception/JobFairException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
-          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="46" />
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/enums/ResultEnum.java">
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/form/JobFairForm_Release.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="225">
+          <caret line="20" column="33" lean-forward="true" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/utils/ResultVOUtil.java">
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/form/JobFairForm_Update.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        <state relative-caret-position="300">
+          <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/repository/EnterpriseInfoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-50">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/enums/ResultEnum.java">
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/repository/JobFairRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        <state relative-caret-position="196">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/vo/JobFairInfoVO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        <state relative-caret-position="75">
+          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/jobfairApplication.java">
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/enums/ResultEnum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="350">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/utils/ResultVOUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/VO/ResultVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/converter/JobFair2JobFairInfoVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.1.RELEASE/spring-webmvc-5.2.1.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="512" column="27" selection-start-line="512" selection-start-column="27" selection-end-line="512" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.1.RELEASE/spring-web-5.2.1.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="104" column="46" selection-start-line="104" selection-start-column="46" selection-end-line="104" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-history/src/main/java/com/xmtx/history/client/HistoryClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/java/com/xmtx/history/dataObject/BrowsingHistory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/DTO/TopNDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.2.1.RELEASE/spring-data-redis-2.2.1.RELEASE.jar!/org/springframework/data/redis/core/DefaultZSetOperations.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="31" column="41" lean-forward="true" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.2.1.RELEASE/spring-data-redis-2.2.1.RELEASE.jar!/org/springframework/data/redis/core/ZSetOperations.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="3798" column="30" selection-start-line="3798" selection-start-column="30" selection-end-line="3798" selection-end-column="30" />
+          <folding>
+            <element signature="e#177013#177014#0" expanded="true" />
+            <element signature="e#177054#177055#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/HashSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="218" column="19" selection-start-line="218" selection-start-column="19" selection-end-line="218" selection-end-column="19" />
+          <folding>
+            <element signature="e#8064#8065#0" expanded="true" />
+            <element signature="e#8112#8113#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/AbstractCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="340" column="19" selection-start-line="340" selection-start-column="19" selection-end-line="340" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1527,160 +1399,209 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/pom.xml">
+    <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/webuiApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="757">
-          <caret line="63" column="18" lean-forward="true" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
+        <state relative-caret-position="175">
+          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/VO/UserSignSuccessVO.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/controller/JobFairController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/VO/ResultVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="402">
+          <caret line="170" selection-start-line="170" selection-end-line="170" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        <state relative-caret-position="302">
+          <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-jobfair/src/main/java/com/xmtx/jobfair/client/JobFairClient.java">
+    <entry file="file://$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/utils/EntityUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+        <state relative-caret-position="500">
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/controller/jobfairController.java">
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/java/com/xmtx/history/service/BrowsingHistoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/java/com/xmtx/history/service/impl/BrowsingHistoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="22" column="72" selection-start-line="22" selection-start-column="72" selection-end-line="22" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/service/JobFairService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/UUID.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="136" column="31" lean-forward="true" selection-start-line="136" selection-start-column="31" selection-end-line="136" selection-end-column="31" />
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/utils/CommonUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="102" column="21" lean-forward="true" selection-start-line="102" selection-start-column="21" selection-end-line="102" selection-end-column="21" />
+        <state relative-caret-position="175">
+          <caret line="114" column="26" selection-start-line="114" selection-start-column="26" selection-end-line="114" selection-end-column="26" />
+          <folding>
+            <element signature="e#2640#2641#0" expanded="true" />
+            <element signature="e#2695#2696#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/utils/ResultVOUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2685#2686#0" expanded="true" />
-            <element signature="e#2740#2741#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/java/com/xmtx/history/HistoryApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/java/com/xmtx/history/repository/BrowsingHistoryRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="17" column="63" lean-forward="true" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/controller/userController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="55" column="85" selection-start-line="55" selection-start-column="85" selection-end-line="55" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="69" selection-start-line="69" selection-end-line="72" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-redis/src/main/java/com/xmtx/redis/client/RedisClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        <state relative-caret-position="225">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/dataObject/JobFair.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/java/com/xmtx/history/controller/BrowsingHistoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.2.1.RELEASE/spring-data-redis-2.2.1.RELEASE.jar!/org/springframework/data/redis/core/ValueOperations.class">
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/JobfairApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.2.1.RELEASE/spring-data-redis-2.2.1.RELEASE.jar!/org/springframework/data/redis/core/StringRedisTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.2.1.RELEASE/spring-data-redis-2.2.1.RELEASE.jar!/org/springframework/data/redis/core/RedisTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="795" column="33" selection-start-line="795" selection-start-column="33" selection-end-line="795" selection-end-column="33" />
+        <state relative-caret-position="225">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
           <folding>
-            <element signature="e#29389#29390#0" expanded="true" />
-            <element signature="e#29425#29426#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="111" column="54" selection-start-line="111" selection-start-column="54" selection-end-line="111" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" selection-start-line="3" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/service/Impl/JobFairServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#job_fair_findById#0;class#JobFairServiceImpl#0" />
+            <element signature="method#job_fair_showAll#0;class#JobFairServiceImpl#0" />
+            <element signature="method#job_fair_release#0;class#JobFairServiceImpl#0" />
+            <element signature="method#job_fair_update#0;class#JobFairServiceImpl#0" />
+            <element signature="e#3517#3518#0" expanded="true" />
+            <element signature="e#3565#3566#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/src/main/java/com/xmtx/redis/controller/RedisOperationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2180">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        <state relative-caret-position="34">
+          <caret line="73" column="32" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
+          <folding>
+            <element signature="method#saveListInZset#0;class#RedisOperationController#0" />
+            <element signature="e#1534#1561#0" expanded="true" />
+            <element signature="e#1646#1654#0" expanded="true" />
+            <element signature="method#saveNormalStringKeyValue#0;class#RedisOperationController#0" />
+            <element signature="method#retrieveStringValueByStringKey#0;class#RedisOperationController#0" />
+            <element signature="method#removeByKey#0;class#RedisOperationController#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/UserApplication.java">
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/controller/JobFairController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/utils/CommonConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/controller/userController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="73" column="4" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="4" />
+          <caret line="142" column="52" lean-forward="true" selection-start-line="142" selection-start-column="52" selection-end-line="142" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1751,7 +1672,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>xmtx-provider-jobfairComment</last-edited>
+          <last-edited>xmtx-common</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

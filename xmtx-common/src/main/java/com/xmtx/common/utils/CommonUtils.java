@@ -90,7 +90,6 @@ public class CommonUtils {
 	 * 生成用户登录成功后使用的token
 	 * 
 	 * @return
-	 * @author 封捷
 	 */
 	public static String generateToken() {
 
@@ -102,7 +101,6 @@ public class CommonUtils {
 	 * 
 	 * @param c 待验证集合
 	 * @return 验证结果（true：有效，false：无效）
-	 * @author 封捷
 	 */
 	public static <E> boolean collectionEffectiveCheck(Collection<E> c) {
 		return (c != null) && (c.size() > 0);
@@ -113,7 +111,6 @@ public class CommonUtils {
 	 * 
 	 * @param source 待验证字符串
 	 * @return 验证结果（true：有效，false：无效）
-	 * @author 封捷
 	 */
 	public static boolean strEffectiveCheck(String source) {
 		return (source != null) && (source.length() > 0);
@@ -125,7 +122,6 @@ public class CommonUtils {
 	 * @param length 验证码长度
 	 * @return 生成的验证码
 	 * @throws RuntimeException 验证码长度必须大于0
-	 * @author 封捷
 	 */
 	public static String randomCode(int length) {
 

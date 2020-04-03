@@ -6,6 +6,7 @@ import lombok.Setter;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -17,7 +18,7 @@ import java.util.Date;
  */
 @Data
 @Entity
-public class JobFair {
+public class JobFair implements Serializable {
     @Id
     private Integer id;
     /**  公司ID **/
@@ -33,7 +34,7 @@ public class JobFair {
     /**  标签 **/
     private String label;
     /**  是否拥有举办招聘会资格 **/
-    private boolean enabled;
+    private Integer enabled;
     /**  所属数据库 **/
     private Integer dbSource;
     /**  招聘会内容 **/
