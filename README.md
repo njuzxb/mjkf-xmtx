@@ -22,9 +22,11 @@
 
 ——————mjkf-xmtx-provider-jobfairComment    招聘会评论服务：提供招聘会评论管理服务 port：2004
 
-——————mjkf-xmtx-provider-forum   论坛服务：提供发帖服务 port：2005
+——————mjkf-xmtx-provider-forum   论坛服务：提供发帖服务 port：2005  （先不做）  
 
-——————mjkf-xmtx-provider-forumComment   论坛评论服务：提供贴子评论服务 port：2005
+——————mjkf-xmtx-provider-forumComment   论坛评论服务：提供贴子评论服务 port：2005  （先不做）
+
+——————mjkf-xmtx-provider-history   记录模块：主要是浏览记录，提供了热榜功能 port：2006
 
 ——————mjkf-xmtx-provider-redis   redis服务：提供redis服务 port：3000
 
@@ -33,6 +35,10 @@
 ——————mjkf-xmtx-provider-api-jobfair  招聘会服务接口 
 
 ——————mjkf-xmtx-provider-api-jobfairComment  招聘会评论服务接口 
+
+——————mjkf-xmtx-provider-api-user  用户服务接口
+
+——————mjkf-xmtx-provider-api-history  记录模块接口
 
 ——————mjkf-xmtx-provider-api-redis redis服务接口 
 
