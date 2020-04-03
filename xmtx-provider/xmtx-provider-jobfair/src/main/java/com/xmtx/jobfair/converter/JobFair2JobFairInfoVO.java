@@ -18,6 +18,7 @@ public class JobFair2JobFairInfoVO {
         tmpJFVO.setJobfairTitle(jobFair.getTitle());
         tmpJFVO.setJobfairLabel(jobFair.getLabel());
         tmpJFVO.setJobfairContent(jobFair.getContent());
+
         return tmpJFVO;
     }
 }

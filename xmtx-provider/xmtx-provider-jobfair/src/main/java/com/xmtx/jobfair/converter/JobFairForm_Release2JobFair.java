@@ -22,9 +22,10 @@ public class JobFairForm_Release2JobFair {
         jobFair.setTitle(form.getTitle());
         jobFair.setLabel(form.getLabel());
         jobFair.setContent(form.getContent());
-        jobFair.setDbSource(1);
         jobFair.setEnabled(0);
         jobFair.setMeetingTime(new Date());
+        jobFair.setCommentNum(0);
+        jobFair.setCommentNum(1);
         //同步方法随机产生唯一ID
         jobFair.setId(KeyUtil.genUniqueKey());
         return jobFair;

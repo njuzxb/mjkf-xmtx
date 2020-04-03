@@ -35,8 +35,10 @@ public class JobFair implements Serializable {
     private String label;
     /**  是否拥有举办招聘会资格 **/
     private Integer enabled;
-    /**  所属数据库 **/
-    private Integer dbSource;
     /**  招聘会内容 **/
     private String content;
+    /**  评论数 **/
+    private Integer commentNum;
+    /**  点赞数 **/
+    private Integer proveNum;
 }

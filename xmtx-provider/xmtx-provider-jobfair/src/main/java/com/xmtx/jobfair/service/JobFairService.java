@@ -1,6 +1,7 @@
 package com.xmtx.jobfair.service;
 
 import com.xmtx.jobfair.dataObject.JobFair;
+import org.springframework.data.domain.Page;
 
 import java.util.List;
 import java.util.Optional;
@@ -25,11 +26,13 @@ public interface JobFairService {
      * 招聘会列表信息查看
      * */
     List<JobFair> job_fair_showAll(Integer pn);
+    //Page<JobFair> job_fair_showAll(Integer pn, Integer size);
 
     /*
-     * 招聘会发布
+     * 招聘会列表信息查看
      * */
-    void job_fair_release(JobFair jobFair);
+    List<JobFair> job_fair_show();
+
     /*
      * 招聘会信息修改
      * */

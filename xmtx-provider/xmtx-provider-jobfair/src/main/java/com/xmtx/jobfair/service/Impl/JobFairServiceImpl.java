@@ -14,9 +14,7 @@ import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Slice;
+import org.springframework.data.domain.*;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -55,24 +53,29 @@ public class JobFairServiceImpl implements JobFairService {
         return list;
     }
 
-    //发布招聘会时，要先检查有没有这个公司。
     @Override
-    public void job_fair_release(JobFair jobFair) {
-        int eid = jobFair.getEid();
-        //根据eid判断公司是否存在
-        Optional<EnterpriseInfo> enterpriseInfoOptional = enterpriseInfoRepository.findById(eid);
-        if(!enterpriseInfoOptional.isPresent()){
-            throw new JobFairException(ResultEnum.JOBFAIR_NOT_EXIST);
-        }
-        System.out.println("存在该公司");
-        //判断该公司的Enable字段是否为1，若为0。则没有发布招聘会的资格
-        EnterpriseInfo enterpriseInfo = enterpriseInfoOptional.get();
-        if(!enterpriseInfo.isEnabled() || jobFair.getEnabled() == 0){
-            throw new JobFairException(JobFairStatusEnum.DISABLE);
-        }
-        System.out.println(JobFairStatusEnum.ENABLE.getMsg());
-        jobFairRepository.save(jobFair);
+    public List<JobFair> job_fair_show() {
+        return jobFairRepository.findAll();
     }
+
+//    //发布招聘会时，要先检查有没有这个公司。
+//    @Override
+//    public void job_fair_release(JobFair jobFair) {
+//        int eid = jobFair.getEid();
+//        //根据eid判断公司是否存在
+//        Optional<EnterpriseInfo> enterpriseInfoOptional = enterpriseInfoRepository.findById(eid);
+//        if(!enterpriseInfoOptional.isPresent()){
+//            throw new JobFairException(ResultEnum.JOBFAIR_NOT_EXIST);
+//        }
+//        System.out.println("存在该公司");
+//        //判断该公司的Enable字段是否为1，若为0。则没有发布招聘会的资格
+//        EnterpriseInfo enterpriseInfo = enterpriseInfoOptional.get();
+//        if(!enterpriseInfo.isEnabled() || jobFair.getEnabled() == 0){
+//            throw new JobFairException(JobFairStatusEnum.DISABLE);
+//        }
+//        System.out.println(JobFairStatusEnum.ENABLE.getMsg());
+//        jobFairRepository.save(jobFair);
+//    }
 
     @Override
     @CachePut(key = "#p0.id")

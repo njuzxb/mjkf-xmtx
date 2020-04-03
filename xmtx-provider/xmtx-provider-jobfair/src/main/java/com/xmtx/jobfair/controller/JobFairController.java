@@ -52,10 +52,6 @@ public class JobFairController {
     public void getTopNJobid(){
         // 1、从redis中取出zset（topN-jobid）;
         // 2、根据循环读取放入List中
-
-
-
-
     }
 
     // 根据id查询招聘信息
@@ -95,6 +91,7 @@ public class JobFairController {
     @GetMapping("/list")
     public ResultVO<JobFairInfoVO> list(Integer pn){
         List<JobFair> list = jobFairService.job_fair_showAll(pn);
+        //List<JobFair> list = jobFairService.job_fair_show();
         List<JobFairInfoVO> res = new ArrayList<>();
         for(int i = 0; i < list.size(); i ++){
             JobFair tmpJF = list.get(i);
@@ -120,7 +117,8 @@ public class JobFairController {
         }
         //将form转换为jobfair,就能调用service中的发布功能啦
         JobFair jobFair = JobFairForm_Release2JobFair.convert(jobFairFormRelease);
-        jobFairService.job_fair_release(jobFair);
+        //jobFairService.job_fair_release(jobFair);
+        jobFairService.job_fair_update(jobFair);
         Map<String,Integer> map = new HashMap<>();
         map.put("JobFairId",jobFair.getId());
         return ResultVOUtil.success(map);
