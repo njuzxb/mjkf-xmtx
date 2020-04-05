@@ -24,6 +24,6 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:1000/eureka/
-    register-with-eureka: false
-  instance:
-    prefer-ip-address: true
+#    register-with-eureka: false
+#  instance:
+#    prefer-ip-address: true

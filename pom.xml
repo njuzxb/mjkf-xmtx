@@ -14,6 +14,9 @@
         <module>xmtx-gateway</module>
         <module>xmtx-eureka</module>
         <module>xmtx-webui</module>
+        <module>xmtx-gateway</module>
+        <module>xmtx-zuul</module>
+        <module>xmtx-test</module>
     </modules>
 
     <!-- 打包方式  pom-->

@@ -6,11 +6,11 @@
       <meta name="description" content=""/>
       <meta name="author" content=""/>
 
-      <link rel="icon" type="image/png" th:href="@{/img/fav.png}"/>
+      <link rel="icon" type="image/png" th:href="@{/web/img/fav.png}"/>
       <title></title>
       <!-- Slick Slider -->
       <link rel="stylesheet" type="text/css" th:href="@{/vendor/slick/slick.min.css}"/>
-      <link rel="stylesheet" type="text/css" th:href="@{vendor/slick/slick-theme.min.css}"/>
+      <link rel="stylesheet" type="text/css" th:href="@{/vendor/slick/slick-theme.min.css}"/>
       <!-- Feather Icon-->
       <link th:href="@{vendor/icons/feather.css}" rel="stylesheet" type="text/css">
       <!-- Bootstrap core CSS -->
@@ -22,7 +22,7 @@
       <!-- Navigation -->
       <nav class="navbar navbar-expand navbar-dark bg-dark osahan-nav-top p-0">
          <div class="container">
-            <a class="navbar-brand mr-2" href="index.html"><img th:src="@{/img/logo.png}" alt="">
+            <a class="navbar-brand mr-2" href="index.html"><img th:src="@{/web/img/logo.png}" alt="">
             </a>
             <form class="d-none d-sm-inline-block form-inline mr-auto my-2 my-md-0 mw-100 navbar-search">
                <div class="input-group">
@@ -525,7 +525,7 @@
          //查询所有项目
          function to_page() {
             $.ajax({
-               url: "/jobfair/getCommandList?pn=0",
+               url: "/jobfair/jobfair/list?pn=0",
                type: "GET",
                success: function (result) {
                   //console.log(result);

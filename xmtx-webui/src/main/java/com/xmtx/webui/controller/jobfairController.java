@@ -14,15 +14,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Slf4j
 public class jobfairController {
 
-    @Autowired
-    private JobFairClient jobFairClient;
-
-    @RequestMapping("/jobfair/getCommandList")
-    @ResponseBody
-    public ResultVO recommendJobsList(@RequestParam("pn") Integer pn){
-//        jobFairClient.list()
-        ResultVO result= jobFairClient.list(pn);
-        log.error("测试");
-        return result;
-    }
+//    @Autowired
+//    private JobFairClient jobFairClient;
+//
+//    @RequestMapping("/jobfair/getCommandList")
+//    @ResponseBody
+//    public ResultVO recommendJobsList(@RequestParam("pn") Integer pn){
+////        jobFairClient.list()
+//        ResultVO result= jobFairClient.list(pn);
+//        log.error("测试");
+//        return result;
+//    }
 }

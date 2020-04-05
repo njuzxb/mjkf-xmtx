@@ -8,7 +8,14 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/xmtx-gateway/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/xmtx-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/xmtx-test/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectResources">
