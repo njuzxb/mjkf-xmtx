@@ -18,7 +18,7 @@ public class EntityUtils {
      * @return List<T>
      */
     public static <T> List<T> castEntity(List<Object[]> list, Class<T> clazz) {
-        List<T> returnList = new ArrayList<>();
+        List<T> returnList = new ArrayList<T>();
         if (list.size() == 0) {
             return returnList;
         }

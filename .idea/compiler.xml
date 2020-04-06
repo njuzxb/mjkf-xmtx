@@ -6,12 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="xmtx-webui" />
         <module name="xmtx-eureka" />
         <module name="xmtx-provider-jobfairComment" />
         <module name="xmtx-provider-admin" />
         <module name="xmtx-common" />
         <module name="xmtx-provider-api-jobfairComment" />
-        <module name="xmtx-webui" />
         <module name="xmtx-provider-jobfair" />
         <module name="xmtx-zuul" />
         <module name="xmtx-provider-api-history" />
@@ -22,6 +22,15 @@
         <module name="xmtx-provider-redis" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8" />
+    <bytecodeTargetLevel target="8">
+      <module name="xmtx-gateway" target="1.5" />
+      <module name="xmtx-provider-api" target="1.5" />
+      <module name="xmtx-provider-api-user" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="xmtx-provider-api-user" options="-parameters" />
+    </option>
   </component>
 </project>

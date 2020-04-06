@@ -17,16 +17,11 @@ public class TopNDTO implements Serializable {
 //    Integer getJobid();
 //
 //    Integer getBrowsingNum();
-
-
+    BigInteger jobid;
+    BigInteger browsingNum;
     public TopNDTO(BigInteger jobid, BigInteger browsingNum) {
         super();
         this.jobid = jobid;
         this.browsingNum = browsingNum;
     }
-
-    BigInteger jobid;
-    BigInteger browsingNum;
-
-
 }

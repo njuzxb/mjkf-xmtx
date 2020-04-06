@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 
 /**
  * @ Author     ：djq.
@@ -17,7 +18,7 @@ import javax.validation.constraints.NotNull;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class ReleaseInput {
+public class ReleaseInput implements Serializable {
     @NotNull(message = "企业id必填")
     private Integer eid;
 
@@ -35,4 +36,16 @@ public class ReleaseInput {
 
     @NotEmpty(message = "地址必填")
     private String address;
+
+    @Override
+    public String toString() {
+        return "ReleaseInput{" +
+                "eid=" + eid +
+                ", promoter_name='" + promoter_name + '\'' +
+                ", title='" + title + '\'' +
+                ", label='" + label + '\'' +
+                ", content='" + content + '\'' +
+                ", address='" + address + '\'' +
+                '}';
+    }
 }

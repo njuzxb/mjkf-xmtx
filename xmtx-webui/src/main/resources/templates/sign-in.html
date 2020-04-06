@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -28,19 +28,19 @@
                         <h5 class="font-weight-bold mt-3">Welcome Back</h5>
                         <p class="text-muted">Don't miss your next opportunity. Sign in to stay updated on your professional world.</p>
                      </div>
-                     <form action="index.html">
+                     <form action="index.html" th:action="@{user/login}" method="POST">
                         <div class="form-group">
                            <label class="mb-1">Email or Phone</label>
                            <div class="position-relative icon-form-control">
                               <i class="feather-user position-absolute"></i>
-                              <input type="email" class="form-control">
+                              <input type="email" name="email" id="email" class="form-control">
                            </div>
                         </div>
                         <div class="form-group">
                            <label class="mb-1">Password</label>
                            <div class="position-relative icon-form-control">
                               <i class="feather-unlock position-absolute"></i>
-                              <input type="password" class="form-control">
+                              <input type="password" name="password" id="password" class="form-control">
                            </div>
                         </div>
                         <div class="custom-control custom-checkbox mb-3">

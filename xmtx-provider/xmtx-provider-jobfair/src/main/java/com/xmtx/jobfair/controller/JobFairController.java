@@ -1,7 +1,5 @@
 package com.xmtx.jobfair.controller;
 
-import com.alibaba.fastjson.JSON;
-import com.xmtx.common.DTO.TopNDTO;
 import com.xmtx.history.client.HistoryClient;
 import com.xmtx.jobfair.converter.JobFair2JobFairInfoVO;
 import com.xmtx.jobfair.converter.JobFairForm_Release2JobFair;
@@ -19,12 +17,10 @@ import com.xmtx.common.utils.ResultVOUtil;
 import com.xmtx.common.VO.ResultVO;
 import com.xmtx.redis.client.RedisClient;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import java.math.BigInteger;
 import java.util.*;
 
 /**
@@ -111,6 +107,7 @@ public class JobFairController {
 
     @PostMapping("/release")
     public ResultVO<Map<String,Integer>> release(@Valid JobFairForm_Release jobFairFormRelease, BindingResult bindingResult){
+        System.out.println("123456");
         if(bindingResult.hasErrors()){
             // log.error("招聘会发布参数不正确,jobFairFormRelease={}",jobFairFormRelease);
             throw new JobFairException(ResultEnum.PARAM_ERROR);
