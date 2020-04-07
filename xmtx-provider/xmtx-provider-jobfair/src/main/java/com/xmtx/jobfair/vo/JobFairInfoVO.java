@@ -25,5 +25,6 @@ public class JobFairInfoVO {
 //    @JsonProperty("label")
     private String jobfairLabel;
 //    @JsonProperty("content")
-    private String jobfairContent;
+    private Integer comment_num;
+    private Integer prove_num;
 }

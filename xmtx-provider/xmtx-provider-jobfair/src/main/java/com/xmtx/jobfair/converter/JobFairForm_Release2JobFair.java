@@ -25,7 +25,7 @@ public class JobFairForm_Release2JobFair {
         jobFair.setEnabled(1);
         jobFair.setMeetingTime(new Date());
         jobFair.setCommentNum(0);
-        jobFair.setCommentNum(1);
+        jobFair.setProveNum(0);
         //同步方法随机产生唯一ID
         jobFair.setId(KeyUtil.genUniqueKey());
         return jobFair;

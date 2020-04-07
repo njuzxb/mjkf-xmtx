@@ -89,6 +89,7 @@ public class JobFairController {
         List<JobFair> list = jobFairService.job_fair_showAll(pn);
         //List<JobFair> list = jobFairService.job_fair_show();
         List<JobFairInfoVO> res = new ArrayList<>();
+        System.out.println("展示招聘会列表");
         for(int i = 0; i < list.size(); i ++){
             JobFair tmpJF = list.get(i);
             //得到构造数据中的公司名字
@@ -106,12 +107,12 @@ public class JobFairController {
 
 
     @PostMapping("/release")
-    public ResultVO<Map<String,Integer>> release(@Valid JobFairForm_Release jobFairFormRelease, BindingResult bindingResult){
+    public ResultVO<Map<String,Integer>> release(@Valid JobFairForm_Release jobFairFormRelease/*, BindingResult bindingResult*/){
         System.out.println("123456");
-        if(bindingResult.hasErrors()){
+        /*if(bindingResult.hasErrors()){
             // log.error("招聘会发布参数不正确,jobFairFormRelease={}",jobFairFormRelease);
             throw new JobFairException(ResultEnum.PARAM_ERROR);
-        }
+        }*/
         //将form转换为jobfair,就能调用service中的发布功能啦
         JobFair jobFair = JobFairForm_Release2JobFair.convert(jobFairFormRelease);
         //jobFairService.job_fair_release(jobFair);
