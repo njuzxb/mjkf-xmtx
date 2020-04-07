@@ -1,55 +1,307 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="12410394-81c6-4cf3-ab1b-2e38dd436410" name="Default Changelist" comment="修改了一下web">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/VO/UserVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/config/userConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/converter/UserVOtoUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/config/SpringMVCConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xmtx-zuul/src/main/java/com/xmtx/zuul/ZuulApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xmtx-zuul/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xmtx-zuul/xmtx-zuul.iml" afterDir="false" />
+    <list default="true" id="b3516352-3651-407c-ba59-2d1159c78ce9" name="Default Changelist" comment="修改了common,eueka,zuul,webui和provider,provider-api的user,redis,jobfair,history的pom.xml文件">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_68.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_xml_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_afterburner_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_jaxb_annotations_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_woodstox_woodstox_core_5_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_15_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_16_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_guice_4_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_archaius_archaius_core_0_7_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_eureka_eureka_client_1_9_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_eureka_eureka_core_1_9_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_core_1_5_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_javanica_1_5_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_metrics_event_stream_1_5_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_serialization_1_5_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_netflix_commons_netflix_commons_util_0_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_netflix_commons_netflix_eventbus_0_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_netflix_commons_netflix_infix_0_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_netflix_commons_netflix_statistics_0_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_core_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_eureka_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_httpclient_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_loadbalancer_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_transport_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_servo_servo_core_0_12_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_zuul_zuul_core_1_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_stoyanr_evictor_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_contribs_jersey_apache_client4_1_19_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_client_1_19_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_19_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_server_1_19_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_servlet_1_19_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_4_11_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_configuration_commons_configuration_1_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_jxpath_commons_jxpath_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_core_10_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_hystrix_10_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_slf4j_10_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_form_feign_form_3_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_form_feign_form_spring_3_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_lettuce_lettuce_core_5_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_core_1_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_43_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_43_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_43_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_43_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_43_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_43_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_addons_reactor_extra_3_3_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_3_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxjava_1_3_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxjava_reactive_streams_1_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxnetty_0_4_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxnetty_contexts_0_4_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxnetty_servo_0_4_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_2_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_servlet_jakarta_servlet_api_4_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_1_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_websocket_jakarta_websocket_api_1_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_jsr311_api_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_10_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr_runtime_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_stringtemplate_3_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_12_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_12_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_27.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_27.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_27.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_13_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_64.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_64.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jettison_jettison_1_3_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_woodstox_stax2_api_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_annotations_9_4_22_v20191022.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_client_9_4_22_v20191022.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_continuation_9_4_22_v20191022.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_9_4_22_v20191022.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_4_22_v20191022.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_plus_9_4_22_v20191022.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_security_9_4_22_v20191022.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_server_9_4_22_v20191022.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_servlet_9_4_22_v20191022.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_servlets_9_4_22_v20191022.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_4_22_v20191022.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_webapp_9_4_22_v20191022.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_xml_9_4_22_v20191022.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_javax_websocket_client_impl_9_4_22_v20191022.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_javax_websocket_server_impl_9_4_22_v20191022.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_api_9_4_22_v20191022.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_client_9_4_22_v20191022.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_common_9_4_22_v20191022.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_server_9_4_22_v20191022.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_servlet_9_4_22_v20191022.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_29.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_8_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_18_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_24_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_5_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_vintage_junit_vintage_engine_5_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_latencyutils_LatencyUtils_2_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jasper_apache_el_8_5_40.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_analysis_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_commons_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_tree_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_29.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_29.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_29.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_autoconfigure_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_configuration_processor_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_cache_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_freemarker_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jetty_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_loadbalancer_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_archaius_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_core_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_eureka_client_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_eureka_server_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_hystrix_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_ribbon_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_zuul_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_openfeign_core_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_loadbalancer_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_archaius_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_eureka_client_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_eureka_server_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_hystrix_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_ribbon_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_zuul_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_openfeign_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_rsa_1_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_11_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_11_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xmlpull_xmlpull_1_1_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xpp3_xpp3_min_1_1_4c.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-common/xmtx-common.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-eureka/xmtx-eureka.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-jobfair/xmtx-provider-api-jobfair.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-jobfairComment/xmtx-provider-api-jobfairComment.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-redis/xmtx-provider-api-redis.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/test/test1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/xmtx-provider-admin.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/xmtx-provider-history.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/xmtx-provider-jobfair.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/main1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/test/test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/xmtx-provider-jobfairComment.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/xmtx-provider-redis.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a1400cbb-8c12-4b93-837f-23790389ef30.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a1400cbb-8c12-4b93-837f-23790389ef30.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a1400cbb-8c12-4b93-837f-23790389ef30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Think.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mjkf-xmtx_2_13.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-zuul/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-eureka/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-history/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-history/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-history/xmtx-provider-api-history.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-history/xmtx-provider-api-history.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-jobfair/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-jobfair/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-jobfairComment/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-jobfairComment/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-redis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-redis/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/controller/userController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/controller/userController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/controller/jobfairController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/controller/jobfairController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-webui/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-webui/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/xmtx-provider-user.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/xmtx-provider-user.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-webui/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-webui/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-webui/xmtx-webui.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-webui/xmtx-webui.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-zuul/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-zuul/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-zuul/xmtx-zuul.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-zuul/xmtx-zuul.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx.iml" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/xmtx-provider/target/" />
-    <ignored path="$PROJECT_DIR$/xmtx-gateway/target/" />
-    <ignored path="$PROJECT_DIR$/xmtx-common/target/" />
-    <ignored path="$PROJECT_DIR$/xmtx-provider-api/target/" />
-    <ignored path="$PROJECT_DIR$/xmtx-eureka/target/" />
-    <ignored path="$PROJECT_DIR$/xmtx-module/target/" />
-    <ignored path="$PROJECT_DIR$/xmtx-provider/xmtx-provider-model/target/" />
-    <ignored path="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/target/" />
-    <ignored path="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/target/" />
-    <ignored path="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/target/" />
-    <ignored path="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/target/" />
-    <ignored path="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-jobfair/target/" />
-    <ignored path="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-jobfairComment/target/" />
-    <ignored path="$PROJECT_DIR$/xmtx-webui/target/" />
-    <ignored path="$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/target/" />
-    <ignored path="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-redis/target/" />
-    <ignored path="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/target/" />
-    <ignored path="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-history/target/" />
-    <ignored path="$PROJECT_DIR$/xmtx-zuul/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,630 +318,80 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - jdbc:mysql:" type="cc8827a6:DatabaseStructure$DbGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - jdbc:mysql:" type="cc8827a6:DatabaseStructure$DbGroup" />
-        <item name="localhost:3306" type="cc8827a6:DatabaseStructure$DbGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - jdbc:mysql:" type="cc8827a6:DatabaseStructure$DbGroup" />
-        <item name="localhost:3306" type="cc8827a6:DatabaseStructure$DbGroup" />
-        <item name="db_mj4x" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - jdbc:mysql:" type="cc8827a6:DatabaseStructure$DbGroup" />
-        <item name="localhost:3306" type="cc8827a6:DatabaseStructure$DbGroup" />
-        <item name="db_mj4x" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - jdbc:mysql:" type="cc8827a6:DatabaseStructure$DbGroup" />
-        <item name="localhost:3306" type="cc8827a6:DatabaseStructure$DbGroup" />
-        <item name="db_mj4x" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="db_mj4x: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/controller/userController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="24" column="78" selection-start-line="24" selection-start-column="78" selection-end-line="24" selection-end-column="78" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/config/SpringMVCConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/webuiApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/controller/jobfairController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/sign-in.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="15" selection-start-column="15" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xmtx-zuul/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/controller/JobFairController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JUnit4 Test Class" />
-        <option value="Enum" />
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/dataobject/JobFairComment.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/java/com/xmtx/history/repository/HistoryRepository.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/java/com/xmtx/history/historyApplication.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/java/com/xmtx/history/dataObject/BrowsingHistory.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/java/com/xmtx/history/vo/TopNVO.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/jobfairApplication.java" />
-        <option value="$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/webuiApplication.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-jobfair/src/main/java/com/xmtx/jobfair/client/JobFairClient.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/enums/ResultEnum.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-history/src/main/java/com/xmtx/history/client/HistoryClient.java" />
-        <option value="$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/utils/EntityUtils.java" />
-        <option value="$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/DTO/TopNDTO.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/java/com/xmtx/history/service/BrowsingHistoryService.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/java/com/xmtx/history/repository/BrowsingHistoryRepository.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/java/com/xmtx/history/service/impl/BrowsingHistoryServiceImpl.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/pom.xml" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/pom.xml" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/java/com/xmtx/history/HistoryApplication.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/java/com/xmtx/history/controller/BrowsingHistoryController.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-redis/src/main/java/com/xmtx/redis/client/RedisClient.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/src/main/java/com/xmtx/redis/controller/RedisOperationController.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/service/Impl/JobFairServiceImpl.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/dataObject/JobFair.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/controller/JobFairController.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/JobfairApplication.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/VO/UserVO.java" />
-        <option value="$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/VO/UserVO.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/repository/UserRepository.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/config/userConfig.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/converter/UserVOtoUser.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/service/UserService.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/xmtx-gateway/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/xmtx-gateway/src/main/java/com/xmtx/gateway/GatewayApplication.java" />
-        <option value="$PROJECT_DIR$/xmtx-gateway/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/xmtx-zuul/pom.xml" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/controller/userController.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/pom.xml" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/pom.xml" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/xmtx-zuul/src/main/java/com/xmtx/zuul/ZuulApplication.java" />
-        <option value="$PROJECT_DIR$/xmtx-zuul/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/xmtx-webui/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/controller/jobfairController.java" />
-        <option value="$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/config/SpringMVCConfig.java" />
-      </list>
-    </option>
-  </component>
-  <component name="JsFlowSettings">
-    <service-enabled>true</service-enabled>
-    <exe-path />
-    <other-services-enabled>true</other-services-enabled>
-    <auto-save>true</auto-save>
-  </component>
   <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-        <option name="vmOptionsForImporter" value="-Xmx768m" />
-      </MavenImportingSettings>
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="alwaysUpdateSnapshots" value="true" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../apache-maven-3.6.3-bin/apache-maven-3.6.3" />
+      </MavenGeneralSettings>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand />
-      <select />
-    </treeState>
-  </component>
-  <component name="MavenRunner">
-    <option name="skipTests" value="true" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="315" />
-    <option name="width" value="1611" />
-    <option name="height" value="1089" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <flattenPackages ProjectPane="false" />
-      <hideEmptyPackages ProjectPane="true" />
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-jobfair" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-jobfair" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-jobfair" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-jobfair" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-jobfair" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jobfair" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-jobfair" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jobfair" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-jobfair" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-redis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-redis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-redis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-redis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-provider-user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-webui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-webui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-webui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-webui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-webui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="webui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-webui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="webui" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-webui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-webui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-zuul" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name="xmtx-zuul" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectId" id="1aCcBXlxSioc5cUWldA6zVkCxLK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/xmtx-zuul/src/main/resources" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
-  <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.xmtx.jobfairComment.repository" />
-      <recent name="com.xmtx.provider.service" />
-      <recent name="com.xmtx.provider.service.impl" />
-      <recent name="com.xmtx.provider.repository" />
-      <recent name="com.xmtx.provider.mapper" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-      <recent name="com.xmtx.provider" />
-      <recent name="com.xmtx.provider.repository" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Think\IdeaProjects\xmtx\xmtx-provider\xmtx-provider-admin" />
-      <recent name="C:\Users\Think\IdeaProjects\xmtx\xmtx-provider\xmtx-provider-admin\src\main\resources" />
-      <recent name="C:\Users\Think\IdeaProjects\xmtx\xmtx-provider\xmtx-provider-admin\src\main\java" />
-      <recent name="C:\Users\Think\IdeaProjects\xmtx\xmtx-provider\xmtx-provider-model\src\main\resources" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Think\IdeaProjects\xmtx\xmtx-zuul\src\main\resources" />
-      <recent name="C:\Users\Think\IdeaProjects\xmtx\xmtx-provider\xmtx-provider-user" />
-      <recent name="C:\Users\Think\IdeaProjects\xmtx\xmtx-provider\xmtx-provider-history\src\main\resources" />
-      <recent name="C:\Users\Think\IdeaProjects\xmtx\xmtx-provider\xmtx-provider-redis\src\main\resources" />
-      <recent name="C:\Users\Think\IdeaProjects\xmtx\xmtx-provider\xmtx-provider-redis\src\main\java\com\xmtx\redis\controller" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.xmtx.zuul" />
-      <recent name="com.xmtx.gateway" />
-      <recent name="com.xmtx.jobfair" />
-      <recent name="com.xmtx.history" />
-      <recent name="com.xmtx.redis" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.xmtx.provider.service.impl" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="configurationTypes">
-      <set>
-        <option value="SpringBootApplicationConfigurationType" />
-      </set>
-    </option>
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-    <option name="contentProportion" value="0.19609042" />
-  </component>
-  <component name="RunManager" selected="Spring Boot.ZuulApplication">
-    <configuration name="AdminProviderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="xmtx-provider-admin" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xmtx.admin.AdminProviderApplication" />
+  <component name="RunManager" selected="JUnit.All in xmtx">
+    <configuration name="All in xmtx" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xmtx" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="xmtx-eureka" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xmtx.eureka.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.xmtx.eureka.EurekaApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JobCommentProviderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="xmtx-provider-jobfairComment" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xmtx.jobfairComment.JobCommentProviderApplication" />
+    <configuration name="HistoryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="xmtx-provider-history" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xmtx.history.HistoryApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RedisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="JobfairApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="xmtx-provider-jobfair" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xmtx.jobfair.JobfairApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="xmtx-provider-redis" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xmtx.redis.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.xmtx.redis.RedisApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="xmtx-provider-user" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xmtx.user.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.xmtx.user.UserApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -708,43 +410,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="jobfairApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="xmtx-provider-jobfair" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xmtx.jobfair.JobfairApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="webuiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="webuiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="xmtx-webui" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xmtx.webui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.xmtx.webui.webuiApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Spring Boot.AdminProviderApplication" />
-      <item itemvalue="Spring Boot.JobCommentProviderApplication" />
-      <item itemvalue="Spring Boot.jobfairApplication" />
-      <item itemvalue="Spring Boot.EurekaApplication" />
-      <item itemvalue="Spring Boot.RedisApplication" />
-      <item itemvalue="Spring Boot.UserApplication" />
-      <item itemvalue="Spring Boot.webuiApplication" />
-      <item itemvalue="Spring Boot.ZuulApplication" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.webuiApplication" />
-        <item itemvalue="Spring Boot.UserApplication" />
+        <item itemvalue="JUnit.All in xmtx" />
         <item itemvalue="Spring Boot.ZuulApplication" />
-        <item itemvalue="Spring Boot.RedisApplication" />
-        <item itemvalue="Spring Boot.EurekaApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -753,797 +429,85 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="12410394-81c6-4cf3-ab1b-2e38dd436410" name="Default Changelist" comment="" />
-      <created>1577686236690</created>
+      <changelist id="b3516352-3651-407c-ba59-2d1159c78ce9" name="Default Changelist" comment="" />
+      <created>1586242880517</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1577686236690</updated>
-      <workItem from="1577686240063" duration="13761000" />
-      <workItem from="1577795205115" duration="13509000" />
-      <workItem from="1577959146337" duration="277000" />
-      <workItem from="1577959505972" duration="257000" />
-      <workItem from="1577959798496" duration="617000" />
-      <workItem from="1577960451777" duration="11777000" />
-      <workItem from="1578022262052" duration="5488000" />
-      <workItem from="1578198558267" duration="2212000" />
-      <workItem from="1581507196614" duration="3228000" />
-      <workItem from="1581568836898" duration="46048000" />
-      <workItem from="1582120589350" duration="2137000" />
-      <workItem from="1582122821877" duration="797000" />
-      <workItem from="1582123981051" duration="1318000" />
-      <workItem from="1582125347933" duration="478000" />
-      <workItem from="1582125887790" duration="13961000" />
-      <workItem from="1582262855130" duration="24704000" />
-      <workItem from="1582697885609" duration="809000" />
-      <workItem from="1583340314893" duration="28813000" />
-      <workItem from="1583568588158" duration="19503000" />
-      <workItem from="1584798873888" duration="93429000" />
-      <workItem from="1586067800715" duration="100000" />
-      <workItem from="1586067910359" duration="4959000" />
+      <updated>1586242880517</updated>
+      <workItem from="1586242882178" duration="149000" />
+      <workItem from="1586243044429" duration="856000" />
+      <workItem from="1586243915466" duration="459000" />
+      <workItem from="1586244399657" duration="6517000" />
     </task>
-    <task id="LOCAL-00001" summary="initial project framework">
-      <created>1577694032761</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1577694032761</updated>
-    </task>
-    <task id="LOCAL-00002" summary="update framework：&#10;1. delete xmtx-module&#10;2. add new module(xmtx-provider-model) in xmtx-provider&#10;3. add a new class:Admin,the entity class of admin">
-      <created>1577783279617</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1577783279617</updated>
-    </task>
-    <task id="LOCAL-00003" summary="update framework：&#10;1. delete xmtx-module&#10;2. add new module(xmtx-provider-model) in xmtx-provider&#10;3. add a new class:Admin,the entity class of admin">
-      <created>1577783488932</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1577783488933</updated>
-    </task>
-    <task id="LOCAL-00004" summary="1. update framework:update &quot;model&quot; module to &quot;admin&quot;&#10;2. build register center:eureka&#10;3. build admin module framework">
-      <created>1578023091682</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1578023091682</updated>
-    </task>
-    <task id="LOCAL-00005" summary="1、增加两个模块：jobfair（招聘发布模块）和jobfairComment（招聘贴的评论模块）；">
-      <created>1581575280163</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1581575280163</updated>
-    </task>
-    <task id="LOCAL-00006" summary="1. 完成jobfairComment模块业务，提供评论增、删、查功能&#10;2. 更新了sql文件，数据库有稍微修改&#10;3. 上传了API文件">
-      <created>1581920203967</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1581920203967</updated>
-    </task>
-    <task id="LOCAL-00007" summary="1.完成前后端对接">
-      <created>1582341060190</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1582341060190</updated>
-    </task>
-    <task id="LOCAL-00008" summary="1.完成redis模块搭建并连接redis服务器&#10;2.完成用户登陆模块：使用token+bcrypt确保安全">
-      <created>1583818705098</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1583818705098</updated>
-    </task>
-    <task id="LOCAL-00009" summary="增加了历史记录模块，增加了热榜，招聘信息的查询改成了分页的，增加了redis缓存招聘信息">
-      <created>1585897311795</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1585897311795</updated>
-    </task>
-    <task id="LOCAL-00010" summary="修改了一下web">
-      <created>1585898390304</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1585898390304</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="JobFairCommentRepositoryTest_testSave - 2020.02.15 at 01h 27m 08s.xml">
-      <configuration name="JobFairCommentRepositoryTest.testSave" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JobFairCommentRepositoryTest_testSave - 2020.02.15 at 01h 30m 38s.xml">
-      <configuration name="JobFairCommentRepositoryTest.testSave" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JobFairCommentRepositoryTest_testSave - 2020.02.15 at 01h 34m 22s.xml">
-      <configuration name="JobFairCommentRepositoryTest.testSave" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JobFairCommentRepositoryTest_testSave - 2020.02.15 at 01h 37m 37s.xml">
-      <configuration name="JobFairCommentRepositoryTest.testSave" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JobFairCommentRepositoryTest_testSave - 2020.02.15 at 01h 40m 19s.xml">
-      <configuration name="JobFairCommentRepositoryTest.testSave" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AdminRepositoryTest_findAllByEnabled - 2020.02.15 at 01h 42m 31s.xml">
-      <configuration name="AdminRepositoryTest.findAllByEnabled" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JobFairCommentRepositoryTest_testSave - 2020.02.15 at 01h 47m 48s.xml">
-      <configuration name="JobFairCommentRepositoryTest.testSave" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JobFairCommentRepositoryTest_testSave - 2020.02.15 at 01h 51m 03s.xml">
-      <configuration name="JobFairCommentRepositoryTest.testSave" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JobFairCommentRepositoryTest_testSave - 2020.02.15 at 01h 53m 01s.xml">
-      <configuration name="JobFairCommentRepositoryTest.testSave" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JobFairCommentRepositoryTest_testSave - 2020.02.16 at 20h 48m 30s.xml">
-      <configuration name="JobFairCommentRepositoryTest.testSave" configurationId="JUnit" />
-    </history-entry>
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="290768000" />
-  </component>
-  <component name="TodoView" selected-index="3">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1723" height="976" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49823323" visible="true" weight="0.24864864" />
-      <window_info id="Structure" order="1" sideWeight="0.5017668" side_tool="true" weight="0.23483483" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32858837" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4996997" weight="0.40332147" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.34519574" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4996997" weight="0.32977462" />
-      <window_info anchor="bottom" id="Database Console" order="7" weight="0.32977462" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4990991" weight="0.113879" />
-      <window_info anchor="bottom" id="Database Changes" order="10" sideWeight="0.4996997" weight="0.32977462" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4996997" weight="0.32977462" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5003003" side_tool="true" weight="0.32977462" />
-      <window_info anchor="bottom" id="Spring" order="13" sideWeight="0.4996997" weight="0.32977462" />
-      <window_info anchor="bottom" id="Java Enterprise" order="14" sideWeight="0.4996997" weight="0.32977462" />
-      <window_info active="true" anchor="bottom" id="Messages" order="15" sideWeight="0.4978979" visible="true" weight="0.40806642" />
-      <window_info anchor="bottom" id="Run Dashboard" order="16" sideWeight="0.4978979" weight="0.3534994" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24984986" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" weight="0.3981982" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" visible="true" weight="0.17117117" />
-      <window_info anchor="right" id="Bean Validation" order="9" weight="0.32972974" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list />
-          </value>
-        </entry>
-        <entry key="User">
-          <value>
-            <list />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="initial project framework" />
-    <MESSAGE value="update framework：&#10;1. delete xmtx-module&#10;2. add new module(xmtx-provider-model) in xmtx-provider&#10;3. add a new class:Admin,the entity class of admin" />
-    <MESSAGE value="1. update framework:update &quot;model&quot; module to &quot;admin&quot;&#10;2. build register center:eureka&#10;3. build admin module framework" />
-    <MESSAGE value="1、增加两个模块：jobfair（招聘发布模块）和jobfairComment（招聘贴的评论模块）；" />
-    <MESSAGE value="1. 完成jobfairComment模块业务，提供评论增、删、查功能&#10;2. 更新了sql文件，数据库有稍微修改&#10;3. 上传了API文件" />
-    <MESSAGE value="迭代1" />
-    <MESSAGE value="1.完成前后端对接" />
-    <MESSAGE value="1.完成redis模块搭建并连接redis服务器&#10;2.完成用户登陆模块：使用token+bcrypt确保安全" />
-    <MESSAGE value="增加了历史记录模块，增加了热榜，招聘信息的查询改成了分页的，增加了redis缓存招聘信息" />
-    <MESSAGE value="修改了一下web" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改了一下web" />
+    <MESSAGE value="修改了common,eueka,zuul,webui和provider,provider-api的user,redis,jobfair,history的pom.xml文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改了common,eueka,zuul,webui和provider,provider-api的user,redis,jobfair,history的pom.xml文件" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-model/src/test/java/com/xmtx/provider/mapper/AdminMapperTest.java</url>
-          <line>23</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-model/src/test/java/com/xmtx/provider/repository/AdminRepositoryTest.java</url>
-          <line>23</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/test/java/com/xmtx/admin/repository/AdminRepositoryTest.java</url>
-          <line>23</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/test/java/com/xmtx/admin/service/AdminServiceTest.java</url>
-          <line>20</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/controller/jobfairController.java</url>
-          <line>24</line>
-          <properties />
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/controller/jobfairController.java</url>
-          <line>26</line>
-          <properties />
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/src/main/java/com/xmtx/redis/controller/RedisOperationController.java</url>
-          <line>49</line>
-          <properties />
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/test/java/com/xmtx/jobfairComment/repository/JobFairCommentRepositoryTest.java</url>
-          <line>14</line>
-          <properties field="jobfairCommentRepository" class="com.xmtx.jobfairComment.repository.JobFairCommentRepositoryTest" />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/VO/ResultVO.java</url>
-          <line>16</line>
-          <properties field="data" class="com.xmtx.webui.VO.ResultVO" />
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-    <watches-manager>
-      <configuration name="SpringBootApplicationConfigurationType">
-        <watch expression="list" />
-      </configuration>
-    </watches-manager>
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand>
-      <path>
-        <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-        <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-      </path>
-    </expand>
-    <select />
-  </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/utils/CommonUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="114" column="26" selection-start-line="114" selection-start-column="26" selection-end-line="114" selection-end-column="26" />
-          <folding>
-            <element signature="e#2640#2641#0" expanded="true" />
-            <element signature="e#2695#2696#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/enums/ResultEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/enums/RoleEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/config.java" />
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/config/userConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-            <element signature="e#373#374#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/dataobject/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/vo/JobFairInfoVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/converter/JobFairForm_Release2JobFair.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="16" column="56" lean-forward="true" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/converter/JobFair2JobFairInfoVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/java/com/xmtx/history/service/impl/BrowsingHistoryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/service/Impl/JobFairServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-372">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#job_fair_findById#0;class#JobFairServiceImpl#0" />
-            <element signature="method#job_fair_showAll#0;class#JobFairServiceImpl#0" />
-            <element signature="method#job_fair_update#0;class#JobFairServiceImpl#0" />
-            <element signature="e#3517#3518#0" expanded="true" />
-            <element signature="e#3565#3566#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/converter/UserVOtoUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/controller/JobCommentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-124">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/repository/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/utils/CommonConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="20" column="64" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/VO/UserSignSuccessVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/VO/UserVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-gateway/xmtx-gateway.iml" />
-    <entry file="file://$PROJECT_DIR$/xmtx-gateway/src/main/resources/application.yml" />
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/JobfairApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-gateway/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/xmtx-gateway/src/main/java/com/xmtx/gateway/GatewayApplication.java" />
-    <entry file="file://$PROJECT_DIR$/xmtx-test/pom.xml" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.2.1.RELEASE/spring-boot-2.2.1.RELEASE.jar!/org/springframework/boot/SpringApplication.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-eureka/src/main/java/com/xmtx/eureka/EurekaApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-eureka/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-200">
-          <caret column="38" selection-start-column="38" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1183">
-          <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="59" column="20" lean-forward="true" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-zuul/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/UserApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/utils/EntityUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" selection-start-line="3" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://a1400cbb-8c12-4b93-837f-23790389ef30/schema/db_mj4x/table/user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="c1281f12-4543-43dd-a49e-ea05d212d554">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/controller/userController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-zuul/src/main/java/com/xmtx/zuul/ZuulApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-webui/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-431">
-          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="41" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="8" column="47" lean-forward="true" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/controller/JobFairController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/sign-in.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" selection-start-column="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/sign-up.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2194" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-zuul/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/webuiApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/controller/jobfairController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="24" column="78" selection-start-line="24" selection-start-column="78" selection-end-line="24" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/config/SpringMVCConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArquillianSettingsConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>xmtx-provider-jobfair:Web exploded</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Web (xmtx-provider-jobfair)|Web</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>xmtx-webui</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Thymeleaf-2.1.4</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Notifications" timestamp="1586250732433">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1586250732433" />
+    <state x="552" y="178" key="#SQL_Dialects" timestamp="1586247659210">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#SQL_Dialects/0.0.1920.1040@0.0.1920.1040" timestamp="1586247659210" />
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586247666277">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586247666277" />
+    <state x="651" y="169" key="CommitChangelistDialog2" timestamp="1586250648908">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="651" y="169" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1586250648908" />
+    <state width="1860" height="182" key="GridCell.Tab.0.bottom" timestamp="1586250648952">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="182" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586250648952" />
+    <state width="1860" height="182" key="GridCell.Tab.0.center" timestamp="1586250648952">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="182" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586250648952" />
+    <state width="1860" height="182" key="GridCell.Tab.0.left" timestamp="1586250648952">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="182" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586250648952" />
+    <state width="1860" height="182" key="GridCell.Tab.0.right" timestamp="1586250648952">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="182" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586250648952" />
+    <state width="1860" height="258" key="GridCell.Tab.1.bottom" timestamp="1586246739814">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="258" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586246739814" />
+    <state width="1860" height="258" key="GridCell.Tab.1.center" timestamp="1586246739814">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="258" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586246739814" />
+    <state width="1860" height="258" key="GridCell.Tab.1.left" timestamp="1586246739814">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="258" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586246739814" />
+    <state width="1860" height="258" key="GridCell.Tab.1.right" timestamp="1586246739814">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="258" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586246739814" />
+    <state x="922" y="261" key="SettingsEditor" timestamp="1586250328857">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="922" y="261" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1586250328857" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1586250690230">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586250690230" />
+    <state x="640" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1586243922221">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586243922221" />
   </component>
 </project>
