@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b3516352-3651-407c-ba59-2d1159c78ce9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-eureka/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +143,7 @@
       <workItem from="1586242882178" duration="149000" />
       <workItem from="1586243044429" duration="856000" />
       <workItem from="1586243915466" duration="459000" />
-      <workItem from="1586244399657" duration="7840000" />
+      <workItem from="1586244399657" duration="8962000" />
     </task>
     <task id="LOCAL-00001" summary="修改了common,eueka,zuul,webui和provider,provider-api的user,redis,jobfair,history的pom.xml文件">
       <created>1586250971452</created>
@@ -156,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586251575543</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="修改eureka的pom.xml">
+      <created>1586252350003</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1586252350003</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,7 +175,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="修改了common,eueka,zuul,webui和provider,provider-api的user,redis,jobfair,history的pom.xml文件" />
     <MESSAGE value="对没有main函数的模组的pom文件删除了打包配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="对没有main函数的模组的pom文件删除了打包配置" />
+    <MESSAGE value="修改eureka的pom.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改eureka的pom.xml" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Notifications" timestamp="1586250732433">
@@ -180,10 +191,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586247666277" />
-    <state x="325" y="128" key="CommitChangelistDialog2" timestamp="1586251575075">
+    <state x="325" y="128" key="CommitChangelistDialog2" timestamp="1586252349562">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="325" y="128" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1586251575075" />
+    <state x="325" y="128" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1586252349562" />
     <state width="1877" height="313" key="GridCell.Tab.0.bottom" timestamp="1586252258777">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -220,10 +231,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="922" y="261" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1586250328857" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1586251578236">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1586252351344">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586251578236" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586252351344" />
     <state x="640" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1586243922221">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
