@@ -25,7 +25,10 @@ public class UserServiceImpl implements UserService {
     public void addNewUser(User user){
         user.setGmt_create(new Date());
         user.setGmt_modified(new Date());
+        // 默认0是普通用户，1是企业用户
         user.setIs_enterprise(0);
+        // 默认0时允许，1是封禁
+        user.setEnabled(0);
         userRepository.save(user);
     }
 }

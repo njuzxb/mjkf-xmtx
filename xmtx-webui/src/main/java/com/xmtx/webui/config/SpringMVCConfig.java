@@ -47,6 +47,12 @@ public class SpringMVCConfig implements WebMvcConfigurer {
         viewName = "profile";
 
         registry.addViewController(urlPath).setViewName(viewName);
+
+        // 跳转到企业详情
+        urlPath = "/company-profile.html";
+        viewName = "company-profile";
+
+        registry.addViewController(urlPath).setViewName(viewName);
     }
 
 }

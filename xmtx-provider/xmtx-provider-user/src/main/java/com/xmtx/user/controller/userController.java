@@ -6,6 +6,7 @@ import com.xmtx.common.utils.CommonUtils;
 import com.xmtx.redis.client.RedisClient;
 import com.xmtx.common.VO.ResultVO;
 import com.xmtx.user.VO.UserSignSuccessVO;
+import com.xmtx.user.VO.UserSignVO;
 import com.xmtx.user.converter.UserVOtoUser;
 import com.xmtx.user.dataobject.User;
 import com.xmtx.common.enums.ResultEnum;
@@ -36,12 +37,10 @@ public class userController {
 
 
     @RequestMapping("/login")
-    public ResultVO login(
-            @RequestParam("loginAcct") String loginAcct,
-            @RequestParam("userPswd") String userPswd) {
+    public ResultVO login(UserSignVO userSignVO) {
 
         // 根据登录账号查询数据库获取User对象
-        Optional<User> user = userService.findBuUsername(loginAcct);
+        Optional<User> user = userService.findBuUsername(userSignVO.getLoginAcct());
         // 检测对象是否为空
         if (!user.isPresent()) {
             return ResultVOUtil.error(ResultEnum.USER_NOT_EXIST);
@@ -50,7 +49,7 @@ public class userController {
         String userpswdDatabase = user.get().getPassword();
 
         //  4.比较密码
-        boolean matcheResult = passwordEncoder.matches(userPswd, userpswdDatabase);
+        boolean matcheResult = passwordEncoder.matches(userSignVO.getUserPswd(), userpswdDatabase);
         if(!matcheResult) {
             return ResultVOUtil.error(ResultEnum.PSW_ERROR);
         }

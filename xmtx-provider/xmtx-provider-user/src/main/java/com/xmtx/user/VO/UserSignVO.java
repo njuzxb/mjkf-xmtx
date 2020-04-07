@@ -9,14 +9,12 @@ import java.io.Serializable;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class UserSignSuccessVO implements Serializable {
+public class UserSignVO implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    private String username;
-    private String name;
-    private String token;
-    private Integer is_enterprise;
+    private String loginAcct;
+    private String userPswd;
 
 
 }
