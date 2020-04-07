@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="UTF-8" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="www.thymeleaf.org">
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -28,26 +28,27 @@
                         <h5 class="font-weight-bold mt-3">Welcome Back</h5>
                         <p class="text-muted">Don't miss your next opportunity. Sign in to stay updated on your professional world.</p>
                      </div>
-                     <form action="index.html">
+                     <form id="form_login">
                         <div class="form-group">
-                           <label class="mb-1">Email or Phone</label>
+                           <label class="mb-1">Account/账号</label>
                            <div class="position-relative icon-form-control">
                               <i class="feather-user position-absolute"></i>
-                              <input type="email" class="form-control">
+                              <input type="text" class="form-control" id="loginAcct" name="loginAcct">
                            </div>
                         </div>
                         <div class="form-group">
                            <label class="mb-1">Password</label>
                            <div class="position-relative icon-form-control">
                               <i class="feather-unlock position-absolute"></i>
-                              <input type="password" class="form-control">
+                              <input type="password" class="form-control" id="userPswd" name="userPswd">
                            </div>
                         </div>
+                     </form>
                         <div class="custom-control custom-checkbox mb-3">
                            <input type="checkbox" class="custom-control-input" id="customCheck1">
                            <label class="custom-control-label" for="customCheck1">Remember password</label>
                         </div>
-                        <button class="btn btn-primary btn-block text-uppercase" type="submit"> Sign in </button>
+                        <button class="btn btn-primary btn-block text-uppercase" type="button" id="login_button"> Sign in </button>
                         <div class="text-center mt-3 border-bottom pb-3">
                            <p class="small text-muted">Or login with</p>
                            <div class="row">
@@ -66,18 +67,58 @@
                            <a href="forgot-password.html">Forgot password?</a>
                            <span class="ml-auto"> New to Osahanin? <a class="font-weight-bold" href="sign-up.html">Join now</a></span>
                         </div>
-                     </form>
+
                   </div>
                </div>
             </div>
          </div>
       </div>
       <!-- Bootstrap core JavaScript -->
-      <script src="vendor/jquery/jquery.min.js"></script>
+      <script th:src="@{vendor/jquery/jquery.min.js}"></script>
       <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
       <!-- slick Slider JS-->
       <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
       <!-- Custom scripts for all pages-->
       <script src="js/osahan.js"></script>
+      <script type="text/javascript">
+         $("#login_button").click(function(){
+            //1、先进行校验
+            //2、发送ajax请求登陆
+            $.ajax({
+               url:"/user/user/login",
+               type:"POST",
+               data:$("#form_login").serialize(),
+               success:function(result){
+                  if(result.code != 0){
+                     show_validate_msg("#input_accountid","error",result.msg);
+                  } else {
+                     let resultData = result.data;
+                     if(!window.localStorage){
+                        alert("浏览器不支持localstorage，请更新浏览器");
+                     }else{
+                        //var storage=window.localStorage;
+                        localStorage.setItem("loginName", resultData.username);
+                        localStorage.setItem("name", resultData.name);
+                        localStorage.setItem("token", resultData.token);
+                        localStorage.setItem("is_enterprise", resultData.is_enterprise);
+                     }
+                      window.location="index.html";
+                  }
+               }
+            });
+         });
+         function show_validate_msg(ele,status,msg){
+            $(ele).parent().removeClass("has-success has-error");
+            $(ele).next("span").text(" ");
+            if("success"==status){
+               $(ele).parent().addClass("has-success");
+               $(ele).next("span").text(msg);
+            }
+            else if("error"==status){
+               $(ele).parent().addClass("has-error");
+               $(ele).next("span").text(msg);
+            }
+         }
+      </script>
    </body>
 </html>

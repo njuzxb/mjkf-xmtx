@@ -5,14 +5,14 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/db_mj4x?characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC
     username: root
-    password: 123456
+    password: 123
   jpa:
     hibernate:
       ddl-auto: none
     show-sql: true
   redis:
-    host: 127.0.0.1
-    password: 123456
+    host: 172.19.240.155
+    password: mf1932245
   cache:
     redis:
       use-key-prefix: true
@@ -24,4 +24,4 @@ eureka:
     service-url:
       defaultZone: http://localhost:1000/eureka/
 server:
-  port: 8083
+  port: 2003

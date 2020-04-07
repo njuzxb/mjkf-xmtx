@@ -189,8 +189,8 @@
                            <div class="status-indicator bg-success"></div>
                         </div>
                         <div class="font-weight-bold">
-                           <div class="text-truncate">Gurdeep Osahan</div>
-                           <div class="small text-gray-500">UI/UX Designer</div>
+                           <div class="text-truncate" id="nav_name"></div>
+                           <div class="small text-gray-500" id="nav_userName"></div>
                         </div>
                      </div>
                      <div class="dropdown-divider"></div>
@@ -321,8 +321,8 @@
                   <div class="box mb-3 shadow-sm border rounded bg-white profile-box text-center">
                      <div class="py-4 px-3 border-bottom">
                         <img src="img/p13.png" class="img-fluid mt-2 rounded-circle" alt="Responsive image">
-                        <h5 class="font-weight-bold text-dark mb-1 mt-4">Gurdeep Osahan</h5>
-                        <p class="mb-0 text-muted">UI / UX Designer</p>
+                        <h5 class="font-weight-bold text-dark mb-1 mt-4" id="left_name"></h5>
+                        <p class="mb-0 text-muted" id="left_username"></p>
                      </div>
                      <div class="d-flex">
                         <div class="col-6 border-right p-3">
@@ -519,8 +519,13 @@
       <script src="js/osahan.js"></script>
       <script type="text/javascript">
          //1、页面加载完成以后，直接去发送一个Ajax请求，要到数据
+         //2、初始化页面信息
          $(function(){
             to_page();
+            $("#nav_name").text(localStorage.getItem("name"));
+            $("#nav_userName").text(localStorage.getItem("loginName"));
+            $("#left_name").text(localStorage.getItem("name"));
+            $("#left_username").text(localStorage.getItem("loginName"));
          });
          //查询所有项目
          function to_page() {
