@@ -1,6 +1,5 @@
 package com.xmtx.jobfairComment.dataobject;
 
-
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
@@ -20,7 +19,9 @@ public class JobFairComment implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id; //主键
 
-    private Integer jobid;
+    private Integer jobId;
+
+    private Integer userId;
 
     private String username;
 
