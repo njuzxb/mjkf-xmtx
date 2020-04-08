@@ -16,7 +16,6 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Optional;
@@ -48,11 +47,12 @@ public class userController {
         // 获取从数据库查询得到的密码
         String userpswdDatabase = user.get().getPassword();
 
-        //  4.比较密码
+        //  比较密码
         boolean matcheResult = passwordEncoder.matches(userSignVO.getUserPswd(), userpswdDatabase);
         if(!matcheResult) {
             return ResultVOUtil.error(ResultEnum.PSW_ERROR);
         }
+
         // 生成token
         String token = CommonUtils.generateToken();
 
@@ -72,9 +72,10 @@ public class userController {
         BeanUtils.copyProperties(user.get(), userSignSuccessVO);
         userSignSuccessVO.setToken(token);
 
-        // 1返回结果
+        // 返回结果
         return ResultVOUtil.success(userSignSuccessVO);
     }
+
 
     @RequestMapping("/register")
     public ResultVO register(UserVO userVO) {
