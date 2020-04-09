@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="UTF-8" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="www.thymeleaf.org">
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -209,13 +209,13 @@
                <div class="col-md-12">
                   <div class="d-flex align-items-center py-3">
                      <div class="profile-left">
-                        <h5 class="font-weight-bold text-dark mb-1 mt-0">Senior Ruby Developer</h5>
-                        <p class="mb-0 text-muted"><a class="mr-2 font-weight-bold" href="#">Envato</a> <i class="feather-map-pin"></i> Melbourne, AU -- DatePosted 2 weeks ago</p>
+                        <h5 class="font-weight-bold text-dark mb-1 mt-0" id="jobTitle"></h5>
+                        <p class="mb-0 text-muted"><a class="mr-2 font-weight-bold" href="#" id="ename"></a> <i class="feather-map-pin"></i> 鼓楼 -- DatePosted 3 days ago</p>
                      </div>
-                     <div class="profile-right ml-auto">
-                        <button type="button" class="btn btn-light mr-1"> &nbsp; Save &nbsp; </button>
-                        <button type="button" class="btn btn-primary"> &nbsp; Apply &nbsp; </button>
-                     </div>
+<!--                     <div class="profile-right ml-auto">-->
+<!--                        <button type="button" class="btn btn-light mr-1"> &nbsp; Save &nbsp; </button>-->
+<!--                        <button type="button" class="btn btn-primary"> &nbsp; Apply &nbsp; </button>-->
+<!--                     </div>-->
                   </div>
                </div>
             </div>
@@ -226,19 +226,19 @@
             <div class="row">
                <!-- Main Content -->
                <main class="col col-xl-6 order-xl-2 col-lg-12 order-lg-1 col-md-12 col-sm-12 col-12">
+<!--                  <div class="box shadow-sm border rounded bg-white mb-3">-->
+<!--                     <div class="box-title border-bottom p-3">-->
+<!--                        <h6 class="m-0">Overview</h6>-->
+<!--                     </div>-->
+<!--                     <div class="box-body p-3">-->
+<!--                        <p>Headquartered in Melbourne, Australia, Envato is a completely online company with an ecosystem of sites and services to help people get creative. We’ve consistently been named as one of the Best Places to Work in Australia, since 2015, in the BRW Awards , and we’ve also been awarded the title of Australia's Coolest Company for Women and Diversity by JobAdvisor.</p>-->
+<!--                        <p class="mb-0">Envato was found in 2006 and, since then, we’ve helped a community of creative sellers earn more than $500 Million . Millions of people around the world choose our marketplace, studio and courses to buy files, hire freelancers, or learn the skills needed to build websites, videos, apps, graphics and more. Find out more at Envato Market , Envato Elements , Envato Sites , Envato Studio and Tuts+...  <a class="mr-2 font-weight-bold" href="#">Read More</a> -->
+<!--                        </p>-->
+<!--                     </div>-->
+<!--                  </div>-->
                   <div class="box shadow-sm border rounded bg-white mb-3">
                      <div class="box-title border-bottom p-3">
-                        <h6 class="m-0">Overview</h6>
-                     </div>
-                     <div class="box-body p-3">
-                        <p>Headquartered in Melbourne, Australia, Envato is a completely online company with an ecosystem of sites and services to help people get creative. We’ve consistently been named as one of the Best Places to Work in Australia, since 2015, in the BRW Awards , and we’ve also been awarded the title of Australia's Coolest Company for Women and Diversity by JobAdvisor.</p>
-                        <p class="mb-0">Envato was found in 2006 and, since then, we’ve helped a community of creative sellers earn more than $500 Million . Millions of people around the world choose our marketplace, studio and courses to buy files, hire freelancers, or learn the skills needed to build websites, videos, apps, graphics and more. Find out more at Envato Market , Envato Elements , Envato Sites , Envato Studio and Tuts+...  <a class="mr-2 font-weight-bold" href="#">Read More</a> 
-                        </p>
-                     </div>
-                  </div>
-                  <div class="box shadow-sm border rounded bg-white mb-3">
-                     <div class="box-title border-bottom p-3">
-                        <h6 class="m-0">Job Details</h6>
+                        <h6 class="m-0">招聘信息详情</h6>
                      </div>
                      <div class="box-body">
                         <table class="table table-borderless mb-0">
@@ -471,5 +471,86 @@
       <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
       <!-- Custom scripts for all pages-->
       <script src="js/osahan.js"></script>
+      <script type="text/javascript">
+         //1、页面加载完成以后，直接去发送一个Ajax请求，要到数据
+         //2、初始化页面信息
+         $(function(){
+            to_page();
+         });
+         // 拿到url中的参数
+         function getQueryVariable(variable)
+         {
+            var query = window.location.search.substring(1);
+            var vars = query.split("&");
+            for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair[0] == variable){return pair[1];}
+            }
+            return(false);
+         }
+         //查询所有项目
+         function to_page() {
+            var jobid = getQueryVariable("jobid")
+            $.ajax({
+               url: "/jobfair/jobfair/findByJobid",
+               data:"jobid="+parseInt(jobid) +"&userid="+ 1 ,
+               type: "GET",
+               success: function (result) {
+                  console.log(result);
+                  //清空table表
+                 // $("#recommend_jobs_box").empty();
+                  //1、解析并显示推荐的招聘会数据
+                  //build_jobFair_box(result, 0);
+               }
+            });
+         }
+         function moreList() {
+            var pn = parseInt($("#recommend_jobs_box").attr("pn"));
+            $.ajax({
+               url: "http://localhost:9000/jobfair/jobfair/list?pn=" + (pn+1) ,
+               type: "GET",
+               success: function (result) {
+                  //console.log(result);
+                  //清空table表
+                  // $("#recommend_jobs_box").empty();
+                  //1、解析并显示推荐的招聘会数据
+                  build_jobFair_box(result, pn+1);
+               }
+            });
+         }
+
+         function build_jobFair_box(result, pn){
+            $("#recommend_jobs_box").attr("pn", pn);
+            var jobs = result.data;
+            $.each(jobs,function(index,item){
+
+
+               var title = $("<h6 class=\"font-weight-bold text-dark mb-0 text-truncate\"></h6>").append(item.jobfairTitle);
+               var name = $("<div class=\"text-truncate text-primary\"></div>").append(item.enterpriseName);
+               var address = $(" <div class=\"small text-gray-500\"><i class=\"feather-map-pin\"></i></div>").append(item.jobfairAddress);
+
+               var head = $("<div class=\"overflow-hidden mr-2\"></div>").append(title).append(name).append(address);
+               var logo = $("<img class=\"img-fluid ml-auto\" src=\"img/l1.png\" alt=\"\">");
+
+               var headBos = $("<div class=\"d-flex align-items-center p-3 job-item-header\"></div>").append(head).append(logo);
+
+               var heart = $("<a href=\"#\" class=\"mr-3 text-secondary\"><i class=\"feather-heart text-danger\"></i> 16</a>");
+               var comment = $("<a href=\"#\" class=\"mr-3 text-secondary\"><i class=\"feather-message-square\"></i> 8</a>");
+               var share = $("<a href=\"#\" class=\"mr-3 text-secondary\"><i class=\"feather-share-2\"></i> 2</a>");
+
+               var center = $("<div class=\"d-flex align-items-center p-3 border-top border-bottom job-item-body\"></div>").append(heart).append(comment).append(share);
+
+               var footer = $(" <div class=\"p-3 job-item-footer\"></div>").append($("<small class=\"text-gray-500\"><i class=\"feather-clock\"></i> Posted 3 Days ago</small>"));
+
+
+               var jobDetail = $("<a href=\"job-profile.html?jobid=" + item.jobfairId + "\"></a>").append($("<div class=\"shadow-sm border rounded bg-white job-item job-item mr-2 mt-3 mb-3\"></div>").append(headBos).append(center).append(footer));
+
+               $("<div class=\"osahan-slider-item\"></div>").append(jobDetail).appendTo("#recommend_jobs_box");
+
+
+
+            });
+         }
+      </script>
    </body>
 </html>
