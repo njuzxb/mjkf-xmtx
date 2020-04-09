@@ -17,11 +17,13 @@ import com.xmtx.common.utils.ResultVOUtil;
 import com.xmtx.common.VO.ResultVO;
 import com.xmtx.redis.client.RedisClient;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.*;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @ Author     ：djq.
@@ -44,7 +46,9 @@ public class JobFairController {
     @Autowired
     RedisClient redisClient;
 
-    // 查询Top列表
+    Object addProve_Num = new Object();
+
+    // TODO 查询Top列表
     public void getTopNJobid(){
         // 1、从redis中取出zset（topN-jobid）;
         // 2、根据循环读取放入List中
@@ -72,7 +76,7 @@ public class JobFairController {
             // 根据id查询招聘信息
             Optional<JobFair> jobFair = jobFairService.job_fair_findById(jobid);
             if(!jobFair.isPresent()){
-                return ResultVOUtil.error("招聘信息已被删除");
+                return ResultVOUtil.error("招聘信息不存在");
             }
             // redisClient.saveNormalStringKeyValue(jobid.toString(), JSON.toJSONString(jobFair.get()), 60 * 24);
             // TODO 2、根据查询结果，成功则插入浏览记录（是否要用消息队列）
@@ -83,17 +87,38 @@ public class JobFairController {
 
     }
 
-    //get方法获取所有招聘会列表
-    @GetMapping("/list")
-    public ResultVO<JobFairInfoVO> list(Integer pn){
-        List<JobFair> list = jobFairService.job_fair_showAll(pn);
-        //List<JobFair> list = jobFairService.job_fair_show();
+    //点赞数，传入jobfair的id，根据id查询招聘会信息并将点赞数加一
+    @GetMapping("/addProve")
+    @Transactional
+    public ResultVO addProve(@RequestParam("jobid") Integer jobid){
+        Optional<JobFair> jobFair = jobFairService.job_fair_findById(jobid);
+        if(!jobFair.isPresent()){
+            return ResultVOUtil.error("招聘信息已被删除");
+        }
+        //原子操作加1
+        AtomicInteger proveNum = new AtomicInteger(jobFair.get().getProveNum());
+        Integer newProve = proveNum.incrementAndGet();
+        JobFair jobFair1 = jobFair.get();
+        Integer old_prove = jobFair.get().getProveNum();
+        jobFair1.setProveNum(newProve);
+        jobFairRepository.save(jobFair1);
+        HashMap<String,Integer> res = new HashMap<>(16);
+        res.put("jobId",jobFair1.getId());
+        res.put("old_prove_num",old_prove);
+        res.put("new_prove_num",jobFair1.getProveNum());
+        return ResultVOUtil.success(res);
+    }
+
+    private ResultVO<JobFairInfoVO> list2VO(List<JobFair> list){
         List<JobFairInfoVO> res = new ArrayList<>();
-        System.out.println("展示招聘会列表");
+        System.err.println("展示招聘会列表");
         for(int i = 0; i < list.size(); i ++){
             JobFair tmpJF = list.get(i);
             //得到构造数据中的公司名字
             Optional<EnterpriseInfo> tmpEIO = enterpriseInfoRepository.findById(tmpJF.getEid());
+            if(!tmpEIO.isPresent()){
+                return ResultVOUtil.error("not exists");
+            }
             EnterpriseInfo tmpEI = tmpEIO.get();
             String name = tmpEI.getEnterpriseName();
             //利用转换器构造完整数据，并存入结果列表中
@@ -103,19 +128,27 @@ public class JobFairController {
         }
         return ResultVOUtil.success(res);
     }
-
+    //get方法获取所有招聘会列表
+    @GetMapping("/list")
+    public ResultVO<JobFairInfoVO> list(Integer pn){
+        List<JobFair> list = jobFairService.job_fair_show(pn);
+        return list2VO(list);
+    }
+    //get方法获取所有招聘会列表
+    @GetMapping("/listAll")
+    public ResultVO<JobFairInfoVO> listAll(Integer pn){
+        List<JobFair> list = jobFairService.job_fair_show_All();
+        return list2VO(list);
+    }
 
 
     @PostMapping("/release")
-    public ResultVO<Map<String,Integer>> release(@Valid JobFairForm_Release jobFairFormRelease/*, BindingResult bindingResult*/){
-        System.out.println("123456");
-        /*if(bindingResult.hasErrors()){
-            // log.error("招聘会发布参数不正确,jobFairFormRelease={}",jobFairFormRelease);
+    public ResultVO<Map<String,Integer>> release(@Valid JobFairForm_Release jobFairFormRelease, BindingResult bindingResult){
+        if(bindingResult.hasErrors()){
             throw new JobFairException(ResultEnum.PARAM_ERROR);
-        }*/
+        }
         //将form转换为jobfair,就能调用service中的发布功能啦
         JobFair jobFair = JobFairForm_Release2JobFair.convert(jobFairFormRelease);
-        //jobFairService.job_fair_release(jobFair);
         jobFairService.job_fair_update(jobFair);
         Map<String,Integer> map = new HashMap<>();
         map.put("JobFairId",jobFair.getId());
@@ -125,7 +158,6 @@ public class JobFairController {
     @PostMapping("/update")
     public ResultVO<JobFairInfoVO> update(@Valid JobFairForm_Update jobFairFormUpdate, BindingResult bindingResult){
         if(bindingResult.hasErrors()){
-            // log.error("招聘会发布参数不正确,jobFairFormUpdate={}",jobFairFormUpdate);
             throw new JobFairException(ResultEnum.PARAM_ERROR);
         }
         Optional<JobFair> jobFairOptional = jobFairRepository.findById(jobFairFormUpdate.getId());
@@ -145,7 +177,7 @@ public class JobFairController {
         }
         jobFairService.job_fair_update(jobFair);
         // 删除缓存
-       // redisClient.removeByKey(jobFair.getId().toString());
+        redisClient.removeByKey(jobFair.getId().toString());
         JobFairInfoVO jobFairInfoVO = JobFair2JobFairInfoVO.convert(jobFair);
         jobFairInfoVO.setEnterpriseName(tmpEIO.get().getEnterpriseName());
         return ResultVOUtil.success(jobFairInfoVO);

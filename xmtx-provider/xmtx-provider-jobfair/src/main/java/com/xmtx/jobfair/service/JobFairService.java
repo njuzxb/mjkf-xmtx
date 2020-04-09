@@ -25,18 +25,19 @@ public interface JobFairService {
     /*
      * 招聘会列表信息查看
      * */
-    List<JobFair> job_fair_showAll(Integer pn);
+    List<JobFair> job_fair_show(Integer pn);
     //Page<JobFair> job_fair_showAll(Integer pn, Integer size);
 
     /*
      * 招聘会列表信息查看
      * */
-    List<JobFair> job_fair_show();
+    List<JobFair> job_fair_show_All();
 
     /*
      * 招聘会信息修改
      * */
     void job_fair_update(JobFair jobFair);
+
     /*
      * 招聘会信息删除
      * */

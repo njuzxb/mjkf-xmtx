@@ -36,9 +36,8 @@ public class JobFairServiceImpl implements JobFairService {
     @Autowired
     EnterpriseInfoRepository enterpriseInfoRepository;
 
-
     @Override
-    @Cacheable(key = "#p0", unless = "#result == null ")
+    //@Cacheable(key = "#p0", unless = "#result == null ")
     public Optional<JobFair> job_fair_findById(Integer id){
 
         return jobFairRepository.findByIdAndEnabled(id, 1);
@@ -46,7 +45,7 @@ public class JobFairServiceImpl implements JobFairService {
     }
 
     @Override
-    public List<JobFair> job_fair_showAll(Integer pn) {
+    public List<JobFair> job_fair_show(Integer pn) {
         Pageable pageable = PageRequest.of(pn,3);
         Slice<JobFair> slice = jobFairRepository.findAll(pageable);
         List<JobFair> list = slice.getContent();
@@ -54,9 +53,10 @@ public class JobFairServiceImpl implements JobFairService {
     }
 
     @Override
-    public List<JobFair> job_fair_show() {
+    public List<JobFair> job_fair_show_All() {
         return jobFairRepository.findAll();
     }
+
 
 //    //发布招聘会时，要先检查有没有这个公司。
 //    @Override
