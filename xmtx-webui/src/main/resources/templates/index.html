@@ -277,9 +277,10 @@
                      </div>
                   </div>
                   <div class="mb-3 shadow-sm rounded box bg-white osahan-slider-main">
-                     <div class="osahan-slider" id="recommend_jobs_box">
-
-                     </div>
+                    <div class="osahan-slider"  id="recommend_jobs_box">
+                       <!--   招聘信息列表-->
+                    </div>
+                     <a class="font-weight-bold p-3 d-block" href="javascript:void(0)" onclick="moreList()" > 加载更多</a>
                   </div>
                   <div class="box mb-3 shadow-sm border rounded bg-white osahan-post">
                      <div class="p-3 d-flex align-items-center border-bottom osahan-post-header">
@@ -530,46 +531,63 @@
          //查询所有项目
          function to_page() {
             $.ajax({
-               url: "/jobfair/jobfair/list?pn=0",
+               url: "http://localhost:9000/jobfair/jobfair/list?pn=0",
                type: "GET",
                success: function (result) {
                   //console.log(result);
+                  //清空table表
+                  $("#recommend_jobs_box").empty();
                   //1、解析并显示推荐的招聘会数据
-                  build_jobFair_box(result);
+                  build_jobFair_box(result, 0);
                }
             });
-            function build_jobFair_box(result){
-               //清空table表
-               $("#recommend_jobs_box").empty();
-               var jobs = result.data;
-               $.each(jobs,function(index,item){
+         }
+         function moreList() {
+            var pn = parseInt($("#recommend_jobs_box").attr("pn"));
+            $.ajax({
+               url: "http://localhost:9000/jobfair/jobfair/list?pn=" + (pn+1) ,
+               type: "GET",
+               success: function (result) {
+                  //console.log(result);
+                  //清空table表
+                  // $("#recommend_jobs_box").empty();
+                  //1、解析并显示推荐的招聘会数据
+                  build_jobFair_box(result, pn+1);
+               }
+            });
+         }
+
+         function build_jobFair_box(result, pn){
+            $("#recommend_jobs_box").attr("pn", pn);
+            var jobs = result.data;
+            $.each(jobs,function(index,item){
 
 
-                  var title = $("<h6 class=\"font-weight-bold text-dark mb-0 text-truncate\"></h6>").append(item.jobfairTitle);
-                  var name = $("<div class=\"text-truncate text-primary\"></div>").append(item.enterpriseName);
-                  var address = $(" <div class=\"small text-gray-500\"><i class=\"feather-map-pin\"></i></div>").append(item.jobfairAddress);
+               var title = $("<h6 class=\"font-weight-bold text-dark mb-0 text-truncate\"></h6>").append(item.jobfairTitle);
+               var name = $("<div class=\"text-truncate text-primary\"></div>").append(item.enterpriseName);
+               var address = $(" <div class=\"small text-gray-500\"><i class=\"feather-map-pin\"></i></div>").append(item.jobfairAddress);
 
-                  var head = $("<div class=\"overflow-hidden mr-2\"></div>").append(title).append(name).append(address);
-                  var logo = $("<img class=\"img-fluid ml-auto\" src=\"img/l1.png\" alt=\"\">");
+               var head = $("<div class=\"overflow-hidden mr-2\"></div>").append(title).append(name).append(address);
+               var logo = $("<img class=\"img-fluid ml-auto\" src=\"img/l1.png\" alt=\"\">");
 
-                  var headBos = $("<div class=\"d-flex align-items-center p-3 job-item-header\"></div>").append(head).append(logo);
+               var headBos = $("<div class=\"d-flex align-items-center p-3 job-item-header\"></div>").append(head).append(logo);
 
-                  var heart = $("<a href=\"#\" class=\"mr-3 text-secondary\"><i class=\"feather-heart text-danger\"></i> 16</a>");
-                  var comment = $("<a href=\"#\" class=\"mr-3 text-secondary\"><i class=\"feather-message-square\"></i> 8</a>");
-                  var share = $("<a href=\"#\" class=\"mr-3 text-secondary\"><i class=\"feather-share-2\"></i> 2</a>");
+               var heart = $("<a href=\"#\" class=\"mr-3 text-secondary\"><i class=\"feather-heart text-danger\"></i> 16</a>");
+               var comment = $("<a href=\"#\" class=\"mr-3 text-secondary\"><i class=\"feather-message-square\"></i> 8</a>");
+               var share = $("<a href=\"#\" class=\"mr-3 text-secondary\"><i class=\"feather-share-2\"></i> 2</a>");
 
-                  var center = $("<div class=\"d-flex align-items-center p-3 border-top border-bottom job-item-body\"></div>").append(heart).append(comment).append(share);
+               var center = $("<div class=\"d-flex align-items-center p-3 border-top border-bottom job-item-body\"></div>").append(heart).append(comment).append(share);
 
-                  var footer = $(" <div class=\"p-3 job-item-footer\"></div>").append($("<small class=\"text-gray-500\"><i class=\"feather-clock\"></i> Posted 3 Days ago</small>"));
-
-
-                  var jobDetail = $("<a href=\"job-profile.html\"></a>").attr("id", item.jobfairId).append($("<div class=\"shadow-sm border rounded bg-white job-item job-item mr-2 mt-3 mb-3\"></div>").append(headBos).append(center).append(footer));
-
-                  $("<div class=\"osahan-slider-item\"></div>").append(jobDetail).appendTo("#recommend_jobs_box");
+               var footer = $(" <div class=\"p-3 job-item-footer\"></div>").append($("<small class=\"text-gray-500\"><i class=\"feather-clock\"></i> Posted 3 Days ago</small>"));
 
 
-               });
-            }
+               var jobDetail = $("<a href=\"job-profile.html\"></a>").attr("id", item.jobfairId).append($("<div class=\"shadow-sm border rounded bg-white job-item job-item mr-2 mt-3 mb-3\"></div>").append(headBos).append(center).append(footer));
+
+               $("<div class=\"osahan-slider-item\"></div>").append(jobDetail).appendTo("#recommend_jobs_box");
+
+
+
+            });
          }
       </script>
    </body>
