@@ -9,14 +9,14 @@
       <link rel="icon" type="image/png" th:href="@{/web/img/fav.png}"/>
       <title></title>
       <!-- Slick Slider -->
-      <link rel="stylesheet" type="text/css" th:href="@{/vendor/slick/slick.min.css}"/>
-      <link rel="stylesheet" type="text/css" th:href="@{/vendor/slick/slick-theme.min.css}"/>
+      <link rel="stylesheet" type="text/css" th:href="@{/web/vendor/slick/slick.min.css}"/>
+      <link rel="stylesheet" type="text/css" th:href="@{/web/vendor/slick/slick-theme.min.css}"/>
       <!-- Feather Icon-->
-      <link th:href="@{vendor/icons/feather.css}" rel="stylesheet" type="text/css">
+      <link th:href="@{/web/vendor/icons/feather.css}" rel="stylesheet" type="text/css">
       <!-- Bootstrap core CSS -->
-      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link th:href="@{/web/vendor/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
       <!-- Custom styles for this template -->
-      <link href="css/style.css" rel="stylesheet">
+      <link th:href="@{/web/css/style.css}" rel="stylesheet">
    </head>
    <body>
       <!-- Navigation -->
@@ -442,7 +442,7 @@
                      </div>
                   </div>
                   <div class="box shadow-sm mb-3 rounded bg-white ads-box text-center overflow-hidden">
-                     <img src="img/ads1.png" class="img-fluid" alt="Responsive image">
+                     <img th:src="@{/web/img/ads1.png}" class="img-fluid" alt="Responsive image">
                      <div class="p-3 border-bottom">
                         <h6 class="font-weight-bold text-gold">Osahanin Premium</h6>
                         <p class="mb-0 text-muted">Grow & nurture your network</p>
@@ -512,12 +512,12 @@
          </div>
       </div>
       <!-- Bootstrap core JavaScript -->
-      <script src="vendor/jquery/jquery.min.js"></script>
-      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script th:src="@{/web/vendor/jquery/jquery.min.js}"></script>
+      <script th:src="@{/web/vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
       <!-- slick Slider JS-->
-      <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+      <script type="text/javascript" th:src="@{/web/vendor/slick/slick.min.js}"></script>
       <!-- Custom scripts for all pages-->
-      <script src="js/osahan.js"></script>
+      <script th:src="@{/web/js/osahan.js}"></script>
       <script type="text/javascript">
          //1、页面加载完成以后，直接去发送一个Ajax请求，要到数据
          //2、初始化页面信息
@@ -581,7 +581,7 @@
                var footer = $(" <div class=\"p-3 job-item-footer\"></div>").append($("<small class=\"text-gray-500\"><i class=\"feather-clock\"></i> Posted 3 Days ago</small>"));
 
 
-               var jobDetail = $("<a href=\"job-profile.html\"></a>").attr("id", item.jobfairId).append($("<div class=\"shadow-sm border rounded bg-white job-item job-item mr-2 mt-3 mb-3\"></div>").append(headBos).append(center).append(footer));
+               var jobDetail = $("<a href=\"job-profile.html?jobid=" + item.jobfairId + "\"></a>").append($("<div class=\"shadow-sm border rounded bg-white job-item job-item mr-2 mt-3 mb-3\"></div>").append(headBos).append(center).append(footer));
 
                $("<div class=\"osahan-slider-item\"></div>").append(jobDetail).appendTo("#recommend_jobs_box");
 

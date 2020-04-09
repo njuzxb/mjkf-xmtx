@@ -4,6 +4,7 @@ import lombok.Data;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 
 /**
  * @ Author     ：djq.
@@ -13,7 +14,7 @@ import javax.validation.constraints.NotNull;
  * @Version: $
  */
 @Data
-public class JobFairForm_Release {
+public class JobFairForm_Release implements Serializable {
     @NotNull(message = "企业id必填")
     private Integer eid;
 

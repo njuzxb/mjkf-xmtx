@@ -4,8 +4,20 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+
+        <option value="$PROJECT_DIR$/xmtx-provider-api/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/xmtx-provider-api/pom.xml" />
+        <option value="$PROJECT_DIR$/xmtx-test/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectResources">
+    <resource url="www.thymeleaf.org" location="$PROJECT_DIR$" />
+>>>>>>> .merge_file_a33112
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />

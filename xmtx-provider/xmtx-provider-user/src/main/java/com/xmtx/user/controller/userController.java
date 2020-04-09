@@ -121,7 +121,7 @@ public class userController {
 //            return resultEntityRemoveByKey;
 //        }
 
-        // 8.远程调用database-provider方法检查登录账号是否被占用
+        // 检查登录账号是否被占用
         String loginAcct = userVO.getLoginName();
         Optional<User> user = userService.findBuUsername(loginAcct);
 

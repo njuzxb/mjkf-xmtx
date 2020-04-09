@@ -78,7 +78,7 @@ public class JobFairServiceImpl implements JobFairService {
 //    }
 
     @Override
-    @CachePut(key = "#p0.id")
+    @CachePut(key = "#p0.id",unless = "#result == null ")
     public void job_fair_update(JobFair jobFair) {
         int eid = jobFair.getEid();
         //根据eid判断公司是否存在
@@ -90,6 +90,7 @@ public class JobFairServiceImpl implements JobFairService {
         //判断该公司的Enable字段是否为1，若为0。则没有发布招聘会的资格
         EnterpriseInfo enterpriseInfo = enterpriseInfoOptional.get();
         if(!enterpriseInfo.isEnabled() || jobFair.getEnabled() == 0){
+            System.out.println(enterpriseInfo.isEnabled()+"  "+jobFair.getEnabled());
             throw new JobFairException(JobFairStatusEnum.DISABLE);
         }
         System.out.println(JobFairStatusEnum.ENABLE.getMsg());

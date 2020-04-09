@@ -9,7 +9,7 @@
         <module name="xmtx-webui" />
         <module name="xmtx-eureka" />
         <module name="xmtx-provider-jobfairComment" />
-        <module name="xmtx-provider-admin" />
+        <module name="xmtx-provider-redis" />
         <module name="xmtx-common" />
         <module name="xmtx-provider-api-jobfairComment" />
         <module name="xmtx-provider-jobfair" />
@@ -18,13 +18,13 @@
         <module name="xmtx-provider-user" />
         <module name="xmtx-provider-api-redis" />
         <module name="xmtx-provider-history" />
+        <module name="xmtx-provider-admin" />
         <module name="xmtx-provider-api-jobfair" />
-        <module name="xmtx-provider-redis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="xmtx" target="1.5" />
-      <module name="xmtx-common" target="8" />
+      <module name="xmtx-common" target="7" />
       <module name="xmtx-eureka" target="1.5" />
       <module name="xmtx-provider" target="1.5" />
       <module name="xmtx-provider-admin" target="1.5" />
@@ -35,10 +35,10 @@
       <module name="xmtx-provider-api-redis" target="1.5" />
       <module name="xmtx-provider-history" target="1.5" />
       <module name="xmtx-provider-jobfair" target="1.8" />
-      <module name="xmtx-provider-jobfairComment" target="1.5" />
+      <module name="xmtx-provider-jobfairComment" target="8" />
       <module name="xmtx-provider-redis" target="1.5" />
-      <module name="xmtx-provider-user" target="8" />
-      <module name="xmtx-webui" target="1.5" />
+      <module name="xmtx-provider-user" target="1.5" />
+      <module name="xmtx-webui" target="8" />
       <module name="xmtx-zuul" target="1.5" />
     </bytecodeTargetLevel>
   </component>

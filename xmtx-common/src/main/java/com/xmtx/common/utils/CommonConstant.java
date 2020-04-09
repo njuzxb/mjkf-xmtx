@@ -20,7 +20,7 @@ public class CommonConstant {
 	public static final String MESSAGE_ACCESS_DENIED = "请登录后再操作！";
 	public static final String MESSAGE_LOGIN_ACCT_ALREADY_IN_USE = "登录账号被占用，请重新设定！";
 	
-	public static final Map<String, String> EXCEPTION_MESSAGE_MAP = new HashMap();
+	public static final Map<String, String> EXCEPTION_MESSAGE_MAP = new HashMap<>();
 	public static final String MESSAGE_RANDOM_CODE_LENGTH_INVALID = "验证码长度不合法！";
 
 	public static final String MESSAGE_REDIS_KEY_OR_VALUE_INVALID = "待存入Redis的key或value不是有效字符串！";
