@@ -1,8 +1,8 @@
 package com.xmtx.jobfairComment.controller;
 
-import com.xmtx.jobfairComment.VO.CommentCreateVO;
-import com.xmtx.jobfairComment.VO.JobFairCommentVO;
-import com.xmtx.jobfairComment.VO.ResultVO;
+import com.xmtx.jobfairComment.vo.CommentCreateVO;
+import com.xmtx.jobfairComment.vo.JobFairCommentVO;
+import com.xmtx.jobfairComment.vo.ResultVO;
 import com.xmtx.jobfairComment.dataobject.JobFairComment;
 import com.xmtx.jobfairComment.dataobject.JobFairSubComment;
 import com.xmtx.jobfairComment.enums.CommentErrorCode;

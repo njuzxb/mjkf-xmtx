@@ -1,0 +1,27 @@
+server:
+  port: 9000
+
+# spring配置
+spring:
+  application:
+    name: xmtx-zuul
+
+
+# eureka配置
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka/
+
+# zuul配置
+zuul:
+  routes:
+#    user:
+#      path: /user/**
+#      serviceId: xmtx-provider-user
+# 简洁写法
+     xmtx-provider-user: /user/**
+     xmtx-provider-jobfair: /jobfair/**
+     xmtx-webui: /web/**
+

@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/main.iml" filepath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/main/main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/main1.iml" filepath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/main1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/test/test.iml" filepath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/test/test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/test/test1.iml" filepath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/src/test/test1.iml" />
       <module fileurl="file://$PROJECT_DIR$/xmtx.iml" filepath="$PROJECT_DIR$/xmtx.iml" />
       <module fileurl="file://$PROJECT_DIR$/xmtx-common/xmtx-common.iml" filepath="$PROJECT_DIR$/xmtx-common/xmtx-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/xmtx-eureka/xmtx-eureka.iml" filepath="$PROJECT_DIR$/xmtx-eureka/xmtx-eureka.iml" />

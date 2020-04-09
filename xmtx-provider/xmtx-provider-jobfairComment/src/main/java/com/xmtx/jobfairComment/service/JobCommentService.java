@@ -1,9 +1,8 @@
 package com.xmtx.jobfairComment.service;
 
-import com.xmtx.jobfairComment.VO.JobFairCommentVO;
-import com.xmtx.jobfairComment.VO.JobFairSubCommentVO;
+import com.xmtx.jobfairComment.vo.JobFairCommentVO;
+import com.xmtx.jobfairComment.vo.JobFairSubCommentVO;
 import com.xmtx.jobfairComment.dataobject.JobFairComment;
-import com.xmtx.jobfairComment.dataobject.JobFairSubComment;
 
 import java.util.List;
 

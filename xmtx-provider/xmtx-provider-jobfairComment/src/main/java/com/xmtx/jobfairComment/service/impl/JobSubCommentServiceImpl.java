@@ -1,6 +1,6 @@
 package com.xmtx.jobfairComment.service.impl;
 
-import com.xmtx.jobfairComment.VO.JobFairSubCommentVO;
+import com.xmtx.jobfairComment.vo.JobFairSubCommentVO;
 import com.xmtx.jobfairComment.dataobject.JobFairSubComment;
 import com.xmtx.jobfairComment.enums.CommentErrorCode;
 import com.xmtx.jobfairComment.enums.CommentStatusEnum;
@@ -47,7 +47,7 @@ public class JobSubCommentServiceImpl implements JobSubCommentService {
      */
     @Override
     public List<JobFairSubCommentVO> findSubCommentByParentId(Integer parentId) {
-        List<JobFairSubComment> originList = jobFairSubCommentRepository.findAllByParentIdAndState(parentId, CommentStatusEnum.NORMAL.getCode());
+        List<JobFairSubComment> originList = jobFairSubCommentRepository.findByParentIdAndState(parentId, CommentStatusEnum.NORMAL.getCode());
         List<JobFairSubCommentVO> jobFairSubCommentVOList = listVO(originList);
         return jobFairSubCommentVOList;
     }
@@ -85,7 +85,7 @@ public class JobSubCommentServiceImpl implements JobSubCommentService {
      */
     @Override
     public List<JobFairSubCommentVO> findByUserId(Integer userId) {
-        List<JobFairSubComment> originList = jobFairSubCommentRepository.findAllByUserIdAndState(userId, CommentStatusEnum.NORMAL.getCode());
+        List<JobFairSubComment> originList = jobFairSubCommentRepository.findByUserIdAndState(userId, CommentStatusEnum.NORMAL.getCode());
         List<JobFairSubCommentVO> jobFairSubCommentVOList = listVO(originList);
         return jobFairSubCommentVOList;
     }

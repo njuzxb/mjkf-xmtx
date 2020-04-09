@@ -1,6 +1,6 @@
 package com.xmtx.jobfairComment.service;
 
-import com.xmtx.jobfairComment.VO.JobFairSubCommentVO;
+import com.xmtx.jobfairComment.vo.JobFairSubCommentVO;
 import com.xmtx.jobfairComment.dataobject.JobFairSubComment;
 
 import java.util.List;
@@ -17,6 +17,11 @@ public interface JobSubCommentService {
      * @param parentId 该二级评论所关联的父级评论
      */
     List<JobFairSubCommentVO> findSubCommentByParentId(Integer parentId);
+
+    /**
+     * 通过parentId找到其顶级评论，增加其顶级评论的评论数
+     */
+
 
     /**
      * 通过id找对应的二级评论

@@ -1,15 +1,12 @@
 package com.xmtx.jobfairComment.service.impl;
 
-import com.xmtx.jobfairComment.VO.JobFairCommentVO;
-import com.xmtx.jobfairComment.VO.JobFairSubCommentVO;
+import com.xmtx.jobfairComment.vo.JobFairCommentVO;
+import com.xmtx.jobfairComment.vo.JobFairSubCommentVO;
 import com.xmtx.jobfairComment.dataobject.JobFairComment;
-import com.xmtx.jobfairComment.dataobject.JobFairSubComment;
 import com.xmtx.jobfairComment.enums.CommentStatusEnum;
 import com.xmtx.jobfairComment.repository.JobFairCommentRepository;
-import com.xmtx.jobfairComment.repository.JobFairSubCommentRepository;
 import com.xmtx.jobfairComment.service.JobCommentService;
 import com.xmtx.jobfairComment.service.JobSubCommentService;
-import lombok.Builder;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -57,7 +54,7 @@ public class JobCommentServiceImpl implements JobCommentService {
     public List<JobFairCommentVO> findUpCommentByJobid(Integer jobid){
         // 从数据库查到jobid对应的所有JobFairComment，然后封装为List<JobFairCommentVO>返回
 
-        List<JobFairComment> originList = jobFairCommentRepository.findAllByJobidAndState(jobid, CommentStatusEnum.NORMAL.getCode());
+        List<JobFairComment> originList = jobFairCommentRepository.findByJobIdAndState(jobid, CommentStatusEnum.NORMAL.getCode());
         List<JobFairCommentVO> jobFairCommentVOList = listVO(originList);
         return jobFairCommentVOList;
     }
@@ -111,7 +108,7 @@ public class JobCommentServiceImpl implements JobCommentService {
      */
     @Override
     public List<JobFairCommentVO> findUpCommentByUserId(Integer userId) {
-        List<JobFairComment> originList = jobFairCommentRepository.findAllByUserId(userId, CommentStatusEnum.NORMAL.getCode());
+        List<JobFairComment> originList = jobFairCommentRepository.findByUserId(userId, CommentStatusEnum.NORMAL.getCode());
         List<JobFairCommentVO> jobFairCommentVOList = listVO(originList);
         return jobFairCommentVOList;
     }

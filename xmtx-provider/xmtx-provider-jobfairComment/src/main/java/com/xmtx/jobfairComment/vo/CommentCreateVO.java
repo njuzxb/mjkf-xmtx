@@ -1,4 +1,4 @@
-package com.xmtx.jobfairComment.VO;
+package com.xmtx.jobfairComment.vo;
 
 import lombok.Getter;
 
@@ -9,6 +9,7 @@ public class CommentCreateVO {
     private Integer parentId;
     //当前用户
     private Integer userId;
+
     private String content;
 
     //用于区分/comment接口收到的是顶级评论还是二级评论

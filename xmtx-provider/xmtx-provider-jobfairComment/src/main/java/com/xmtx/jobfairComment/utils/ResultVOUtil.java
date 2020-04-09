@@ -1,7 +1,7 @@
 package com.xmtx.jobfairComment.utils;
 
 
-import com.xmtx.jobfairComment.VO.ResultVO;
+import com.xmtx.jobfairComment.vo.ResultVO;
 import com.xmtx.jobfairComment.enums.ResultEnum;
 
 public class ResultVOUtil {

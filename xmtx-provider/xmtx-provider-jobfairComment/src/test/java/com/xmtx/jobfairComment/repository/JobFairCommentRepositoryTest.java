@@ -19,7 +19,7 @@ public class JobFairCommentRepositoryTest extends JobCommentProviderApplicationT
     @Test
     public void testSave(){
         JobFairComment jobfairComment = new JobFairComment();
-        jobfairComment.setJobid(1);
+        jobfairComment.setJobId(1);
         jobfairComment.setUsername("test");
         jobfairComment.setContent("测试添加评论");
         jobfairComment.setState(CommentStatusEnum.NORMAL.getCode());
