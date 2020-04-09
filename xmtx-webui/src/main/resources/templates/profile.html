@@ -208,8 +208,8 @@
                   <div class="box mb-3 shadow-sm border rounded bg-white profile-box text-center">
                      <div class="py-4 px-3 border-bottom">
                         <img src="img/p13.png" class="img-fluid mt-2 rounded-circle" alt="Responsive image">
-                        <h5 class="font-weight-bold text-dark mb-1 mt-4">Gurdeep Osahan</h5>
-                        <p class="mb-0 text-muted">UI / UX Designer</p>
+                        <h5 class="font-weight-bold text-dark mb-1 mt-4" id="left_name"></h5>
+                        <p class="mb-0 text-muted" id="left_username"></p>
                      </div>
                      <div class="d-flex">
                         <div class="col-6 border-right p-3">
@@ -225,43 +225,44 @@
                         <a class="font-weight-bold p-3 d-block" href="sign-in.html"> Log Out </a>
                      </div>
                   </div>
-                  <div class="box shadow-sm border rounded bg-white mb-3">
-                     <div class="box-title border-bottom p-3">
-                        <h6 class="m-0">Skills & Endorsements</h6>
-                     </div>
-                     <div class="box-body">
-                        <div class="d-flex align-items-center osahan-post-header p-3 border-bottom people-list">
-                           <div class="dropdown-list-image mr-3">
-                              <img class="rounded-circle" src="img/l4.png" alt="">
-                           </div>
-                           <div class="font-weight-bold">
-                              <div class="text-truncate">Character Concept <span class="badge badge-dark ml-1">1</span></div>
-                              <div class="small text-muted"><span class="text-primary">You and 1 connection</span> have given endorsements for this skill
-                              </div>
-                           </div>
-                        </div>
-                        <div class="d-flex align-items-center osahan-post-header p-3 border-bottom people-list">
-                           <div class="dropdown-list-image mr-3">
-                              <img class="rounded-circle" src="img/l8.png" alt="">
-                           </div>
-                           <div class="font-weight-bold">
-                              <div class="text-truncate">Digital Painting <span class="badge badge-danger ml-1">6</span></div>
-                              <div class="small text-muted"><span class="text-primary">Ask</span> has given an endorsement for this skill
-                              </div>
-                           </div>
-                        </div>
-                        <div class="d-flex align-items-center osahan-post-header p-3 people-list">
-                           <div class="dropdown-list-image mr-3">
-                              <img class="rounded-circle" src="img/l5.png" alt="">
-                           </div>
-                           <div class="font-weight-bold">
-                              <div class="text-truncate">Adobe Photoshop <span class="badge badge-info ml-1">3</span></div>
-                              <div class="small text-muted"><span class="text-primary">Julia Cox</span> has given an endorsement for this skill
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
+
+<!--                  <div class="box shadow-sm border rounded bg-white mb-3">-->
+<!--                     <div class="box-title border-bottom p-3">-->
+<!--                        <h6 class="m-0">Skills & Endorsements</h6>-->
+<!--                     </div>-->
+<!--                     <div class="box-body">-->
+<!--                        <div class="d-flex align-items-center osahan-post-header p-3 border-bottom people-list">-->
+<!--                           <div class="dropdown-list-image mr-3">-->
+<!--                              <img class="rounded-circle" src="img/l4.png" alt="">-->
+<!--                           </div>-->
+<!--                           <div class="font-weight-bold">-->
+<!--                              <div class="text-truncate">Character Concept <span class="badge badge-dark ml-1">1</span></div>-->
+<!--                              <div class="small text-muted"><span class="text-primary">You and 1 connection</span> have given endorsements for this skill-->
+<!--                              </div>-->
+<!--                           </div>-->
+<!--                        </div>-->
+<!--                        <div class="d-flex align-items-center osahan-post-header p-3 border-bottom people-list">-->
+<!--                           <div class="dropdown-list-image mr-3">-->
+<!--                              <img class="rounded-circle" src="img/l8.png" alt="">-->
+<!--                           </div>-->
+<!--                           <div class="font-weight-bold">-->
+<!--                              <div class="text-truncate">Digital Painting <span class="badge badge-danger ml-1">6</span></div>-->
+<!--                              <div class="small text-muted"><span class="text-primary">Ask</span> has given an endorsement for this skill-->
+<!--                              </div>-->
+<!--                           </div>-->
+<!--                        </div>-->
+<!--                        <div class="d-flex align-items-center osahan-post-header p-3 people-list">-->
+<!--                           <div class="dropdown-list-image mr-3">-->
+<!--                              <img class="rounded-circle" src="img/l5.png" alt="">-->
+<!--                           </div>-->
+<!--                           <div class="font-weight-bold">-->
+<!--                              <div class="text-truncate">Adobe Photoshop <span class="badge badge-info ml-1">3</span></div>-->
+<!--                              <div class="small text-muted"><span class="text-primary">Julia Cox</span> has given an endorsement for this skill-->
+<!--                              </div>-->
+<!--                           </div>-->
+<!--                        </div>-->
+<!--                     </div>-->
+<!--                  </div>-->
                   <div class="box shadow-sm mb-3 rounded bg-white ads-box text-center">
                      <img src="img/job1.png" class="img-fluid" alt="Responsive image">
                      <div class="p-3 border-bottom">
@@ -287,220 +288,280 @@
                   </div>
                   <div class="box shadow-sm border rounded bg-white mb-3">
                      <div class="box-title border-bottom p-3">
-                        <h6 class="m-0">招聘信息</h6>
+                        <h6 class="m-0">我发布的招聘信息</h6>
                      </div>
+                  </div>
 
-                     <div class="box-body p-3 border-bottom">
-                        <div class="d-flex align-items-top job-item-header pb-2">
-                           <div class="mr-2">
-                              <h6 class="font-weight-bold text-dark mb-0">Web designer</h6>
-                              <div class="text-truncate text-primary">Spotify Inc.</div>
-                              <div class="small text-gray-500">Oct 2020 - Present (4 year 7 month) </div>
-                           </div>
-                           <img class="img-fluid ml-auto mb-auto" src="img/l3.png" alt="">
-                        </div>
-                        <p class="mb-0">Find the most qualified people in the most unexpected places. Information for applicants to consider when applying for local positions. </p>
+                     <table class="table table-border table-hover">
+                        <!--表头-->
+                        <thead>
+                        <tr>
+                           <th>编号</th>
+                           <th>企业名称</th>
+                           <th>招聘地址</th>
+                           <th>招聘标题</th>
+                           <th>标签</th>
+                           <th>评论</th>
+                           <th>点赞数/th>
+                        </tr>
+                        </thead>
+                        <!--数据渲染区域-->
+                        <tbody id="tbody">
+                        </tbody>
+                     </table>
+                     <!--分页-->
+                     <div class="page">
+                        <a id="down" href="#" onClick="change1(--pageno)">上一页</a>　　
+                        <span id="a3"></span><a id="up" href="#" onClick="change1(++pageno)">下一页</a>
+                        <span class="ho">第<span id="a2"></span>/<span id="a1"></span>页</span>
                      </div>
-                     <a href="http://localhost:9000/jobfair/jobfair/list?pn=0">展示第1页</a>
-                     <a href="http://localhost:9000/jobfair/jobfair/list?pn=1">展示第2页</a>
-                     <a href="http://localhost:9000/jobfair/jobfair/list?pn=2">展示第3页</a>
-                     <a href="http://localhost:9000/jobfair/jobfair/list?pn=3">展示第4页</a>
-                     <div class="box-body p-3 border-bottom">
-                        <div class="d-flex align-items-top job-item-header pb-2">
-                           <div class="mr-2">
-                              <h6 class="font-weight-bold text-dark mb-0">Cloud Software Engineer</h6>
-                              <div class="text-truncate text-primary">Spotify Inc.</div>
-                              <div class="small text-gray-500">Oct 2020 - Present (4 year 7 month) </div>
-                           </div>
-                           <img class="img-fluid ml-auto mb-auto" src="img/l6.png" alt="">
-                        </div>
-                        <p class="mb-0">Find the most qualified people in the most unexpected places. Information for.. </p>
-                     </div>
-                     <div class="box-body p-3">
-                        <div class="d-flex align-items-top job-item-header pb-2">
-                           <div class="mr-2">
-                              <h6 class="font-weight-bold text-dark mb-0">UI/UX designer</h6>
-                              <div class="text-truncate text-primary">Behance</div>
-                              <div class="small text-gray-500">Oct 2020 - Present (4 year 7 month) </div>
-                           </div>
-                           <img class="img-fluid ml-auto mb-auto" src="img/l2.png" alt="">
-                        </div>
-                        <p class="mb-0">Wualified people in the most unexpected places. Information for applicants to consider when applying for local positions. The largest community on the web to find and list jobs that aren't restricted by commutes or a specific location.
-                        </p>
-                     </div>
-                  </div>
-<!--                  <div class="box shadow-sm border rounded bg-white mb-3">-->
-<!--&lt;!&ndash;                     <div class="box-title border-bottom p-3">&ndash;&gt;-->
-<!--&lt;!&ndash;                        <h6 class="m-0">Education</h6>&ndash;&gt;-->
-<!--&lt;!&ndash;                     </div>&ndash;&gt;-->
-<!--                     <div class="box-body p-3 border-bottom">-->
-<!--                        <div class="d-flex align-items-top job-item-header pb-2">-->
-<!--                           <div class="mr-2">-->
-<!--                              <h6 class="font-weight-bold text-dark mb-0">Stanford University</h6>-->
-<!--                              <div class="text-truncate text-primary">Master’s programmes</div>-->
-<!--                              <div class="small text-gray-500">Oct 2020 - Present (4 year 7 month) </div>-->
-<!--                           </div>-->
-<!--                           <img class="img-fluid ml-auto mb-auto" src="img/e1.png" alt="">-->
-<!--                        </div>-->
-<!--                        <p class="mb-0">Find the most qualified people in the most unexpected places. Information for applicants to consider when applying for local positions.</p>-->
-<!--                     </div>-->
-<!--                     <div class="box-body p-3">-->
-<!--                        <div class="d-flex align-items-top job-item-header pb-2">-->
-<!--                           <div class="mr-2">-->
-<!--                              <h6 class="font-weight-bold text-dark mb-0">Harvard University</h6>-->
-<!--                              <div class="text-truncate text-primary">Maths and science education</div>-->
-<!--                              <div class="small text-gray-500">Oct 2020 - Present (4 year 7 month) </div>-->
-<!--                           </div>-->
-<!--                           <img class="img-fluid ml-auto mb-auto" src="img/e2.png" alt="">-->
-<!--                        </div>-->
-<!--                        <p class="mb-0">Wualified people in the most unexpected places. Information for applicants to consider when applying for local positions.</p>-->
-<!--                     </div>-->
-<!--                  </div>-->
+                     <!--用来存放总页数，放置在body中-->
+                     <div style="display:block" id="p"></div>
+                     <script src="http://code.jquery.com/jquery-latest.js"></script>
+                     <script type="text/javascript">
+                        $("#nav_name").text(localStorage.getItem("name"));
+                        $("#nav_userName").text(localStorage.getItem("loginName"));
+                        $("#left_name").text(localStorage.getItem("name"));
+                        $("#left_username").text(localStorage.getItem("loginName"));
+                        $(document).ready(function paging(page){
+                           $.ajax({
+                              type: "GET",
+                              url: "http://localhost:9000/jobfair/jobfair/listAll?username=南大",
+                              dataType:"json",
+                              success: function(data){
+                                 // console.log(data);
+                                 // console.log(data.length);
+                                 for(var i=0;i<data.data.length;i++) {
+                                    tbody.innerHTML+="<tr><th>13111"+data.data[i].jobfairId+"</th>"+
+                                            "<th>2543534"+data.data[i].enterpriseName+"</th>"+
+                                            "<th>"+data.data[i].jobfairAddress+"</th>"+
+                                            "<th>"+data.data[i].jobfairTitle+"</th>"+
+                                            "<th>"+data.data[i].jobfairLabel+"</th>"+
+                                            "<th>"+data.data[i].comment_num+"</th>"+
+                                            "<th>"+data.data[i].prove_num+"</th></tr>";
+                                 }
+                                 var a = document.getElementById("tbody").getElementsByTagName("tr");
+                                 var zz =new Array(a.length);
+                                 //alert("目前共有"+zz.length+"条招聘信息");
+                                 for(var i=0;i<a.length;i++)
+                                 { zz[i]=a[i].innerHTML } //div的字符串数组付给zz
+                                 var pageno=1;               //当前页
+                                 var pagesize=10;            //每页多少条信息
+                                 if(zz.length%pagesize==0)
+                                 {var  pageall =zz.length/pagesize }
+                                 else
+                                 {var  pageall =parseInt(zz.length/pagesize)+1
+                                  //alert("招聘信息共有"+pageall+"页");//一共多少页
+                                 }
+                                 $("#p").text(pageall);      //将pageall的值存放到div中，便于下次使用
+                                 change(1,pageall,zz);
+                              }
+                           })
+                        })
+                        var k;
+                        function change(e,all,zu){
+                           zz=zu;
+                           var pagesize=10;   //每页多少条信息
+                           pageall=all;     //总页数
+                           pageno=e;        //当前页
+                           if(e <1)//如果输入页<1页
+                           { e=1;pageno=1}//就等于第1页 ， 当前页为1
+                           if(e>pageall)//如果输入页大于最大页
+                           {e=pageall;pageno=pageall}//输入页和当前页都=最大页
+                           document.getElementById("tbody").innerHTML="";//全部清空
+                           for(var i=0;i<pagesize;i++)
+                           {
+                              var div =document.createElement("tr");//建立div对象
+                              div.innerHTML=zz[(e-1)*pagesize+i];//建立显示元素
+                              document.getElementById("tbody").appendChild(div);//加入tbody中
+                              if(zz[(e-1)*pagesize+i+1]==null)//超出范围跳出
+                                 break
+                           }
+                           var ye="";
+                           for(var j=1;j<=pageall;j++)
+                           {
+                              if(e==j)
+                              {ye=ye+"<span><a href='#' onClick='change1("+j+")' style='color:#FF0000'>"+j+"</a></span> "}
+                              else
+                              {ye=ye+"<a href='#' onClick='change1("+j+")'>"+j+"</a> "}
+                           }
+                           document.getElementById("a1").innerHTML=pageall;
+                           document.getElementById("a2").innerHTML=pageno;
+                           document.getElementById("a3").innerHTML=ye;
+
+                           /*如果当前是第一页则：*/
+
+                           if (pageno == 1)
+                           {
+                              $('#down').hide();//隐藏
+                           }else {
+                              $('#down').show();//显示
+                           }
+
+                           /*如果是最后一页则：*/
+
+                           if (pageno == pageall)
+                           {
+                              $('#up').hide();//隐藏
+                           }else {
+                              $('#up').show();//显示
+                           }
+                           k=zu;
+
+                        }
+                        function change1(e){
+                           zz=k;
+                           var pagesize=10;
+                           pageall=$("#p").text();
+                           pageno=e;
+                           if(e <1)//如果输入页<1页
+                           { e=1;pageno=1}//就等于第1页 ， 当前页为1
+                           if(e>pageall)//如果输入页大于最大页
+                           {e=pageall;pageno=pageall}//输入页和当前页都=最大页
+                           document.getElementById("tbody").innerHTML="";//全部清空
+                           for(var i=0;i<pagesize;i++)
+                           {
+                              var div =document.createElement("tr");//建立div对象
+                              div.innerHTML=zz[(e-1)*pagesize+i];//建立显示元素
+                              document.getElementById("tbody").appendChild(div);//加入tbody中
+                              if(zz[(e-1)*pagesize+i+1]==null)//超出范围跳出
+                                 break
+                           }
+                           var ye="";
+                           for(var j=1;j<=pageall;j++)
+                           {
+                              if(e==j)
+                              {ye=ye+"<span><a href='#' onClick='change1("+j+")' style='color:#FF0000'>"+j+"</a></span> "}
+                              else
+                              {ye=ye+"<a href='#' onClick='change1("+j+")'>"+j+"</a> "}
+                           }
+                           document.getElementById("a1").innerHTML=pageall;
+                           document.getElementById("a2").innerHTML=pageno;
+                           document.getElementById("a3").innerHTML=ye;
+                           /*如果当前是第一页则：*/
+                           if (pageno == 1)
+                           {
+                              $('#down').hide();//隐藏
+                           }else {
+                              $('#down').show();//显示
+                           }
+                           /*如果是最后一页则：*/
+
+                           if (pageno == pageall)
+                           {
+                              $('#up').hide();//隐藏
+                           }else {
+                              $('#up').show();//显示
+                           }
+                        }
+                     </script>
+
+
                </main>
-               <aside class="col col-xl-3 order-xl-3 col-lg-12 order-lg-3 col-12">
-                  <div class="box shadow-sm border rounded bg-white mb-3">
-                     <div class="box-title border-bottom p-3">
-                        <h6 class="m-0">Who viewed your profile</h6>
-                     </div>
-                     <div class="box-body p-3">
-                        <div class="d-flex align-items-center osahan-post-header mb-3 people-list">
-                           <div class="dropdown-list-image mr-3">
-                              <img class="rounded-circle" src="img/p4.png" alt="">
-                              <div class="status-indicator bg-success"></div>
-                           </div>
-                           <div class="font-weight-bold mr-2">
-                              <div class="text-truncate">Sophia Lee</div>
-                              <div class="small text-gray-500">@Harvard
-                              </div>
-                           </div>
-                           <span class="ml-auto"><button type="button" class="btn btn-light btn-sm">Connent</button>
-                           </span>
-                        </div>
-                        <div class="d-flex align-items-center osahan-post-header mb-3 people-list">
-                           <div class="dropdown-list-image mr-3">
-                              <img class="rounded-circle" src="img/p9.png" alt="">
-                              <div class="status-indicator bg-success"></div>
-                           </div>
-                           <div class="font-weight-bold mr-2">
-                              <div class="text-truncate">John Doe</div>
-                              <div class="small text-gray-500">Traveler
-                              </div>
-                           </div>
-                           <span class="ml-auto"><button type="button" class="btn btn-light btn-sm">Connent</button>
-                           </span>
-                        </div>
-                        <div class="d-flex align-items-center osahan-post-header mb-3 people-list">
-                           <div class="dropdown-list-image mr-3">
-                              <img class="rounded-circle" src="img/p10.png" alt="">
-                              <div class="status-indicator bg-success"></div>
-                           </div>
-                           <div class="font-weight-bold mr-2">
-                              <div class="text-truncate">Julia Cox</div>
-                              <div class="small text-gray-500">Art Designer
-                              </div>
-                           </div>
-                           <span class="ml-auto"><button type="button" class="btn btn-light btn-sm">Connent</button>
-                           </span>
-                        </div>
-                        <div class="d-flex align-items-center osahan-post-header mb-3 people-list">
-                           <div class="dropdown-list-image mr-3">
-                              <img class="rounded-circle" src="img/p11.png" alt="">
-                              <div class="status-indicator bg-success"></div>
-                           </div>
-                           <div class="font-weight-bold mr-2">
-                              <div class="text-truncate">Robert Cook</div>
-                              <div class="small text-gray-500">@Photography
-                              </div>
-                           </div>
-                           <span class="ml-auto"><button type="button" class="btn btn-light btn-sm">Connent</button>
-                           </span>
-                        </div>
-                        <div class="d-flex align-items-center osahan-post-header people-list">
-                           <div class="dropdown-list-image mr-3">
-                              <img class="rounded-circle" src="img/p12.png" alt="">
-                              <div class="status-indicator bg-success"></div>
-                           </div>
-                           <div class="font-weight-bold mr-2">
-                              <div class="text-truncate">Richard Bell</div>
-                              <div class="small text-gray-500">@Envato
-                              </div>
-                           </div>
-                           <span class="ml-auto"><button type="button" class="btn btn-light btn-sm">Connent</button>
-                           </span>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="box shadow-sm mb-3 rounded bg-white ads-box text-center">
-                     <img src="img/ads1.png" class="img-fluid" alt="Responsive image">
+               <aside class="col col-xl-3 order-xl-3 col-lg-6 order-lg-3 col-md-6 col-sm-6 col-12">
+
+                  <div class="box shadow-sm mb-3 rounded bg-white ads-box text-center overflow-hidden">
+                     <img th:src="@{/web/img/ads1.png}" class="img-fluid" alt="Responsive image">
                      <div class="p-3 border-bottom">
                         <h6 class="font-weight-bold text-gold">Osahanin Premium</h6>
-                        <p class="mb-0 text-muted">Grow &amp; nurture your network</p>
+                        <p class="mb-0 text-muted">Grow & nurture your network</p>
                      </div>
                      <div class="p-3">
                         <button type="button" class="btn btn-outline-gold pl-4 pr-4"> ACTIVATE </button>
                      </div>
                   </div>
-                  <a href="job-profile.html">
-                     <div class="shadow-sm border rounded bg-white job-item mb-3">
-                        <div class="d-flex align-items-center p-3 job-item-header">
-                           <div class="overflow-hidden mr-2">
-                              <h6 class="font-weight-bold text-dark mb-0 text-truncate">Product Director</h6>
-                              <div class="text-truncate text-primary">Spotify Inc.</div>
-                              <div class="small text-gray-500"><i class="feather-map-pin"></i> India, Punjab</div>
-                           </div>
-                           <img class="img-fluid ml-auto" src="img/l3.png" alt="">
-                        </div>
-                        <div class="d-flex align-items-center p-3 border-top border-bottom job-item-body">
-                           <div class="overlap-rounded-circle">
-                              <img class="rounded-circle shadow-sm" data-toggle="tooltip" data-placement="top" title="" src="img/p9.png" alt="" data-original-title="Sophia Lee">
-                              <img class="rounded-circle shadow-sm" data-toggle="tooltip" data-placement="top" title="" src="img/p10.png" alt="" data-original-title="John Doe">
-                              <img class="rounded-circle shadow-sm" data-toggle="tooltip" data-placement="top" title="" src="img/p11.png" alt="" data-original-title="Julia Cox">
-                              <img class="rounded-circle shadow-sm" data-toggle="tooltip" data-placement="top" title="" src="img/p10.png" alt="" data-original-title="John Doe">
-                              <img class="rounded-circle shadow-sm" data-toggle="tooltip" data-placement="top" title="" src="img/p11.png" alt="" data-original-title="Julia Cox">
-                              <img class="rounded-circle shadow-sm" data-toggle="tooltip" data-placement="top" title="" src="img/p12.png" alt="" data-original-title="Robert Cook">
-                           </div>
-                           <span class="font-weight-bold text-muted">18 connections</span>
-                        </div>
-                        <div class="p-3 job-item-footer">
-                           <small class="text-gray-500"><i class="feather-clock"></i> Posted 3 Days ago</small>
-                        </div>
+                  <div class="box shadow-sm border rounded bg-white mb-3">
+                     <div class="box-title border-bottom p-3">
+                        <h6 class="m-0">Jobs
+                        </h6>
                      </div>
-                  </a>
-                  <a href="job-profile.html">
-                     <div class="shadow-sm border rounded bg-white job-item mb-3">
-                        <div class="d-flex align-items-center p-3 job-item-header">
-                           <div class="overflow-hidden mr-2">
-                              <h6 class="font-weight-bold text-dark mb-0 text-truncate">.NET Developer</h6>
-                              <div class="text-truncate text-primary">Invision</div>
-                              <div class="small text-gray-500"><i class="feather-map-pin"></i> London, UK
+                     <div class="box-body p-3">
+                        <a href="job-profile.html?jobid=1">
+                           <div class="shadow-sm border rounded bg-white job-item mb-3">
+                              <div class="d-flex align-items-center p-3 job-item-header">
+                                 <div class="overflow-hidden mr-2">
+                                    <h6 class="font-weight-bold text-dark mb-0 text-truncate">阿里招聘会</h6>
+                                    <div class="text-truncate text-primary">南京大学</div>
+                                    <div class="small text-gray-500"><i class="feather-map-pin"></i> 鼓楼</div>
+                                 </div>
+                                 <img class="img-fluid ml-auto" src="img/l3.png" alt="">
+                              </div>
+                              <div class="d-flex align-items-center p-3 border-top border-bottom job-item-body">
+                                 <div class="overlap-rounded-circle">
+                                    <img class="rounded-circle shadow-sm" data-toggle="tooltip" data-placement="top" title="" src="img/p9.png" alt="" data-original-title="Sophia Lee">
+                                    <img class="rounded-circle shadow-sm" data-toggle="tooltip" data-placement="top" title="" src="img/p10.png" alt="" data-original-title="John Doe">
+                                    <img class="rounded-circle shadow-sm" data-toggle="tooltip" data-placement="top" title="" src="img/p11.png" alt="" data-original-title="Julia Cox">
+                                    <img class="rounded-circle shadow-sm" data-toggle="tooltip" data-placement="top" title="" src="img/p12.png" alt="" data-original-title="Robert Cook">
+                                 </div>
+                                 <span class="font-weight-bold text-muted">18 connections</span>
+                              </div>
+                              <div class="p-3 job-item-footer">
+                                 <small class="text-gray-500"><i class="feather-clock"></i> Posted 3 Days ago</small>
                               </div>
                            </div>
-                           <img class="img-fluid ml-auto" src="img/l4.png" alt="">
-                        </div>
-                        <div class="d-flex align-items-center p-3 border-top border-bottom job-item-body">
-                           <div class="overlap-rounded-circle">
-                              <img class="rounded-circle shadow-sm" data-toggle="tooltip" data-placement="top" title="" src="img/p13.png" alt="" data-original-title="Sophia Lee">
-                              <img class="rounded-circle shadow-sm" data-toggle="tooltip" data-placement="top" title="" src="img/p1.png" alt="" data-original-title="John Doe">
-                              <img class="rounded-circle shadow-sm" data-toggle="tooltip" data-placement="top" title="" src="img/p2.png" alt="" data-original-title="Julia Cox">
-                              <img class="rounded-circle shadow-sm" data-toggle="tooltip" data-placement="top" title="" src="img/p3.png" alt="" data-original-title="Robert Cook">
+                        </a>
+
+                        <a href="job-profile.html?jobid=3">
+                           <div class="shadow-sm border rounded bg-white job-item">
+                              <div class="d-flex align-items-center p-3 job-item-header">
+                                 <div class="overflow-hidden mr-2">
+                                    <h6 class="font-weight-bold text-dark mb-0 text-truncate">腾讯宣讲会</h6>
+                                    <div class="text-truncate text-primary">南京大学</div>
+                                    <div class="small text-gray-500"><i class="feather-map-pin"></i> 仙林
+                                    </div>
+                                 </div>
+                                 <img class="img-fluid ml-auto" src="img/l4.png" alt="">
+                              </div>
+                              <div class="d-flex align-items-center p-3 border-top border-bottom job-item-body">
+                                 <div class="overlap-rounded-circle">
+                                    <img class="rounded-circle shadow-sm" data-toggle="tooltip" data-placement="top" title="" src="img/p13.png" alt="" data-original-title="Sophia Lee">
+                                    <img class="rounded-circle shadow-sm" data-toggle="tooltip" data-placement="top" title="" src="img/p1.png" alt="" data-original-title="John Doe">
+                                    <img class="rounded-circle shadow-sm" data-toggle="tooltip" data-placement="top" title="" src="img/p3.png" alt="" data-original-title="Robert Cook">
+                                 </div>
+                                 <span class="font-weight-bold text-muted">18 connections</span>
+                              </div>
+                              <div class="p-3 job-item-footer">
+                                 <small class="text-gray-500"><i class="feather-clock"></i> Posted 3 Days ago</small>
+                              </div>
                            </div>
-                           <span class="font-weight-bold text-muted">18 connections</span>
-                        </div>
-                        <div class="p-3 job-item-footer">
-                           <small class="text-gray-500"><i class="feather-clock"></i> Posted 3 Days ago</small>
-                        </div>
+                        </a>
+                        <a href="job-profile.html?jobid=2">
+                           <div class="shadow-sm border rounded bg-white job-item">
+                              <div class="d-flex align-items-center p-3 job-item-header">
+                                 <div class="overflow-hidden mr-2">
+                                    <h6 class="font-weight-bold text-dark mb-0 text-truncate">头条宣讲会</h6>
+                                    <div class="text-truncate text-primary">南京大学</div>
+                                    <div class="small text-gray-500"><i class="feather-map-pin"></i> 汉口路
+                                    </div>
+                                 </div>
+                                 <img class="img-fluid ml-auto" src="img/l4.png" alt="">
+                              </div>
+                              <div class="d-flex align-items-center p-3 border-top border-bottom job-item-body">
+                                 <div class="overlap-rounded-circle">
+                                    <img class="rounded-circle shadow-sm" data-toggle="tooltip" data-placement="top" title="" src="img/p13.png" alt="" data-original-title="Sophia Lee">
+                                    <img class="rounded-circle shadow-sm" data-toggle="tooltip" data-placement="top" title="" src="img/p1.png" alt="" data-original-title="John Doe">
+                                    <img class="rounded-circle shadow-sm" data-toggle="tooltip" data-placement="top" title="" src="img/p3.png" alt="" data-original-title="Robert Cook">
+                                 </div>
+                                 <span class="font-weight-bold text-muted">18 connections</span>
+                              </div>
+                              <div class="p-3 job-item-footer">
+                                 <small class="text-gray-500"><i class="feather-clock"></i> Posted 3 Days ago</small>
+                              </div>
+                           </div>
+                        </a>
                      </div>
-                  </a>
+                  </div>
                </aside>
             </div>
          </div>
       </div>
+
       <!-- Bootstrap core JavaScript -->
-      <script src="vendor/jquery/jquery.min.js"></script>
-      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-      <!-- slick Slider JS-->
-      <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
-      <!-- Custom scripts for all pages-->
-      <script src="js/osahan.js"></script>
+<!--      <script src="../static/vendor/jquery/jquery.min.js"></script>-->
+<!--      <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>-->
+<!--      &lt;!&ndash; slick Slider JS&ndash;&gt;-->
+<!--      <script type="text/javascript" src="../static/vendor/slick/slick.min.js"></script>-->
+<!--      &lt;!&ndash; Custom scripts for all pages&ndash;&gt;-->
+<!--      <script src="../static/js/osahan.js"></script>-->
    </body>
 </html>

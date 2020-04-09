@@ -1,15 +1,17 @@
 package com.xmtx.jobfair.client;
 
+import com.xmtx.jobfair.common.JobFairForm_Release;
 import com.xmtx.jobfair.common.JobFairInfoOutput;
-import com.xmtx.jobfair.common.ReleaseInput;
 import com.xmtx.common.VO.ResultVO;
 import com.xmtx.jobfair.common.UpdateInput;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.validation.Valid;
 import java.util.Map;
 
 /**
@@ -23,16 +25,20 @@ import java.util.Map;
 public interface JobFairClient {
 
     @GetMapping("/jobfair/list")
-    public ResultVO list(@RequestParam("pn") Integer pn);
+    ResultVO list(@RequestParam("pn") Integer pn);
+
+    @GetMapping("/jobfair/addProve")
+    ResultVO addProve(@RequestParam("jobid") Integer jobid);
 
     @PostMapping("/jobfair/release")
-    public ResultVO<Map<String,Integer>> release(@RequestParam("input") ReleaseInput releaseInput, @RequestParam("result") BindingResult bindingResult);
+    ResultVO<Map<String,Integer>> release(@Valid JobFairForm_Release releaseInput, @RequestParam("result") BindingResult bindingResult);
 
     @PostMapping("/jobfair/update")
-    public ResultVO<JobFairInfoOutput> update(@RequestParam("input") UpdateInput updateInput, @RequestParam("result") BindingResult bindingResult);
+    ResultVO<JobFairInfoOutput> update(@RequestParam("input") UpdateInput updateInput, @RequestParam("result") BindingResult bindingResult);
 
     @PostMapping("/jobfair/delete")
-    public ResultVO<String> delete(Integer id);
+    ResultVO<String> delete(Integer id);
+
 
 
 }

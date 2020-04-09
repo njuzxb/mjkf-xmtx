@@ -25,7 +25,7 @@
                   <div class="osahan-login py-4">
                      <div class="text-center mb-4">
                         <a href="index.html"><img src="img/fav.png" alt=""></a>
-                        <h5 class="font-weight-bold mt-3">Welcome Back</h5>
+                        <h5 class="font-weight-bold mt-3">小明同学欢迎您</h5>
                         <p class="text-muted">Don't miss your next opportunity. Sign in to stay updated on your professional world.</p>
                      </div>
                      <form id="form_login">
@@ -37,7 +37,7 @@
                            </div>
                         </div>
                         <div class="form-group">
-                           <label class="mb-1">Password</label>
+                           <label class="mb-1">Password/密码</label>
                            <div class="position-relative icon-form-control">
                               <i class="feather-unlock position-absolute"></i>
                               <input type="password" class="form-control" id="userPswd" name="userPswd">
@@ -49,19 +49,19 @@
                            <label class="custom-control-label" for="customCheck1">Remember password</label>
                         </div>
                         <button class="btn btn-primary btn-block text-uppercase" type="button" id="login_button"> Sign in </button>
-                        <div class="text-center mt-3 border-bottom pb-3">
-                           <p class="small text-muted">Or login with</p>
-                           <div class="row">
-                              <div class="col-4">
-                                 <button type="button" class="btn btn-sm btn-outline-instagram btn-block"><i class="feather-instagram"></i> Instagram</button>
-                              </div>
-                              <div class="col-4">
-                                 <button type="button" class="btn btn-sm btn-outline-linkedin btn-block"><i class="feather-linkedin"></i> Linkedin</button>
-                              </div>
-                              <div class="col-4">
-                                 <button type="button" class="btn btn-sm btn-outline-facebook btn-block"><i class="feather-facebook"></i> Facebook</button>
-                              </div>
-                           </div>
+<!--                        <div class="text-center mt-3 border-bottom pb-3">-->
+<!--                           <p class="small text-muted">Or login with</p>-->
+<!--                           <div class="row">-->
+<!--                              <div class="col-4">-->
+<!--                                 <button type="button" class="btn btn-sm btn-outline-instagram btn-block"><i class="feather-instagram"></i> Instagram</button>-->
+<!--                              </div>-->
+<!--                              <div class="col-4">-->
+<!--                                 <button type="button" class="btn btn-sm btn-outline-linkedin btn-block"><i class="feather-linkedin"></i> Linkedin</button>-->
+<!--                              </div>-->
+<!--                              <div class="col-4">-->
+<!--                                 <button type="button" class="btn btn-sm btn-outline-facebook btn-block"><i class="feather-facebook"></i> Facebook</button>-->
+<!--                              </div>-->
+<!--                           </div>-->
                         </div>
                         <div class="py-3 d-flex align-item-center">
                            <a href="forgot-password.html">Forgot password?</a>
@@ -82,6 +82,7 @@
       <script src="js/osahan.js"></script>
       <script type="text/javascript">
          $("#login_button").click(function(){
+            window.location="index.html";
             //1、先进行校验
             //2、发送ajax请求登陆
             $.ajax({

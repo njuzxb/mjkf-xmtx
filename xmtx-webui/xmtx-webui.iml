@@ -41,6 +41,12 @@
     <orderEntry type="module" module-name="xmtx-provider-api-jobfair" />
     <orderEntry type="module" module-name="xmtx-common" />
     <orderEntry type="module" module-name="xmtx-provider-api-jobfairComment" />
+    <orderEntry type="module" module-name="xmtx-provider-api-jobfair" />
+    <orderEntry type="module" module-name="xmtx-provider-api-jobfairComment" />
+    <orderEntry type="module" module-name="xmtx-common" />
+    <orderEntry type="module" module-name="xmtx-provider-jobfair" />
+    <orderEntry type="module" module-name="xmtx-provider-api-history" />
+    <orderEntry type="module" module-name="xmtx-provider-api-redis" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:2.2.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:2.2.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-logging:2.2.1.RELEASE" level="project" />

@@ -16,6 +16,9 @@ eureka:
 
 # zuul配置
 zuul:
+  host:
+      connect-timeout-millis: 15000 #HTTP连接超时要比Hystrix的大
+      socket-timeout-millis: 60000   #socket超时
   routes:
 #    user:
 #      path: /user/**
@@ -24,4 +27,3 @@ zuul:
      xmtx-provider-user: /user/**
      xmtx-provider-jobfair: /jobfair/**
      xmtx-webui: /web/**
-

@@ -1,52 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="12410394-81c6-4cf3-ab1b-2e38dd436410" name="Default Changelist" comment="前端index.html首页做了“加载更多”分页读取">
-      <change afterPath="$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/controller/webui_userController.java" afterDir="false" />
+    <list default="true" id="12410394-81c6-4cf3-ab1b-2e38dd436410" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/config/CorsConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/DTO/TopNDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/DTO/TopNDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/utils/CommonConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/utils/CommonConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/utils/EntityUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/utils/EntityUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-history/xmtx-provider-api-history.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-history/xmtx-provider-api-history.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-jobfair/src/main/java/com/xmtx/jobfair/common/ReleaseInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-jobfair/src/main/java/com/xmtx/jobfair/common/ReleaseInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-jobfair/src/main/java/com/xmtx/jobfair/client/JobFairClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-jobfair/src/main/java/com/xmtx/jobfair/client/JobFairClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-jobfair/src/main/java/com/xmtx/jobfair/common/ReleaseInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-jobfair/src/main/java/com/xmtx/jobfair/common/JobFairForm_Release.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-jobfair/xmtx-provider-api-jobfair.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-jobfair/xmtx-provider-api-jobfair.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-jobfairComment/xmtx-provider-api-jobfairComment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-jobfairComment/xmtx-provider-api-jobfairComment.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-redis/xmtx-provider-api-redis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-redis/xmtx-provider-api-redis.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/xmtx-provider-history.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/xmtx-provider-history.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/JobfairApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/JobfairApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/controller/JobFairController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/controller/JobFairController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/converter/JobFair2JobFairInfoVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/converter/JobFair2JobFairInfoVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/converter/JobFairForm_Release2JobFair.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/converter/JobFairForm_Release2JobFair.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/form/JobFairForm_Release.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/form/JobFairForm_Release.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/dataObject/JobFair.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/dataObject/JobFair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/repository/EnterpriseInfoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/repository/EnterpriseInfoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/repository/JobFairRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/repository/JobFairRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/service/Impl/JobFairServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/service/Impl/JobFairServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/vo/JobFairInfoVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/vo/JobFairInfoVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/service/JobFairService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/service/JobFairService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/utils/KeyUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/utils/KeyUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/xmtx-provider-jobfair.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/xmtx-provider-jobfair.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/service/impl/JobCommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/service/impl/JobCommentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/xmtx-provider-jobfairComment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/xmtx-provider-jobfairComment.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/xmtx-provider-redis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/xmtx-provider-redis.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/VO/UserSignSuccessVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/VO/UserSignSuccessVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/controller/userController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/controller/userController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/dataobject/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/dataobject/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/xmtx-provider-user.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/xmtx-provider-user.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-webui/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-webui/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/config/SpringMVCConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/config/SpringMVCConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/controller/jobfairController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/controller/jobfairController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/webuiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/webuiApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-webui/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-webui/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/controller/webui_userController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/controller/webui_userController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/jobs.html" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/jobs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/job-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/job-profile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/release.html" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/release.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/sign-in.html" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/sign-in.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/sign-up.html" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/sign-up.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xmtx-webui/xmtx-webui.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-webui/xmtx-webui.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-zuul/src/main/java/com/xmtx/zuul/filter/TokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-zuul/src/main/java/com/xmtx/zuul/filter/TokenFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-zuul/src/main/java/com/xmtx/zuul/filter/TokenFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-zuul/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-zuul/src/main/resources/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -100,10 +89,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/dataObject/JobFair.java">
+        <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/sign-up.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="20" column="46" lean-forward="true" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+            <state relative-caret-position="554">
+              <caret line="82" column="43" lean-forward="true" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -111,17 +100,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xmtx-zuul/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/sign-up.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1346">
-              <caret line="46" column="58" lean-forward="true" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
+            <state relative-caret-position="232">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
@@ -129,26 +109,70 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-887">
-              <caret line="526" column="69" selection-start-line="526" selection-start-column="36" selection-end-line="526" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/job-profile.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="247" column="59" selection-start-line="247" selection-start-column="59" selection-end-line="247" selection-end-column="59" />
+            <state relative-caret-position="337">
+              <caret line="403" column="57" selection-start-line="403" selection-start-column="57" selection-end-line="403" selection-end-column="57" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/job-profile.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="443">
+              <caret line="428" column="23" lean-forward="true" selection-start-line="335" selection-start-column="14" selection-end-line="428" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/profile.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="452" column="34" lean-forward="true" selection-start-line="452" selection-start-column="34" selection-end-line="452" selection-end-column="34" />
+              <folding>
+                <element signature="n#style#0;n#div#3;n#div#1;n#main#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#span#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#span#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/release.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="725">
+              <caret line="296" column="77" selection-start-line="296" selection-start-column="77" selection-end-line="296" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/controller/JobFairController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="392">
+              <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/dataObject/JobFair.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="40" column="30" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/sign-in.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="45" column="28" lean-forward="true" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+            <state relative-caret-position="343">
+              <caret line="90" column="40" selection-start-line="90" selection-start-column="40" selection-end-line="90" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -168,6 +192,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>recommend_jobs_box</find>
+      <find>coll</find>
+      <find>about</find>
+      <find>comment</find>
+      <find>Gu</find>
+      <find>People</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -178,7 +207,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/enums/ResultEnum.java" />
         <option value="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-history/src/main/java/com/xmtx/history/client/HistoryClient.java" />
         <option value="$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/utils/EntityUtils.java" />
         <option value="$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/DTO/TopNDTO.java" />
@@ -211,24 +239,25 @@
         <option value="$PROJECT_DIR$/xmtx-zuul/pom.xml" />
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/pom.xml" />
         <option value="$PROJECT_DIR$/xmtx-zuul/src/main/java/com/xmtx/zuul/ZuulApplication.java" />
-        <option value="$PROJECT_DIR$/xmtx-zuul/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/xmtx-webui/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/config/SpringMVCConfig.java" />
         <option value="$PROJECT_DIR$/.idea/misc.xml" />
         <option value="$PROJECT_DIR$/xmtx-zuul/src/main/java/com/xmtx/zuul/filter/TokenFilter.java" />
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/pom.xml" />
         <option value="$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/utils/CommonConstant.java" />
-        <option value="$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/controller/webui_userController.java" />
-        <option value="$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/controller/jobfairController.java" />
-        <option value="$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/sign-in.html" />
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/controller/userController.java" />
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/sign-up.html" />
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/release.html" />
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-history/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/controller/jobfairController.java" />
+        <option value="$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/controller/webui_userController.java" />
+        <option value="$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/release.html" />
         <option value="$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/job-profile.html" />
+        <option value="$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/profile.html" />
+        <option value="$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/sign-up.html" />
+        <option value="$PROJECT_DIR$/xmtx-zuul/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/sign-in.html" />
       </list>
     </option>
   </component>
@@ -276,11 +305,6 @@
             <path>
               <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
               <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
@@ -367,6 +391,17 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="jobfair" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-jobfair" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jobfair" type="462c0819:PsiDirectoryNode" />
+              <item name="dataObject" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xmtx" type="b2602c69:ProjectViewProjectNode" />
@@ -649,7 +684,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
@@ -662,14 +697,14 @@
       <recent name="com.xmtx.provider.repository" />
       <recent name="com.xmtx.provider.mapper" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Think\IdeaProjects\xmtx\xmtx-provider\xmtx-provider-admin" />
       <recent name="C:\Users\Think\IdeaProjects\xmtx\xmtx-provider\xmtx-provider-admin\src\main\resources" />
       <recent name="C:\Users\Think\IdeaProjects\xmtx\xmtx-provider\xmtx-provider-admin\src\main\java" />
       <recent name="C:\Users\Think\IdeaProjects\xmtx\xmtx-provider\xmtx-provider-model\src\main\resources" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -1041,7 +1076,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="315027000" />
+    <option name="totallyTimeSpent" value="321632000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1054,7 +1089,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1723" height="976" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49823323" visible="true" weight="0.24864864" />
       <window_info id="Structure" order="1" sideWeight="0.5017668" side_tool="true" weight="0.23483483" />
@@ -1080,7 +1114,7 @@
       <window_info anchor="bottom" id="Spring" order="13" sideWeight="0.4996997" weight="0.32977462" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" sideWeight="0.4996997" weight="0.32977462" />
       <window_info anchor="bottom" id="Messages" order="15" sideWeight="0.4978979" weight="0.18386714" />
-      <window_info anchor="bottom" id="Run Dashboard" order="16" sideWeight="0.4978979" visible="true" weight="0.11506525" />
+      <window_info anchor="bottom" id="Run Dashboard" order="16" sideWeight="0.4978979" visible="true" weight="0.16132858" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24984986" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1192,13 +1226,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/controller/jobfairController.java</url>
-          <line>23</line>
+          <line>21</line>
           <properties />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/controller/jobfairController.java</url>
-          <line>25</line>
+          <line>23</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
@@ -1242,17 +1276,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/xmtx-gateway/src/main/resources/application.yml" />
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/JobfairApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xmtx-gateway/pom.xml" />
     <entry file="file://$PROJECT_DIR$/xmtx-gateway/src/main/java/com/xmtx/gateway/GatewayApplication.java" />
     <entry file="file://$PROJECT_DIR$/xmtx-test/pom.xml" />
@@ -1400,13 +1423,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/vo/JobFairInfoVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/utils/CommonConstant.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1427,26 +1443,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/controller/webui_userController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/controller/jobfairController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hs_err_pid25496.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1600" />
@@ -1457,11 +1453,6 @@
         <state relative-caret-position="275">
           <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7921" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xmtx-zuul/pom.xml">
@@ -1478,16 +1469,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-zuul/src/main/java/com/xmtx/zuul/ZuulApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -1498,20 +1479,6 @@
     <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/jobs.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-300" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/release.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1483">
-          <caret line="294" column="101" selection-start-line="294" selection-start-column="101" selection-end-line="294" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/sign-up.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1346">
-          <caret line="46" column="58" lean-forward="true" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xmtx-common/src/main/java/com/xmtx/common/VO/UserVO.java">
@@ -1538,23 +1505,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-zuul/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/controller/JobFairController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="72" column="24" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/controller/userController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-182">
@@ -1565,31 +1515,119 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/vo/JobFairInfoVO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-887">
-          <caret line="526" column="69" selection-start-line="526" selection-start-column="36" selection-end-line="526" selection-end-column="69" />
+        <state relative-caret-position="367">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/sign-in.html">
+    <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/config/CorsConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="45" column="28" lean-forward="true" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+        <state relative-caret-position="618">
+          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/controller/jobfairController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/java/com/xmtx/webui/controller/webui_userController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/dataObject/JobFair.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="20" column="46" lean-forward="true" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+        <state relative-caret-position="525">
+          <caret line="40" column="30" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/service/JobFairService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/controller/JobFairController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/release.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="296" column="77" selection-start-line="296" selection-start-column="77" selection-end-line="296" selection-end-column="77" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/job-profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="247" column="59" selection-start-line="247" selection-start-column="59" selection-end-line="247" selection-end-column="59" />
+        <state relative-caret-position="443">
+          <caret line="428" column="23" lean-forward="true" selection-start-line="335" selection-start-column="14" selection-end-line="428" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="452" column="34" lean-forward="true" selection-start-line="452" selection-start-column="34" selection-end-line="452" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#div#3;n#div#1;n#main#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-zuul/src/main/java/com/xmtx/zuul/ZuulApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="403" column="57" selection-start-line="403" selection-start-column="57" selection-end-line="403" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-zuul/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/sign-up.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="82" column="43" lean-forward="true" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-webui/src/main/resources/templates/sign-in.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="90" column="40" selection-start-line="90" selection-start-column="40" selection-end-line="90" selection-end-column="40" />
         </state>
       </provider>
     </entry>

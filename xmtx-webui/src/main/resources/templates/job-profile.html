@@ -210,7 +210,7 @@
                   <div class="d-flex align-items-center py-3">
                      <div class="profile-left">
                         <h5 class="font-weight-bold text-dark mb-1 mt-0" id="jobTitle"></h5>
-                        <p class="mb-0 text-muted"><a class="mr-2 font-weight-bold" href="#" id="ename"></a> <i class="feather-map-pin"></i> 鼓楼 -- DatePosted 3 days ago</p>
+                        <p class="mb-0 text-muted"><a class="mr-2 font-weight-bold" href="#" id="ename">南大</a> <i class="feather-map-pin"></i> 鼓楼 -- DatePosted 3 days ago</p>
                      </div>
 <!--                     <div class="profile-right ml-auto">-->
 <!--                        <button type="button" class="btn btn-light mr-1"> &nbsp; Save &nbsp; </button>-->
@@ -244,69 +244,82 @@
                         <table class="table table-borderless mb-0">
                            <tbody>
                               <tr class="border-bottom">
-                                 <th class="p-3">Seniority Level</th>
-                                 <td class="p-3">Mid-Senior level
+                                 <th class="p-3">发起人</th>
+                                 <td class="p-3" id="promoter">
                                  </td>
                               </tr>
                               <tr class="border-bottom">
-                                 <th class="p-3">Industry</th>
-                                 <td class="p-3">Internet Information Technology & Services</td>
+                                 <th class="p-3">招聘时间</th>
+                                 <td class="p-3" id="meeting_time"></td>
                               </tr>
                               <tr class="border-bottom">
-                                 <th class="p-3">Employment Type</th>
-                                 <td class="p-3">Full-time
+                                 <th class="p-3">招聘地址</th>
+                                 <td class="p-3" id="address">
                                  </td>
                               </tr>
                               <tr class="border-bottom">
-                                 <th class="p-3">Job Functions</th>
-                                 <td class="p-3">Other</td>
+                                 <th class="p-3">标签</th>
+                                 <td class="p-3" id="label"></td>
                               </tr>
                            </tbody>
                         </table>
                      </div>
                   </div>
-                  <div class="box mb-3 shadow-sm border rounded bg-white osahan-post">
-                     <div class="p-3 d-flex align-items-center border-bottom osahan-post-header">
-                        <div class="dropdown-list-image mr-3">
-                           <img class="rounded-circle" src="img/p6.png" alt="">
-                        </div>
-                        <div class="font-weight-bold">
-                           <div class="text-truncate">Envato</div>
-                           <div class="small text-gray-500">Internet | 24,044 followers</div>
-                        </div>
-                        <span class="ml-auto"><button type="button" class="btn btn-light"><i class="feather-plus"></i> Follow</button></span>
-                     </div>
-                     <img src="img/post1.png" class="img-fluid" alt="Responsive image">
-                     <div class="p-3 osahan-post-body">
-                        <h5 class="mb-3">About us</h5>
-                        <p>Welcome! We’re so happy you found us. Since you’ve come this far, we’d love to take the opportunity to introduce ourselves.</p>
-                        <p class="mb-0">Our story starts in 2006 with three founders in a Sydney garage (no, we’re not kidding). Born from a desire to earn a living doing what they loved, with the flexibility to do it from anywhere, Envato set out to create an online community for buying and selling creative digital assets. Nearly 13 years later, we’re profitable and still totally bootstrapped. This allows us to stay super experimental and totally focused on the best interests of our authors and customers around the world.
-                        </p>
-                     </div>
-                     <div class="overflow-hidden border-top text-center">
-                        <a class="font-weight-bold p-3 d-block" href="#"> READ MORE </a>
-                     </div>
-                  </div>
+                   <div class="box mb-3 shadow-sm border rounded bg-white osahan-post">
+<!--                       <div class="p-3 d-flex align-items-center border-bottom osahan-post-header">-->
+<!--                           <div class="dropdown-list-image mr-3">-->
+<!--                               <img class="rounded-circle" src="img/p6.png" alt="">-->
+<!--                               <div class="status-indicator bg-success"></div>-->
+<!--                           </div>-->
+<!--                           <div class="font-weight-bold">-->
+<!--                               <div class="text-truncate">Collin Weiland</div>-->
+<!--                               <div class="small text-gray-500">Web Developer @Google</div>-->
+<!--                           </div>-->
+<!--                           <span class="ml-auto small">3 hours</span>-->
+<!--                       </div>-->
+                       <div class="p-3 border-bottom osahan-post-body">
+                           <p id="jobfair_content"></p>
+                           <img src="img/post1.png" class="img-fluid" alt="Responsive image">
+                       </div>
+                       <div class="p-3 border-bottom osahan-post-footer">
+                           <a href="#" class="mr-3 text-secondary" id="prove_num"><i class="feather-heart text-danger"></i> </a>
+                           <a href="#" class="mr-3 text-secondary" id="comment_num"><i class="feather-message-square"></i> </a>
+                           <a href="#" class="mr-3 text-secondary"><i class="feather-share-2"></i> 2</a>
+                       </div>
+                       <div class="p-3 d-flex align-items-top border-bottom osahan-post-comment">
+                           <div class="dropdown-list-image mr-3">
+                               <img class="rounded-circle" src="img/p7.png" alt="">
+                               <div class="status-indicator bg-success"></div>
+                           </div>
+                           <div class="font-weight-bold">
+                               <div class="text-truncate"> James Spiegel <span class="float-right small">2 min</span></div>
+                               <div class="small text-gray-500">Ratione voluptatem sequi en lod nesciunt. Neque porro quisquam est, quinder dolorem ipsum quia dolor sit amet, consectetur</div>
+                           </div>
+                       </div>
+                       <div class="p-3">
+                           <textarea placeholder="Add Comment..." class="form-control border-0 p-0 shadow-none" rows="1"></textarea>
+                       </div>
+                   </div>
                </main>
                <aside class="col col-xl-3 order-xl-1 col-lg-6 order-lg-2 col-md-6 col-sm-6 col-12">
                   <div class="box mb-3 shadow-sm border rounded bg-white profile-box text-center">
-                     <div class="p-5">
-                        <img src="img/clogo2.png" class="img-fluid" alt="Responsive image">
+                     <div class="py-4 px-3 border-bottom">
+                        <img src="img/p13.png" class="img-fluid mt-2 rounded-circle" alt="Responsive image">
+                        <h5 class="font-weight-bold text-dark mb-1 mt-4" id="left_name"></h5>
+                        <p class="mb-0 text-muted" id="left_username"></p>
                      </div>
-                     <div class="p-3 border-top border-bottom">
-                        <h5 class="font-weight-bold text-dark mb-1 mt-0">Envato</h5>
-                        <p class="mb-0 text-muted">Melbourne, AU
-                        </p>
+                     <div class="d-flex">
+                        <div class="col-6 border-right p-3">
+                           <h6 class="font-weight-bold text-dark mb-1">358</h6>
+                           <p class="mb-0 text-black-50 small">Connections</p>
+                        </div>
+                        <div class="col-6 p-3">
+                           <h6 class="font-weight-bold text-dark mb-1">85</h6>
+                           <p class="mb-0 text-black-50 small">Views</p>
+                        </div>
                      </div>
-                     <div class="p-3">
-                        <div class="d-flex align-items-top mb-2">
-                           <p class="mb-0 text-muted">Posted</p>
-                           <p class="font-weight-bold text-dark mb-0 mt-0 ml-auto">1 day ago</p>
-                        </div>
-                        <div class="d-flex align-items-top">
-                           <p class="mb-0 text-muted">Applicant Rank</p>
-                           <p class="font-weight-bold text-dark mb-0 mt-0 ml-auto">25</p>
-                        </div>
+                     <div class="overflow-hidden border-top">
+                        <a class="font-weight-bold p-3 d-block" href="profile.html"> View my profile </a>
                      </div>
                   </div>
                   <div class="box shadow-sm mb-3 rounded bg-white ads-box text-center">
@@ -321,20 +334,30 @@
                   </div>
                </aside>
                <aside class="col col-xl-3 order-xl-3 col-lg-6 order-lg-3 col-md-6 col-sm-6 col-12">
-                  <button type="button" class="btn btn-lg btn-block btn-danger mb-3"> <i class="feather-bell"></i> Set alert for jobs </button>
+
+                  <div class="box shadow-sm mb-3 rounded bg-white ads-box text-center overflow-hidden">
+                     <img th:src="@{/web/img/ads1.png}" class="img-fluid" alt="Responsive image">
+                     <div class="p-3 border-bottom">
+                        <h6 class="font-weight-bold text-gold">Osahanin Premium</h6>
+                        <p class="mb-0 text-muted">Grow & nurture your network</p>
+                     </div>
+                     <div class="p-3">
+                        <button type="button" class="btn btn-outline-gold pl-4 pr-4"> ACTIVATE </button>
+                     </div>
+                  </div>
                   <div class="box shadow-sm border rounded bg-white mb-3">
                      <div class="box-title border-bottom p-3">
-                        <h6 class="m-0">Similar Jobs
+                        <h6 class="m-0">Jobs
                         </h6>
                      </div>
                      <div class="box-body p-3">
-                        <a href="job-profile.html">
+                        <a href="job-profile.html?jobid=1">
                            <div class="shadow-sm border rounded bg-white job-item mb-3">
                               <div class="d-flex align-items-center p-3 job-item-header">
                                  <div class="overflow-hidden mr-2">
-                                    <h6 class="font-weight-bold text-dark mb-0 text-truncate">Product Director</h6>
-                                    <div class="text-truncate text-primary">Spotify Inc.</div>
-                                    <div class="small text-gray-500"><i class="feather-map-pin"></i> India, Punjab</div>
+                                    <h6 class="font-weight-bold text-dark mb-0 text-truncate">阿里招聘会</h6>
+                                    <div class="text-truncate text-primary">南京大学</div>
+                                    <div class="small text-gray-500"><i class="feather-map-pin"></i> 鼓楼</div>
                                  </div>
                                  <img class="img-fluid ml-auto" src="img/l3.png" alt="">
                               </div>
@@ -352,13 +375,38 @@
                               </div>
                            </div>
                         </a>
-                        <a href="job-profile.html">
+
+                        <a href="job-profile.html?jobid=3">
                            <div class="shadow-sm border rounded bg-white job-item">
                               <div class="d-flex align-items-center p-3 job-item-header">
                                  <div class="overflow-hidden mr-2">
-                                    <h6 class="font-weight-bold text-dark mb-0 text-truncate">.NET Developer</h6>
-                                    <div class="text-truncate text-primary">Invision</div>
-                                    <div class="small text-gray-500"><i class="feather-map-pin"></i> London, UK
+                                    <h6 class="font-weight-bold text-dark mb-0 text-truncate">腾讯宣讲会</h6>
+                                    <div class="text-truncate text-primary">南京大学</div>
+                                    <div class="small text-gray-500"><i class="feather-map-pin"></i> 仙林
+                                    </div>
+                                 </div>
+                                 <img class="img-fluid ml-auto" src="img/l4.png" alt="">
+                              </div>
+                              <div class="d-flex align-items-center p-3 border-top border-bottom job-item-body">
+                                 <div class="overlap-rounded-circle">
+                                    <img class="rounded-circle shadow-sm" data-toggle="tooltip" data-placement="top" title="" src="img/p13.png" alt="" data-original-title="Sophia Lee">
+                                    <img class="rounded-circle shadow-sm" data-toggle="tooltip" data-placement="top" title="" src="img/p1.png" alt="" data-original-title="John Doe">
+                                    <img class="rounded-circle shadow-sm" data-toggle="tooltip" data-placement="top" title="" src="img/p3.png" alt="" data-original-title="Robert Cook">
+                                 </div>
+                                 <span class="font-weight-bold text-muted">18 connections</span>
+                              </div>
+                              <div class="p-3 job-item-footer">
+                                 <small class="text-gray-500"><i class="feather-clock"></i> Posted 3 Days ago</small>
+                              </div>
+                           </div>
+                        </a>
+                        <a href="job-profile.html?jobid=2">
+                           <div class="shadow-sm border rounded bg-white job-item">
+                              <div class="d-flex align-items-center p-3 job-item-header">
+                                 <div class="overflow-hidden mr-2">
+                                    <h6 class="font-weight-bold text-dark mb-0 text-truncate">头条宣讲会</h6>
+                                    <div class="text-truncate text-primary">南京大学</div>
+                                    <div class="small text-gray-500"><i class="feather-map-pin"></i> 汉口路
                                     </div>
                                  </div>
                                  <img class="img-fluid ml-auto" src="img/l4.png" alt="">
@@ -378,88 +426,6 @@
                         </a>
                      </div>
                   </div>
-                  <div class="box shadow-sm border rounded bg-white mb-3">
-                     <div class="box-title border-bottom p-3">
-                        <h6 class="m-0">Who viewed your profile</h6>
-                     </div>
-                     <div class="box-body p-3">
-                        <div class="d-flex align-items-center osahan-post-header mb-3 people-list">
-                           <div class="dropdown-list-image mr-3">
-                              <img class="rounded-circle" src="img/p4.png" alt="">
-                              <div class="status-indicator bg-success"></div>
-                           </div>
-                           <div class="font-weight-bold mr-2">
-                              <div class="text-truncate">Sophia Lee</div>
-                              <div class="small text-gray-500">@Harvard
-                              </div>
-                           </div>
-                           <span class="ml-auto"><button type="button" class="btn btn-outline-primary btn-sm">Connent</button>
-                           </span>
-                        </div>
-                        <div class="d-flex align-items-center osahan-post-header mb-3 people-list">
-                           <div class="dropdown-list-image mr-3">
-                              <img class="rounded-circle" src="img/p9.png" alt="">
-                              <div class="status-indicator bg-success"></div>
-                           </div>
-                           <div class="font-weight-bold mr-2">
-                              <div class="text-truncate">John Doe</div>
-                              <div class="small text-gray-500">Traveler
-                              </div>
-                           </div>
-                           <span class="ml-auto"><button type="button" class="btn btn-outline-primary btn-sm">Connent</button>
-                           </span>
-                        </div>
-                        <div class="d-flex align-items-center osahan-post-header mb-3 people-list">
-                           <div class="dropdown-list-image mr-3">
-                              <img class="rounded-circle" src="img/p10.png" alt="">
-                              <div class="status-indicator bg-success"></div>
-                           </div>
-                           <div class="font-weight-bold mr-2">
-                              <div class="text-truncate">Julia Cox</div>
-                              <div class="small text-gray-500">Art Designer
-                              </div>
-                           </div>
-                           <span class="ml-auto"><button type="button" class="btn btn-outline-primary btn-sm">Connent</button>
-                           </span>
-                        </div>
-                        <div class="d-flex align-items-center osahan-post-header mb-3 people-list">
-                           <div class="dropdown-list-image mr-3">
-                              <img class="rounded-circle" src="img/p11.png" alt="">
-                              <div class="status-indicator bg-success"></div>
-                           </div>
-                           <div class="font-weight-bold mr-2">
-                              <div class="text-truncate">Robert Cook</div>
-                              <div class="small text-gray-500">@Photography
-                              </div>
-                           </div>
-                           <span class="ml-auto"><button type="button" class="btn btn-outline-primary btn-sm">Connent</button>
-                           </span>
-                        </div>
-                        <div class="d-flex align-items-center osahan-post-header people-list">
-                           <div class="dropdown-list-image mr-3">
-                              <img class="rounded-circle" src="img/p12.png" alt="">
-                              <div class="status-indicator bg-success"></div>
-                           </div>
-                           <div class="font-weight-bold mr-2">
-                              <div class="text-truncate">Richard Bell</div>
-                              <div class="small text-gray-500">@Envato
-                              </div>
-                           </div>
-                           <span class="ml-auto"><button type="button" class="btn btn-outline-primary btn-sm">Connent</button>
-                           </span>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="box shadow-sm mb-3 rounded bg-white ads-box text-center">
-                     <img src="img/ads1.png" class="img-fluid" alt="Responsive image">
-                     <div class="p-3 border-bottom">
-                        <h6 class="font-weight-bold text-gold">Osahanin Premium</h6>
-                        <p class="mb-0 text-muted">Grow &amp; nurture your network</p>
-                     </div>
-                     <div class="p-3">
-                        <button type="button" class="btn btn-outline-gold pl-4 pr-4"> ACTIVATE </button>
-                     </div>
-                  </div>
                </aside>
             </div>
          </div>
@@ -476,6 +442,10 @@
          //2、初始化页面信息
          $(function(){
             to_page();
+            $("#nav_name").text(localStorage.getItem("name"));
+            $("#nav_userName").text(localStorage.getItem("loginName"));
+            $("#left_name").text(localStorage.getItem("name"));
+            $("#left_username").text(localStorage.getItem("loginName"));
          });
          // 拿到url中的参数
          function getQueryVariable(variable)
@@ -496,11 +466,17 @@
                data:"jobid="+parseInt(jobid) +"&userid="+ 1 ,
                type: "GET",
                success: function (result) {
-                  console.log(result);
-                  //清空table表
-                 // $("#recommend_jobs_box").empty();
-                  //1、解析并显示推荐的招聘会数据
-                  //build_jobFair_box(result, 0);
+                  var jobfair = result.data;
+                  $("#jobTitle").append(jobfair.title);
+                  $("#jobTitle").attr("jobid", jobfair.id);
+                  $("#promoter").append(jobfair.promoter);
+                  $("#meeting_time").append(jobfair.meetingTime);
+                  $("#address").append(jobfair.address);
+                  $("#label").append(jobfair.label);
+                  $("#jobfair_content").append(jobfair.content);
+                  $("#prove_num").append(jobfair.proveNum);
+                  $("#comment_num").append(jobfair.commentNum);
+
                }
             });
          }

@@ -1,27 +1,26 @@
-package com.xmtx.webui.controller;
-
-import com.xmtx.common.VO.ResultVO;
-import com.xmtx.jobfair.client.JobFairClient;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.openfeign.EnableFeignClients;
-import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Service;
-import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.*;
-
-import javax.validation.Valid;
-import java.util.Map;
-
-
-@RestController
-@RequestMapping("/jobfair")
-@Slf4j
-@Service
-public class jobfairController {
-    @Autowired
-    private JobFairClient jobFairClient;
+//package com.xmtx.webui.controller;
+//
+//import com.xmtx.jobfair.common.JobFairForm_Release;
+//import lombok.extern.slf4j.Slf4j;
+//import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.cloud.openfeign.EnableFeignClients;
+//import org.springframework.cloud.openfeign.FeignClient;
+//import org.springframework.stereotype.Controller;
+//import org.springframework.stereotype.Service;
+//import org.springframework.validation.BindingResult;
+//import org.springframework.web.bind.annotation.*;
+//
+//import javax.validation.Valid;
+//import java.util.Map;
+//
+//
+//@RestController
+//@RequestMapping("/jobfair")
+//@Slf4j
+//@Service
+//public class jobfairController {
+//    @Autowired
+//    private JobFairClient jobFairClient;
 //    @RequestMapping("/getCommandList")
 //    @ResponseBody
 //    public ResultVO recommendJobsList(@RequestParam("pn") Integer pn){
@@ -41,4 +40,4 @@ public class jobfairController {
 //        System.out.println(releaseInput.toString());
 //        return "redirect:/index.html";
 //    }
-}
+//}

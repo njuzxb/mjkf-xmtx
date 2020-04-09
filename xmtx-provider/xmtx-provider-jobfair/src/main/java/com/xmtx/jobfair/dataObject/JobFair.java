@@ -41,4 +41,21 @@ public class JobFair implements Serializable {
     private Integer commentNum;
     /**  点赞数 **/
     private Integer proveNum;
+
+    @Override
+    public String toString() {
+        return "JobFair{" +
+                "id=" + id +
+                ", eid=" + eid +
+                ", promoter='" + promoter + '\'' +
+                ", meetingTime=" + meetingTime +
+                ", address='" + address + '\'' +
+                ", title='" + title + '\'' +
+                ", label='" + label + '\'' +
+                ", enabled=" + enabled +
+                ", content='" + content + '\'' +
+                ", commentNum=" + commentNum +
+                ", proveNum=" + proveNum +
+                '}';
+    }
 }
