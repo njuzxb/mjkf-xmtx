@@ -301,10 +301,168 @@
                         </div>
                         <p class="mb-0">Find the most qualified people in the most unexpected places. Information for applicants to consider when applying for local positions. </p>
                      </div>
-                     <a href="http://localhost:9000/jobfair/jobfair/list?pn=0">展示第1页</a>
-                     <a href="http://localhost:9000/jobfair/jobfair/list?pn=1">展示第2页</a>
-                     <a href="http://localhost:9000/jobfair/jobfair/list?pn=2">展示第3页</a>
-                     <a href="http://localhost:9000/jobfair/jobfair/list?pn=3">展示第4页</a>
+
+                     <table class="table table-border table-hover">
+                        <!--表头-->
+                        <thead>
+                        <tr>
+                           <th>招聘会编号</th>
+                           <th>企业名称</th>
+                           <th>招聘会地址</th>
+                           <th>招聘会标题</th>
+                           <th>招聘会标签</th>
+                           <th>评论数</th>
+                           <th>点赞数</th>
+                        </tr>
+                        </thead>
+                        <!--数据渲染区域-->
+                        <tbody id="tbody">
+                        </tbody>
+                     </table>
+                     <!--分页-->
+                     <div class="page">
+                        <a id="down" href="#" onClick="change1(--pageno)">上一页</a>　　
+                        <span id="a3"></span><a id="up" href="#" onClick="change1(++pageno)">下一页</a>
+                        <span class="ho">第<span id="a2"></span>/<span id="a1"></span>页</span>
+                     </div>
+                     <!--用来存放总页数，放置在body中-->
+                     <div style="display:block" id="p"></div>
+                     <script src="http://code.jquery.com/jquery-latest.js"></script>
+                     <script type="text/javascript">
+                        $(document).ready(function paging(page){
+                           $.ajax({
+                              type: "GET",
+                              url: "http://localhost:9000/jobfair/jobfair/listAll",
+                              dataType:"json",
+                              success: function(data){
+                                 console.log(data);
+                                 console.log(data.length);
+                                 for(var i=0;i<data.data.length;i++) {
+                                    tbody.innerHTML+="<tr><th>13111"+data.data[i].jobfairId+"</th>"+
+                                            "<th>2543534"+data.data[i].enterpriseName+"</th>"+
+                                            "<th>"+data.data[i].jobfairAddress+"</th>"+
+                                            "<th>"+data.data[i].jobfairTitle+"</th>"+
+                                            "<th>"+data.data[i].jobfairLabel+"</th>"+
+                                            "<th>"+data.data[i].comment_num+"</th>"+
+                                            "<th>"+data.data[i].prove_num+"</th></tr>";
+                                 }
+                                 var a = document.getElementById("tbody").getElementsByTagName("tr");
+                                 var zz =new Array(a.length);
+                                 alert("目前共有"+zz.length+"条招聘信息");
+                                 for(var i=0;i<a.length;i++)
+                                 { zz[i]=a[i].innerHTML } //div的字符串数组付给zz
+                                 var pageno=1;               //当前页
+                                 var pagesize=10;            //每页多少条信息
+                                 if(zz.length%pagesize==0)
+                                 {var  pageall =zz.length/pagesize }
+                                 else
+                                 {var  pageall =parseInt(zz.length/pagesize)+1
+                                  alert("招聘信息共有"+pageall+"页");}       //一共多少页
+                                 $("#p").text(pageall);      //将pageall的值存放到div中，便于下次使用
+                                 change(1,pageall,zz);
+                              }
+                           })
+                        })
+                        var k;
+                        function change(e,all,zu){
+                           zz=zu;
+                           var pagesize=10;   //每页多少条信息
+                           pageall=all;     //总页数
+                           pageno=e;        //当前页
+                           if(e <1)//如果输入页<1页
+                           { e=1;pageno=1}//就等于第1页 ， 当前页为1
+                           if(e>pageall)//如果输入页大于最大页
+                           {e=pageall;pageno=pageall}//输入页和当前页都=最大页
+                           document.getElementById("tbody").innerHTML="";//全部清空
+                           for(var i=0;i<pagesize;i++)
+                           {
+                              var div =document.createElement("tr");//建立div对象
+                              div.innerHTML=zz[(e-1)*pagesize+i];//建立显示元素
+                              document.getElementById("tbody").appendChild(div);//加入tbody中
+                              if(zz[(e-1)*pagesize+i+1]==null)//超出范围跳出
+                                 break
+                           }
+                           var ye="";
+                           for(var j=1;j<=pageall;j++)
+                           {
+                              if(e==j)
+                              {ye=ye+"<span><a href='#' onClick='change1("+j+")' style='color:#FF0000'>"+j+"</a></span> "}
+                              else
+                              {ye=ye+"<a href='#' onClick='change1("+j+")'>"+j+"</a> "}
+                           }
+                           document.getElementById("a1").innerHTML=pageall;
+                           document.getElementById("a2").innerHTML=pageno;
+                           document.getElementById("a3").innerHTML=ye;
+
+                           /*如果当前是第一页则：*/
+
+                           if (pageno == 1)
+                           {
+                              $('#down').hide();//隐藏
+                           }else {
+                              $('#down').show();//显示
+                           }
+
+                           /*如果是最后一页则：*/
+
+                           if (pageno == pageall)
+                           {
+                              $('#up').hide();//隐藏
+                           }else {
+                              $('#up').show();//显示
+                           }
+                           k=zu;
+
+                        }
+                        function change1(e){
+                           zz=k;
+                           var pagesize=10;
+                           pageall=$("#p").text();
+                           pageno=e;
+                           if(e <1)//如果输入页<1页
+                           { e=1;pageno=1}//就等于第1页 ， 当前页为1
+                           if(e>pageall)//如果输入页大于最大页
+                           {e=pageall;pageno=pageall}//输入页和当前页都=最大页
+                           document.getElementById("tbody").innerHTML="";//全部清空
+                           for(var i=0;i<pagesize;i++)
+                           {
+                              var div =document.createElement("tr");//建立div对象
+                              div.innerHTML=zz[(e-1)*pagesize+i];//建立显示元素
+                              document.getElementById("tbody").appendChild(div);//加入tbody中
+                              if(zz[(e-1)*pagesize+i+1]==null)//超出范围跳出
+                                 break
+                           }
+                           var ye="";
+                           for(var j=1;j<=pageall;j++)
+                           {
+                              if(e==j)
+                              {ye=ye+"<span><a href='#' onClick='change1("+j+")' style='color:#FF0000'>"+j+"</a></span> "}
+                              else
+                              {ye=ye+"<a href='#' onClick='change1("+j+")'>"+j+"</a> "}
+                           }
+                           document.getElementById("a1").innerHTML=pageall;
+                           document.getElementById("a2").innerHTML=pageno;
+                           document.getElementById("a3").innerHTML=ye;
+                           /*如果当前是第一页则：*/
+                           if (pageno == 1)
+                           {
+                              $('#down').hide();//隐藏
+                           }else {
+                              $('#down').show();//显示
+                           }
+                           /*如果是最后一页则：*/
+
+                           if (pageno == pageall)
+                           {
+                              $('#up').hide();//隐藏
+                           }else {
+                              $('#up').show();//显示
+                           }
+                        }
+                     </script>
+
+                     <hr>
+                     <hr>
                      <div class="box-body p-3 border-bottom">
                         <div class="d-flex align-items-top job-item-header pb-2">
                            <div class="mr-2">
@@ -495,12 +653,13 @@
             </div>
          </div>
       </div>
+
       <!-- Bootstrap core JavaScript -->
-      <script src="vendor/jquery/jquery.min.js"></script>
-      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-      <!-- slick Slider JS-->
-      <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
-      <!-- Custom scripts for all pages-->
-      <script src="js/osahan.js"></script>
+<!--      <script src="../static/vendor/jquery/jquery.min.js"></script>-->
+<!--      <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>-->
+<!--      &lt;!&ndash; slick Slider JS&ndash;&gt;-->
+<!--      <script type="text/javascript" src="../static/vendor/slick/slick.min.js"></script>-->
+<!--      &lt;!&ndash; Custom scripts for all pages&ndash;&gt;-->
+<!--      <script src="../static/js/osahan.js"></script>-->
    </body>
 </html>
