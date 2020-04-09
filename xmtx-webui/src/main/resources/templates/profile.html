@@ -332,7 +332,7 @@
                         $(document).ready(function paging(page){
                            $.ajax({
                               type: "GET",
-                              url: "http://localhost:9000/jobfair/jobfair/listAll",
+                              url: "http://localhost:9000/jobfair/jobfair/listAll?username=root",
                               dataType:"json",
                               success: function(data){
                                  console.log(data);
