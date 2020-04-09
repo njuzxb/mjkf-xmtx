@@ -7,7 +7,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Configuration
 public class SpringMVCConfig implements WebMvcConfigurer {
 
-    @Override
+    //@Override
     public void addViewControllers(ViewControllerRegistry registry) {
 
         // 相当于：<mvc:view-controller path="/to/login/page.html" view-name="member-login" />
@@ -39,6 +39,12 @@ public class SpringMVCConfig implements WebMvcConfigurer {
         // 跳转到招聘信息列表
         urlPath = "/jobs.html";
         viewName = "jobs";
+
+        registry.addViewController(urlPath).setViewName(viewName);
+
+        // 跳转到发布招聘信息列表
+        urlPath = "/release.html";
+        viewName = "release";
 
         registry.addViewController(urlPath).setViewName(viewName);
 
