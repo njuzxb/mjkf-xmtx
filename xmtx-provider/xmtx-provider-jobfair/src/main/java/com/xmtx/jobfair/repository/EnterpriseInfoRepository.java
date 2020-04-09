@@ -18,6 +18,8 @@ public interface EnterpriseInfoRepository extends JpaRepository<EnterpriseInfo,I
     @Override
     Optional<EnterpriseInfo> findById(Integer id);
     List<EnterpriseInfo> findAllById(Integer enterpriseId);
+
+    @Override
     List<EnterpriseInfo> findAll();
 
 }

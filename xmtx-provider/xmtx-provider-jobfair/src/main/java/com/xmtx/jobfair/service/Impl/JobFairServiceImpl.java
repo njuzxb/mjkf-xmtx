@@ -17,8 +17,10 @@ import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.*;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @ Author     ：djq.
@@ -36,12 +38,41 @@ public class JobFairServiceImpl implements JobFairService {
     @Autowired
     EnterpriseInfoRepository enterpriseInfoRepository;
 
-    @Override
     //@Cacheable(key = "#p0", unless = "#result == null ")
+    @Override
+    public JobFair job_fair_add_proveNum(JobFair jobFair){
+        //原子操作加1
+        AtomicInteger proveNum = new AtomicInteger(jobFair.getProveNum());
+        Integer newProve = proveNum.incrementAndGet();
+        JobFair jobFair1 = jobFair;
+        Integer old_prove = jobFair.getProveNum();
+        jobFair1.setProveNum(newProve);
+        jobFairRepository.save(jobFair1);
+        return jobFair1;
+    }
+
+    @Override
+    @Cacheable(key = "#p0", unless = "#result == null ")
     public Optional<JobFair> job_fair_findById(Integer id){
-
         return jobFairRepository.findByIdAndEnabled(id, 1);
+    }
 
+    @Override
+    public Optional<JobFair> add_prove_job_fair_findById(Integer id) {
+        return jobFairRepository.findByIdAndEnabled(id, 1);
+    }
+
+    @Override
+    public List<JobFair> job_fair_show_byName(String username) {
+        List<Integer> jobId_List = jobFairRepository.findByPromoter(username);
+        List<JobFair> jobFairList = new ArrayList<>();
+        for(Integer id:jobId_List){
+            Optional<JobFair> tmp = jobFairRepository.findById(id);
+            if(tmp.isPresent()){
+                jobFairList.add(tmp.get());
+            }
+        }
+        return jobFairList;
     }
 
     @Override
@@ -53,7 +84,7 @@ public class JobFairServiceImpl implements JobFairService {
     }
 
     @Override
-    public List<JobFair> job_fair_show_All() {
+    public List<JobFair> job_fair_show_All(String username) {
         return jobFairRepository.findAll();
     }
 
@@ -87,6 +118,7 @@ public class JobFairServiceImpl implements JobFairService {
             throw new JobFairException(ResultEnum.JOBFAIR_NOT_EXIST);
         }
         System.out.println("存在该公司");
+        //TODO 判断该发起人用户是否存在(根据promoterName)，待做
         //判断该公司的Enable字段是否为1，若为0。则没有发布招聘会的资格
         EnterpriseInfo enterpriseInfo = enterpriseInfoOptional.get();
         if(!enterpriseInfo.isEnabled() || jobFair.getEnabled() == 0){

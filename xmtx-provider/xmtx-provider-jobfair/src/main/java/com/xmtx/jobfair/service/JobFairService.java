@@ -20,8 +20,12 @@ public interface JobFairService {
     * 根据id查找招聘信息
     * */
     Optional<JobFair> job_fair_findById(Integer id);
+    /*
+     * 根据id查找招聘信息,不走缓存,要考虑数据库与缓存的一致性
+     * */
+    Optional<JobFair> add_prove_job_fair_findById(Integer id);
 
-
+    List<JobFair> job_fair_show_byName(String username);
     /*
      * 招聘会列表信息查看
      * */
@@ -31,13 +35,16 @@ public interface JobFairService {
     /*
      * 招聘会列表信息查看
      * */
-    List<JobFair> job_fair_show_All();
+    List<JobFair> job_fair_show_All(String username);
 
     /*
      * 招聘会信息修改
      * */
     void job_fair_update(JobFair jobFair);
-
+    /*
+     * 点赞功能
+     * */
+    JobFair job_fair_add_proveNum(JobFair jobFair);
     /*
      * 招聘会信息删除
      * */

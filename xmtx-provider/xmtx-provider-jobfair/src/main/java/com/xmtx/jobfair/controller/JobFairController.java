@@ -91,7 +91,8 @@ public class JobFairController {
     @GetMapping("/addProve")
     @Transactional
     public ResultVO addProve(@RequestParam("jobid") Integer jobid){
-        Optional<JobFair> jobFair = jobFairService.job_fair_findById(jobid);
+        //从缓存中取数据
+        Optional<JobFair> jobFair = jobFairService.add_prove_job_fair_findById(jobid);
         if(!jobFair.isPresent()){
             return ResultVOUtil.error("招聘信息已被删除");
         }
@@ -134,13 +135,12 @@ public class JobFairController {
         List<JobFair> list = jobFairService.job_fair_show(pn);
         return list2VO(list);
     }
-    //get方法获取所有招聘会列表
+    //get方法获取某用户发布的所有招聘会列表
     @GetMapping("/listAll")
-    public ResultVO<JobFairInfoVO> listAll(Integer pn){
-        List<JobFair> list = jobFairService.job_fair_show_All();
+    public ResultVO<JobFairInfoVO> listAll(String username){
+        List<JobFair> list = jobFairService.job_fair_show_byName(username);
         return list2VO(list);
     }
-
 
     @PostMapping("/release")
     public ResultVO<Map<String,Integer>> release(@Valid JobFairForm_Release jobFairFormRelease, BindingResult bindingResult){
