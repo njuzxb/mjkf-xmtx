@@ -18,7 +18,7 @@ import java.io.Serializable;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class ReleaseInput implements Serializable {
+public class JobFairForm_Release implements Serializable {
     @NotNull(message = "企业id必填")
     private Integer eid;
 
