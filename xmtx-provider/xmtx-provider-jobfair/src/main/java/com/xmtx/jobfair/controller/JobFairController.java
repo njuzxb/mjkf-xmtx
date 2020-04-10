@@ -144,7 +144,7 @@ public class JobFairController {
 
     @PostMapping("/release")
     public ResultVO<Map<String,Integer>> release(@Valid JobFairForm_Release jobFairFormRelease, BindingResult bindingResult){
-        if(bindingResult.hasErrors()){
+            if(bindingResult.hasErrors()){
             throw new JobFairException(ResultEnum.PARAM_ERROR);
         }
         //将form转换为jobfair,就能调用service中的发布功能啦
