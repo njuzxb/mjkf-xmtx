@@ -82,7 +82,7 @@
       <script src="js/osahan.js"></script>
       <script type="text/javascript">
          $("#login_button").click(function(){
-            window.location="index.html";
+            // window.location="index.html";
             //1、先进行校验
             //2、发送ajax请求登陆
             $.ajax({
@@ -91,7 +91,7 @@
                data:$("#form_login").serialize(),
                success:function(result){
                   if(result.code != 0){
-                     show_validate_msg("#input_accountid","error",result.msg);
+                     show_validate_msg("#loginAcct","error",result.msg);
                   } else {
                      let resultData = result.data;
                      if(!window.localStorage){

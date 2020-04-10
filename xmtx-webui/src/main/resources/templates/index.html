@@ -401,6 +401,7 @@
                               </div>
                            </div>
                         </a>
+
                         <a href="job-profile.html?jobid=2">
                            <div class="shadow-sm border rounded bg-white job-item">
                               <div class="d-flex align-items-center p-3 job-item-header">
@@ -492,9 +493,9 @@
 
                var headBos = $("<div class=\"d-flex align-items-center p-3 job-item-header\"></div>").append(head).append(logo);
 
-               var heart = $("<a href=\"#\" class=\"mr-3 text-secondary\"><i class=\"feather-heart text-danger\"></i> 16</a>");
-               var comment = $("<a href=\"#\" class=\"mr-3 text-secondary\"><i class=\"feather-message-square\"></i> 8</a>");
-               var share = $("<a href=\"#\" class=\"mr-3 text-secondary\"><i class=\"feather-share-2\"></i> 2</a>");
+               var heart = $("<a href=\"#\" class=\"mr-3 text-secondary\"><i class=\"feather-heart text-danger\"></i> </a>").append(item.prove_num);
+               var comment = $("<a href=\"#\" class=\"mr-3 text-secondary\"><i class=\"feather-message-square\"></i> </a>").append(item.comment_num);
+               var share = $("<a href=\"#\" class=\"mr-3 text-secondary\"><i class=\"feather-share-2\"></i> 0 </a>");
 
                var center = $("<div class=\"d-flex align-items-center p-3 border-top border-bottom job-item-body\"></div>").append(heart).append(comment).append(share);
 
