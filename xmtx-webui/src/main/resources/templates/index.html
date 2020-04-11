@@ -222,29 +222,29 @@
 <!--                        <img src="img/chart.png" class="img-fluid" alt="Responsive image">-->
 <!--                     </div>-->
 <!--                  </div>-->
-                  <div class="box shadow-sm mb-3 rounded bg-white ads-box text-center">
-                     <img src="img/job1.png" class="img-fluid" alt="Responsive image">
-                     <div class="p-3 border-bottom">
-                        <h6 class="font-weight-bold text-dark">Osahan Solutions</h6>
-                        <p class="mb-0 text-muted">Looking for talent?</p>
-                     </div>
-                     <div class="p-3">
-                        <button type="button" class="btn btn-outline-primary pl-4 pr-4"> POST A JOB </button>
-                     </div>
-                  </div>
+<!--                  <div class="box shadow-sm mb-3 rounded bg-white ads-box text-center">-->
+<!--                     <img src="img/job1.png" class="img-fluid" alt="Responsive image">-->
+<!--                     <div class="p-3 border-bottom">-->
+<!--                        <h6 class="font-weight-bold text-dark">Osahan Solutions</h6>-->
+<!--                        <p class="mb-0 text-muted">Looking for talent?</p>-->
+<!--                     </div>-->
+<!--                     <div class="p-3">-->
+<!--                        <button type="button" class="btn btn-outline-primary pl-4 pr-4"> POST A JOB </button>-->
+<!--                     </div>-->
+<!--                  </div>-->
                </aside>
                <aside class="col col-xl-3 order-xl-3 col-lg-6 order-lg-3 col-md-6 col-sm-6 col-12">
 
-                  <div class="box shadow-sm mb-3 rounded bg-white ads-box text-center overflow-hidden">
-                     <img th:src="@{/web/img/ads1.png}" class="img-fluid" alt="Responsive image">
-                     <div class="p-3 border-bottom">
-                        <h6 class="font-weight-bold text-gold">Osahanin Premium</h6>
-                        <p class="mb-0 text-muted">Grow & nurture your network</p>
-                     </div>
-                     <div class="p-3">
-                        <button type="button" class="btn btn-outline-gold pl-4 pr-4"> ACTIVATE </button>
-                     </div>
-                  </div>
+<!--                  <div class="box shadow-sm mb-3 rounded bg-white ads-box text-center overflow-hidden">-->
+<!--                     <img th:src="@{/web/img/ads1.png}" class="img-fluid" alt="Responsive image">-->
+<!--                     <div class="p-3 border-bottom">-->
+<!--                        <h6 class="font-weight-bold text-gold">Osahanin Premium</h6>-->
+<!--                        <p class="mb-0 text-muted">Grow & nurture your network</p>-->
+<!--                     </div>-->
+<!--                     <div class="p-3">-->
+<!--                        <button type="button" class="btn btn-outline-gold pl-4 pr-4"> ACTIVATE </button>-->
+<!--                     </div>-->
+<!--                  </div>-->
                   <div class="box shadow-sm border rounded bg-white mb-3">
                      <div class="box-title border-bottom p-3">
                         <h6 class="m-0">Jobs
@@ -277,7 +277,7 @@
                         </a>
 
                         <a href="job-profile.html?jobid=3">
-                           <div class="shadow-sm border rounded bg-white job-item">
+                           <div class="shadow-sm border rounded bg-white job-item  mb-3">
                               <div class="d-flex align-items-center p-3 job-item-header">
                                  <div class="overflow-hidden mr-2">
                                     <h6 class="font-weight-bold text-dark mb-0 text-truncate">腾讯宣讲会</h6>
@@ -302,7 +302,7 @@
                         </a>
 
                         <a href="job-profile.html?jobid=2">
-                           <div class="shadow-sm border rounded bg-white job-item">
+                           <div class="shadow-sm border rounded bg-white job-item  mb-3">
                               <div class="d-flex align-items-center p-3 job-item-header">
                                  <div class="overflow-hidden mr-2">
                                     <h6 class="font-weight-bold text-dark mb-0 text-truncate">头条宣讲会</h6>
@@ -352,6 +352,7 @@
          function to_page() {
             $.ajax({
                url: "http://localhost:9000/jobfair/jobfair/list?pn=0",
+               timeout: 2000,
                type: "GET",
                success: function (result) {
                   //console.log(result);
