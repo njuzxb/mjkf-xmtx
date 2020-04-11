@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3516352-3651-407c-ba59-2d1159c78ce9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/controller/JobFairCommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/controller/JobFairCommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/service/impl/JobCommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/service/impl/JobCommentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/vo/CommentCreateVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/vo/CommentCreateVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/vo/JobFairCommentVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/vo/JobFairCommentVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/vo/JobFairSubCommentVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/vo/JobFairSubCommentVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/vo/SubCommentCreateVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/vo/SubCommentCreateVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/resources/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/xmtx-provider/target/" />
@@ -69,89 +66,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/service/impl/JobCommentServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/repository/JobSubCommentRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="87" selection-start-line="10" selection-start-column="87" selection-end-line="10" selection-end-column="87" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/service/impl/JobSubCommentServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="931">
+              <caret line="49" column="24" lean-forward="true" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/JobCommentProviderApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+            <state relative-caret-position="228">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/vo/SubCommentCreateVO.java">
+        <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="152">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xmtx-eureka/src/main/java/com/xmtx/eureka/EurekaApplication.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xmtx-zuul/src/main/java/com/xmtx/zuul/ZuulApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-redis/src/main/java/com/xmtx/redis/client/RedisClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="23" selection-start-line="22" selection-end-line="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/src/main/java/com/xmtx/redis/RedisApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/JobfairApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/vo/JobFairCommentVO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="38" column="42" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/controller/JobFairCommentController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="82" column="8" lean-forward="true" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="247">
+              <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -159,8 +132,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/UserApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+            <state relative-caret-position="209">
+              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/controller/JobFairCommentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="115" selection-start-line="115" selection-end-line="115" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/service/JobSubCommentService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -197,9 +203,6 @@
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/VO/JobFairCommentVO.java" />
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/VO/JobFairSubCommentVO.java" />
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/pom.xml" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/repository/JobFairCommentRepository.java" />
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/repository/JobFairSubCommentRepository.java" />
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/test/java/com/xmtx/jobfairComment/repository/JobFairCommentRepositoryTest.java" />
@@ -207,14 +210,17 @@
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/service/JobSubCommentService.java" />
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/repository/JobCommentRepository.java" />
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/service/JobCommentService.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/service/impl/JobSubCommentServiceImpl.java" />
-        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/repository/JobSubCommentRepository.java" />
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/vo/CommentCreateVO.java" />
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/vo/JobFairCommentVO.java" />
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/vo/JobFairSubCommentVO.java" />
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/vo/SubCommentCreateVO.java" />
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/controller/JobFairCommentController.java" />
         <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/service/impl/JobCommentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/repository/JobSubCommentRepository.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/service/impl/JobSubCommentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/resources/application.yml" />
       </list>
     </option>
   </component>
@@ -240,7 +246,7 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="651" />
     <option name="y" value="84" />
-    <option name="width" value="1311" />
+    <option name="width" value="1295" />
     <option name="height" value="1085" />
   </component>
   <component name="ProjectId" id="1aCcBXlxSioc5cUWldA6zVkCxLK" />
@@ -659,6 +665,17 @@
               <item name="mjkf-xmtx" type="b2602c69:ProjectViewProjectNode" />
               <item name="mjkf-xmtx" type="462c0819:PsiDirectoryNode" />
               <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mjkf-xmtx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mjkf-xmtx" type="462c0819:PsiDirectoryNode" />
+              <item name="xmtx-provider" type="462c0819:PsiDirectoryNode" />
               <item name="xmtx-provider-user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -807,7 +824,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/校招/春招/项目/SpringCloud/ruoyi/ruoyi-cloud" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -924,7 +941,7 @@
       <workItem from="1586336964718" duration="174000" />
       <workItem from="1586337162460" duration="1971000" />
       <workItem from="1586414906408" duration="5843000" />
-      <workItem from="1586585370033" duration="9919000" />
+      <workItem from="1586585370033" duration="12965000" />
     </task>
     <task id="LOCAL-00001" summary="修改了common,eueka,zuul,webui和provider,provider-api的user,redis,jobfair,history的pom.xml文件">
       <created>1586250971452</created>
@@ -944,13 +961,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25777000" />
+    <option name="totallyTimeSpent" value="28823000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1477" height="837" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28219563" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2976777" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Persistence" order="3" side_tool="true" />
@@ -963,8 +980,8 @@
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.42492917" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.37252125" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.30736545" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.32152975" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
@@ -1079,49 +1096,20 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/service/impl/JobCommentServiceImpl.java</url>
-          <line>148</line>
+          <line>150</line>
           <properties />
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/controller/JobFairCommentController.java</url>
+          <line>115</line>
+          <properties />
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/service/Impl/JobFairServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="57" column="39" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-aop/5.2.1.RELEASE/spring-aop-5.2.1.RELEASE.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="84" selection-start-line="84" selection-end-line="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-beans/5.2.1.RELEASE/spring-beans-5.2.1.RELEASE.jar!/org/springframework/beans/BeanUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="356" selection-start-line="356" selection-end-line="356" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.27/tomcat-embed-core-9.0.27.jar!/org/apache/catalina/core/StandardContextValve.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.27/tomcat-embed-core-9.0.27.jar!/org/apache/tomcat/util/net/SocketProcessorBase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.27/tomcat-embed-core-9.0.27.jar!/org/apache/tomcat/util/net/NioEndpoint.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -1192,62 +1180,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-web/5.2.1.RELEASE/spring-web-5.2.1.RELEASE.jar!/org/springframework/web/filter/RequestContextFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-web/5.2.1.RELEASE/spring-web-5.2.1.RELEASE.jar!/org/springframework/web/filter/OncePerRequestFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.27/tomcat-embed-core-9.0.27.jar!/org/apache/catalina/core/ApplicationFilterChain.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="95" selection-start-line="95" selection-end-line="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.27/tomcat-embed-core-9.0.27.jar!/org/apache/catalina/core/StandardWrapperValve.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="31" column="63" selection-start-line="31" selection-start-column="63" selection-end-line="31" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-webmvc/5.2.1.RELEASE/spring-webmvc-5.2.1.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="515" selection-start-line="515" selection-end-line="515" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-webmvc/5.2.1.RELEASE/spring-webmvc-5.2.1.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="391" column="19" selection-start-line="391" selection-start-column="19" selection-end-line="391" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-webmvc/5.2.1.RELEASE/spring-webmvc-5.2.1.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="512" column="27" selection-start-line="512" selection-start-column="27" selection-end-line="512" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-web/5.2.1.RELEASE/spring-web-5.2.1.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="109" selection-start-line="109" selection-end-line="109" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/repository/JobFairRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -1283,16 +1215,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/dataobject/JobFairComment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1334,84 +1256,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/repository/JobCommentRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/repository/JobSubCommentRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/service/impl/JobCommentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="148" column="36" selection-start-line="148" selection-start-column="36" selection-end-line="148" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/service/impl/JobSubCommentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="88" column="8" selection-start-line="88" selection-start-column="8" selection-end-line="88" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/service/JobCommentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/service/JobSubCommentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/utils/ResultVOUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-eureka/src/main/java/com/xmtx/eureka/EurekaApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-zuul/src/main/java/com/xmtx/zuul/ZuulApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
@@ -1422,48 +1270,195 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/src/main/java/com/xmtx/redis/RedisApplication.java">
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/vo/SubCommentCreateVO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="238">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/JobfairApplication.java">
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/service/JobCommentService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/UserApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/vo/JobFairCommentVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="38" column="42" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
+        <state relative-caret-position="225">
+          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/vo/SubCommentCreateVO.java">
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/vo/JobFairCommentVO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="254">
+          <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/repository/JobCommentRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-eureka/src/main/java/com/xmtx/eureka/EurekaApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-zuul/src/main/java/com/xmtx/zuul/ZuulApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/src/main/java/com/xmtx/redis/RedisApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-redis/src/main/java/com/xmtx/redis/controller/RedisOperationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2223">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/java/com/xmtx/jobfair/JobfairApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-webmvc/5.2.1.RELEASE/spring-webmvc-5.2.1.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-webmvc/5.2.1.RELEASE/spring-webmvc-5.2.1.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="512" column="27" selection-start-line="512" selection-start-column="27" selection-end-line="512" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-webmvc/5.2.1.RELEASE/spring-webmvc-5.2.1.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="391" column="19" selection-start-line="391" selection-start-column="19" selection-end-line="391" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-webmvc/5.2.1.RELEASE/spring-webmvc-5.2.1.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="515" selection-start-line="515" selection-end-line="515" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.27/tomcat-embed-core-9.0.27.jar!/org/apache/catalina/core/ApplicationFilterChain.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.27/tomcat-embed-core-9.0.27.jar!/org/apache/catalina/core/StandardWrapperValve.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="347" selection-start-line="347" selection-end-line="347" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-web/5.2.1.RELEASE/spring-web-5.2.1.RELEASE.jar!/org/springframework/web/filter/RequestContextFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-web/5.2.1.RELEASE/spring-web-5.2.1.RELEASE.jar!/org/springframework/web/filter/OncePerRequestFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/dataobject/JobFairComment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/service/JobSubCommentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/controller/JobFairCommentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="82" column="8" lean-forward="true" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
+        <state relative-caret-position="182">
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-web/5.2.1.RELEASE/spring-web-5.2.1.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1111">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/repository/JobSubCommentRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="87" selection-start-line="10" selection-start-column="87" selection-end-line="10" selection-end-column="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/service/impl/JobSubCommentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="931">
+          <caret line="49" column="24" lean-forward="true" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/service/impl/JobCommentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1472,8 +1467,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/java/com/xmtx/jobfairComment/JobCommentProviderApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+        <state relative-caret-position="228">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfairComment/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/java/com/xmtx/user/UserApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-user/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-jobfair/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
         </state>
       </provider>
     </entry>

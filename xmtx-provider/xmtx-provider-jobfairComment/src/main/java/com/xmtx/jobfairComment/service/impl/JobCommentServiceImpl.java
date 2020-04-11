@@ -23,6 +23,7 @@ public class JobCommentServiceImpl implements JobCommentService {
     @Autowired
     JobCommentRepository jobCommentRepository;
 
+    @Autowired
     JobSubCommentService jobSubCommentService;
 
 
@@ -133,6 +134,7 @@ public class JobCommentServiceImpl implements JobCommentService {
 
     /**
      * List<JobFairComment>转VO的List
+     * 设置reply为该JobFairComment的所有二级评论的集合
      * @param originList
      * @return
      */
