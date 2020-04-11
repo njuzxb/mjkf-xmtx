@@ -126,7 +126,7 @@ public class JobCommentServiceImpl implements JobCommentService {
         List<JobFairSubCommentVO> subCommentList = findSubCommentById(jobFairComment.getId());
 
         //设置顶级评论下属二级评论
-        jobFairCommentVO.setRelys(subCommentList);
+        jobFairCommentVO.setRely(subCommentList);
 
         return jobFairCommentVO;
     }
@@ -146,7 +146,7 @@ public class JobCommentServiceImpl implements JobCommentService {
             List<JobFairSubCommentVO> subCommentList = findSubCommentById(jobFairComment.getId());
 
             //设置顶级评论下属二级评论
-            jobFairCommentVO.setRelys(subCommentList);
+            jobFairCommentVO.setRely(subCommentList);
 
             return jobFairCommentVO;
         }).collect(Collectors.toList());

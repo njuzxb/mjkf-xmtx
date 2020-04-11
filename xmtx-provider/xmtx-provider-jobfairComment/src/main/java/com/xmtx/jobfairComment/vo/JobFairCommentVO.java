@@ -12,10 +12,10 @@ public class JobFairCommentVO {
     private Integer id;
 
     //@JsonProperty("jobid")
-    private Integer jobId;
+    private Integer jobid;
 
     //@JsonProperty("userid")
-    private Integer userId;
+    private Integer userid;
 
     //@JsonProperty("username")
     private String username;
@@ -36,6 +36,6 @@ public class JobFairCommentVO {
      * 比JobFairSubComment多一个该顶级评论下所有二级评论的集合
      */
     //@JsonProperty("reply")
-    private List<JobFairSubCommentVO> relys;
+    private List<JobFairSubCommentVO> rely;
 
 }

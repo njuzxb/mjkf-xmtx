@@ -63,10 +63,10 @@ public class JobFairCommentController {
 
         JobFairComment jobFairComment = new JobFairComment();
 
-        jobFairComment.setJobId(commentCreateVO.getJobId());
+        jobFairComment.setJobId(commentCreateVO.getJobid());
 
         //设置当前发出评论的用户的信息
-        jobFairComment.setUserId(commentCreateVO.getUserId());
+        jobFairComment.setUserId(commentCreateVO.getUserid());
         //setUsername
         jobFairComment.setUsername(commentCreateVO.getUsername());
 
@@ -83,10 +83,10 @@ public class JobFairCommentController {
     public ResultVO subComment(@RequestBody SubCommentCreateVO subCommentCreateVO) {
         JobFairSubComment jobFairSubComment = new JobFairSubComment();
 
-        jobFairSubComment.setParentId(subCommentCreateVO.getParentId());
+        jobFairSubComment.setParentId(subCommentCreateVO.getCommentid());
 
         //设置当前发起评论的用户信息
-        jobFairSubComment.setUserId(subCommentCreateVO.getUserId());
+        jobFairSubComment.setUserId(subCommentCreateVO.getUserid());
         jobFairSubComment.setUsername(subCommentCreateVO.getUsername());
 
         //找到父级评论的信息
@@ -94,13 +94,13 @@ public class JobFairCommentController {
         //jobFairSubComment.setReplyUserId(parentComment.getUserId());
         //jobFairSubComment.setReplyUsername(parentComment.getUsername());
 
-        jobFairSubComment.setReplyUserId(subCommentCreateVO.getReplyUserId());
-        jobFairSubComment.setReplyUsername(subCommentCreateVO.getReplyUsername());
+        jobFairSubComment.setReplyUserId(subCommentCreateVO.getReplyuserid());
+        jobFairSubComment.setReplyUsername(subCommentCreateVO.getReplyusername());
 
         jobFairSubComment.setPubtime(new Date());
         jobFairSubComment.setContent(subCommentCreateVO.getContent());
 
-        jobSubCommentService.addSubComment(jobFairSubComment, subCommentCreateVO.getParentId());
+        jobSubCommentService.addSubComment(jobFairSubComment, subCommentCreateVO.getCommentid());
 
         return ResultVOUtil.success(jobFairSubComment);
     }

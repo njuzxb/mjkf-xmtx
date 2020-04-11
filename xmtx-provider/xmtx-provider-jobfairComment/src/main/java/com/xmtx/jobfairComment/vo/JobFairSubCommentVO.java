@@ -11,16 +11,16 @@ public class JobFairSubCommentVO {
     private Integer id;
 
     //@JsonProperty("commentid")
-    private Integer parentId;
+    private Integer commentid;
 
     //@JsonProperty("replyuserid")
-    private Integer relyUserId;
+    private Integer replyuserid;
 
     //@JsonProperty("replyusername")
-    private String replyUsername;
+    private String replyusername;
 
     //@JsonProperty("userid")
-    private Integer userId;
+    private Integer userid;
 
     //@JsonProperty("username")
     private Integer username;
