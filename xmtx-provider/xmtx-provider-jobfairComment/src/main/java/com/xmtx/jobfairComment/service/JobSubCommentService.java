@@ -16,7 +16,7 @@ public interface JobSubCommentService {
      * 通过父级评论id查其所关联的二级评论
      * @param parentId 该二级评论所关联的父级评论
      */
-    List<JobFairSubCommentVO> findSubCommentByParentId(Integer parentId);
+    List<JobFairSubCommentVO> findAllSubCommentByParentId(Integer parentId);
 
     /**
      * 通过parentId找到其顶级评论，增加其顶级评论的评论数

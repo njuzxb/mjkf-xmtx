@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: xmtx-provider-redis
+  redis:
+    host: 172.19.240.155
+    password: mf1932245
+
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka/
+  instance:
+    prefer-ip-address: true
+server:
+  port: 3000

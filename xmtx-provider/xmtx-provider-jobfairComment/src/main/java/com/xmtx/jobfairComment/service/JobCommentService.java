@@ -17,7 +17,7 @@ public interface JobCommentService {
     /**
      * 根据jobid查找评论
      */
-    List<JobFairCommentVO> findUpCommentByJobid(Integer jobid);
+    List<JobFairCommentVO> findUpCommentByJobId(Integer jobId);
 
     /**
      * 找到该顶级评论所关联的所有二级评论

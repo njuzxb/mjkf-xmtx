@@ -6,12 +6,12 @@ import com.xmtx.jobfairComment.vo.ResultVO;
 import com.xmtx.jobfairComment.dataobject.JobFairComment;
 import com.xmtx.jobfairComment.dataobject.JobFairSubComment;
 import com.xmtx.jobfairComment.enums.CommentErrorCode;
-import com.xmtx.jobfairComment.enums.CommentTypeEnum;
 import com.xmtx.jobfairComment.enums.ResultEnum;
 import com.xmtx.jobfairComment.exception.CommentException;
 import com.xmtx.jobfairComment.service.JobCommentService;
 import com.xmtx.jobfairComment.service.JobSubCommentService;
 import com.xmtx.jobfairComment.utils.ResultVOUtil;
+import com.xmtx.jobfairComment.vo.SubCommentCreateVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,7 +20,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/jobFairComment")
-public class JobCommentController {
+public class JobFairCommentController {
 
     @Autowired
     JobCommentService jobCommentService;
@@ -61,64 +61,59 @@ public class JobCommentController {
             throw new CommentException(CommentErrorCode.CONTENT_IS_EMPTY);
         }
 
-        //顶级评论
-        if(CommentTypeEnum.PRIMARY_COMMENT.getType().equals(commentCreateVO.getType())) {
-            JobFairComment jobFairComment = new JobFairComment();
+        JobFairComment jobFairComment = new JobFairComment();
 
-            jobFairComment.setJobId(commentCreateVO.getParentId());
+        jobFairComment.setJobId(commentCreateVO.getJobId());
 
-            //设置当前发出评论的用户的信息
-            jobFairComment.setUserId(commentCreateVO.getUserId());
-            //setUsername
+        //设置当前发出评论的用户的信息
+        jobFairComment.setUserId(commentCreateVO.getUserId());
+        //setUsername
+        jobFairComment.setUsername(commentCreateVO.getUsername());
 
-            jobFairComment.setContent(commentCreateVO.getContent());
-            jobFairComment.setPubtime(new Date());
+        jobFairComment.setContent(commentCreateVO.getContent());
+        jobFairComment.setPubtime(new Date());
 
-            //jobFairComment.setProve();
-            //jobFairComment.setState();
+        jobCommentService.comment(jobFairComment);
 
-            jobCommentService.comment(jobFairComment);
+        return ResultVOUtil.success(jobFairComment);
+    }
 
-            return ResultVOUtil.success(jobFairComment);
-        }
+    @ResponseBody
+    @PostMapping("/subComment")
+    public ResultVO subComment(@RequestBody SubCommentCreateVO subCommentCreateVO) {
+        JobFairSubComment jobFairSubComment = new JobFairSubComment();
 
-        //二级评论
-        else if(CommentTypeEnum.SUB_COMMENT.getType().equals(commentCreateVO.getType())) {
-            JobFairSubComment jobFairSubComment = new JobFairSubComment();
+        jobFairSubComment.setParentId(subCommentCreateVO.getParentId());
 
-            jobFairSubComment.setParentId(commentCreateVO.getParentId());
+        //设置当前发起评论的用户信息
+        jobFairSubComment.setUserId(subCommentCreateVO.getUserId());
+        jobFairSubComment.setUsername(subCommentCreateVO.getUsername());
 
-            //设置当前发起评论的用户信息
-            jobFairSubComment.setUserId(commentCreateVO.getUserId());
-            //jobFairSubComment.setUsername();
+        //找到父级评论的信息
+        //JobFairCommentVO parentComment = jobCommentService.findById(subCommentCreateVO.getParentId());
+        //jobFairSubComment.setReplyUserId(parentComment.getUserId());
+        //jobFairSubComment.setReplyUsername(parentComment.getUsername());
 
-            //找到父级评论的信息
-            JobFairCommentVO parentComment = jobCommentService.findById(commentCreateVO.getParentId());
-            jobFairSubComment.setReplyUserId(parentComment.getUserId());
-            jobFairSubComment.setReplyUsername(parentComment.getUsername());
+        jobFairSubComment.setReplyUserId(subCommentCreateVO.getReplyUserId());
+        jobFairSubComment.setReplyUsername(subCommentCreateVO.getReplyUsername());
 
-            jobFairSubComment.setPubtime(new Date());
-            jobFairSubComment.setContent(commentCreateVO.getContent());
+        jobFairSubComment.setPubtime(new Date());
+        jobFairSubComment.setContent(subCommentCreateVO.getContent());
 
-            //jobFairSubComment.setProve();
-            //jobFairSubComment.setState();
+        jobSubCommentService.addSubComment(jobFairSubComment, subCommentCreateVO.getParentId());
 
-            jobSubCommentService.addSubComment(jobFairSubComment, commentCreateVO.getParentId());
-
-            return ResultVOUtil.success(jobFairSubComment);
-        }
-
-        return ResultVOUtil.success();
+        return ResultVOUtil.success(jobFairSubComment);
     }
 
     /**
      * 根据jobid查找“正常”的顶级评论
      * 其中顶级评论中包含了其下属二级评论
      */
+    @ResponseBody
     @GetMapping("/findUpCommentByJobid")
     public ResultVO findUpCommentByJobid(@RequestParam("jobid") String jobid){
 
-        List<JobFairCommentVO> list = jobCommentService.findUpCommentByJobid(Integer.valueOf(jobid));
+        List<JobFairCommentVO> list = jobCommentService.findUpCommentByJobId(Integer.valueOf(jobid));
 
         return ResultVOUtil.success(list);
 

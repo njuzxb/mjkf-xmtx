@@ -1,10 +1,10 @@
 package com.xmtx.jobfairComment.service.impl;
 
+import com.xmtx.jobfairComment.repository.JobCommentRepository;
 import com.xmtx.jobfairComment.vo.JobFairCommentVO;
 import com.xmtx.jobfairComment.vo.JobFairSubCommentVO;
 import com.xmtx.jobfairComment.dataobject.JobFairComment;
 import com.xmtx.jobfairComment.enums.CommentStatusEnum;
-import com.xmtx.jobfairComment.repository.JobFairCommentRepository;
 import com.xmtx.jobfairComment.service.JobCommentService;
 import com.xmtx.jobfairComment.service.JobSubCommentService;
 import org.springframework.beans.BeanUtils;
@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 
@@ -20,7 +21,7 @@ import java.util.stream.Collectors;
 public class JobCommentServiceImpl implements JobCommentService {
 
     @Autowired
-    JobFairCommentRepository jobFairCommentRepository;
+    JobCommentRepository jobCommentRepository;
 
     JobSubCommentService jobSubCommentService;
 
@@ -38,7 +39,7 @@ public class JobCommentServiceImpl implements JobCommentService {
         jobFairComment.setState(CommentStatusEnum.NORMAL.getCode());
         jobFairComment.setProve(0);
         jobFairComment.setPubtime(new Date());
-        jobFairCommentRepository.save(jobFairComment);
+        jobCommentRepository.save(jobFairComment);
 
         return jobFairComment;
 
@@ -47,14 +48,14 @@ public class JobCommentServiceImpl implements JobCommentService {
     /**
      * 根据jobid查找所有“正常”评论
      * 并查到该顶级评论下属所有二级评论
-     * @param jobid
+     * @param jobId
      * @return
      */
     @Override
-    public List<JobFairCommentVO> findUpCommentByJobid(Integer jobid){
+    public List<JobFairCommentVO> findUpCommentByJobId(Integer jobId){
         // 从数据库查到jobid对应的所有JobFairComment，然后封装为List<JobFairCommentVO>返回
 
-        List<JobFairComment> originList = jobFairCommentRepository.findByJobIdAndState(jobid, CommentStatusEnum.NORMAL.getCode());
+        List<JobFairComment> originList = jobCommentRepository.findAllByJobIdAndState(jobId, CommentStatusEnum.NORMAL.getCode());
         List<JobFairCommentVO> jobFairCommentVOList = listVO(originList);
         return jobFairCommentVOList;
     }
@@ -66,7 +67,7 @@ public class JobCommentServiceImpl implements JobCommentService {
      */
     @Override
     public List<JobFairSubCommentVO> findSubCommentById(Integer id) {
-        return jobSubCommentService.findSubCommentByParentId(id);
+        return jobSubCommentService.findAllSubCommentByParentId(id);
     }
 
     /**
@@ -76,7 +77,8 @@ public class JobCommentServiceImpl implements JobCommentService {
     @Override
     public JobFairCommentVO findById(Integer id){
 
-        JobFairComment jobFairComment = jobFairCommentRepository.findById(id).get();
+        Optional<JobFairComment> optionalJobFairComment = jobCommentRepository.findByIdAndState(id, CommentStatusEnum.NORMAL.getCode());
+        JobFairComment jobFairComment = optionalJobFairComment.get();
         JobFairCommentVO jobFairCommentVO = transferToVO(jobFairComment);
         return jobFairCommentVO;
     }
@@ -91,10 +93,10 @@ public class JobCommentServiceImpl implements JobCommentService {
 
 
         // 从数据库删除评论(用户）
-        jobFairCommentRepository.deleteById(id);
+        jobCommentRepository.deleteById(id);
 
         // 级联删除其下属二级评论
-        List<JobFairSubCommentVO> subComments = jobSubCommentService.findSubCommentByParentId(id);
+        List<JobFairSubCommentVO> subComments = jobSubCommentService.findAllSubCommentByParentId(id);
 
         for(JobFairSubCommentVO subComment : subComments) {
             jobSubCommentService.deleteById(subComment.getId());
@@ -108,7 +110,7 @@ public class JobCommentServiceImpl implements JobCommentService {
      */
     @Override
     public List<JobFairCommentVO> findUpCommentByUserId(Integer userId) {
-        List<JobFairComment> originList = jobFairCommentRepository.findByUserId(userId, CommentStatusEnum.NORMAL.getCode());
+        List<JobFairComment> originList = jobCommentRepository.findAllByUserIdAndState(userId, CommentStatusEnum.NORMAL.getCode());
         List<JobFairCommentVO> jobFairCommentVOList = listVO(originList);
         return jobFairCommentVOList;
     }

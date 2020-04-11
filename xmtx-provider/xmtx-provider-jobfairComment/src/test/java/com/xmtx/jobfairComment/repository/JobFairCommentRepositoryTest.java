@@ -14,19 +14,20 @@ import org.springframework.stereotype.Component;
 public class JobFairCommentRepositoryTest extends JobCommentProviderApplicationTests {
 
     @Autowired
-    private JobFairCommentRepository jobfairCommentRepository;
+    private JobCommentRepository jobCommentRepository;
 
     @Test
     public void testSave(){
         JobFairComment jobfairComment = new JobFairComment();
         jobfairComment.setJobId(1);
+        jobfairComment.setUserId(3);
         jobfairComment.setUsername("test");
         jobfairComment.setContent("测试添加评论");
         jobfairComment.setState(CommentStatusEnum.NORMAL.getCode());
         jobfairComment.setProve(1);
         jobfairComment.setPubtime(DateTime.now().toDate());
 
-        JobFairComment result = jobfairCommentRepository.save(jobfairComment);
+        JobFairComment result = jobCommentRepository.save(jobfairComment);
         Assert.assertTrue(result != null);
     }
 }

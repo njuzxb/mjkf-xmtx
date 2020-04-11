@@ -1,12 +1,12 @@
 package com.xmtx.jobfairComment.service.impl;
 
+import com.xmtx.jobfairComment.repository.JobCommentRepository;
+import com.xmtx.jobfairComment.repository.JobSubCommentRepository;
 import com.xmtx.jobfairComment.vo.JobFairSubCommentVO;
 import com.xmtx.jobfairComment.dataobject.JobFairSubComment;
 import com.xmtx.jobfairComment.enums.CommentErrorCode;
 import com.xmtx.jobfairComment.enums.CommentStatusEnum;
 import com.xmtx.jobfairComment.exception.CommentException;
-import com.xmtx.jobfairComment.repository.JobFairCommentRepository;
-import com.xmtx.jobfairComment.repository.JobFairSubCommentRepository;
 import com.xmtx.jobfairComment.service.JobSubCommentService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,10 +21,10 @@ import java.util.stream.Collectors;
 public class JobSubCommentServiceImpl implements JobSubCommentService {
 
     @Autowired
-    JobFairSubCommentRepository jobFairSubCommentRepository;
+    JobSubCommentRepository jobSubCommentRepository;
 
     @Autowired
-    JobFairCommentRepository jobFairCommentRepository;
+    JobCommentRepository jobCommentRepository;
 
     /**
      * 向parentId所指的父级评论回复二级评论
@@ -37,7 +37,7 @@ public class JobSubCommentServiceImpl implements JobSubCommentService {
         jobFairSubComment.setProve(0);
         jobFairSubComment.setPubtime(new Date());
 
-        jobFairSubCommentRepository.save(jobFairSubComment);
+        jobSubCommentRepository.save(jobFairSubComment);
 
         return jobFairSubComment;
     }
@@ -46,8 +46,8 @@ public class JobSubCommentServiceImpl implements JobSubCommentService {
      * 通过父级评论parentId找到其所关联的所有二级评论
      */
     @Override
-    public List<JobFairSubCommentVO> findSubCommentByParentId(Integer parentId) {
-        List<JobFairSubComment> originList = jobFairSubCommentRepository.findByParentIdAndState(parentId, CommentStatusEnum.NORMAL.getCode());
+    public List<JobFairSubCommentVO> findAllSubCommentByParentId(Integer parentId) {
+        List<JobFairSubComment> originList = jobSubCommentRepository.findAllByParentIdAndState(parentId, CommentStatusEnum.NORMAL.getCode());
         List<JobFairSubCommentVO> jobFairSubCommentVOList = listVO(originList);
         return jobFairSubCommentVOList;
     }
@@ -57,7 +57,7 @@ public class JobSubCommentServiceImpl implements JobSubCommentService {
      */
     @Override
     public JobFairSubCommentVO findById(Integer id) {
-        Optional<JobFairSubComment> optionalJobFairSubComment = jobFairSubCommentRepository.findById(id);
+        Optional<JobFairSubComment> optionalJobFairSubComment = jobSubCommentRepository.findById(id);
         if(!optionalJobFairSubComment.isPresent()) {
             throw new CommentException(CommentErrorCode.SUBCOMMENT_NOT_EXIST);
         } else {
@@ -72,12 +72,12 @@ public class JobSubCommentServiceImpl implements JobSubCommentService {
      */
     @Override
     public void deleteById(Integer id) {
-        Optional<JobFairSubComment> optionalJobFairSubComment = jobFairSubCommentRepository.findById(id);
+        Optional<JobFairSubComment> optionalJobFairSubComment = jobSubCommentRepository.findById(id);
         if(!optionalJobFairSubComment.isPresent()) {
             throw new CommentException(CommentErrorCode.SUBCOMMENT_NOT_EXIST);
         }
 
-        jobFairSubCommentRepository.deleteById(id);
+        jobSubCommentRepository.deleteById(id);
     }
 
     /**
@@ -85,7 +85,7 @@ public class JobSubCommentServiceImpl implements JobSubCommentService {
      */
     @Override
     public List<JobFairSubCommentVO> findByUserId(Integer userId) {
-        List<JobFairSubComment> originList = jobFairSubCommentRepository.findByUserIdAndState(userId, CommentStatusEnum.NORMAL.getCode());
+        List<JobFairSubComment> originList = jobSubCommentRepository.findAllByUserIdAndState(userId, CommentStatusEnum.NORMAL.getCode());
         List<JobFairSubCommentVO> jobFairSubCommentVOList = listVO(originList);
         return jobFairSubCommentVOList;
     }
