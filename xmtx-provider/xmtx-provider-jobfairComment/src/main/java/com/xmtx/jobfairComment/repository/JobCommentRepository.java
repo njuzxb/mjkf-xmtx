@@ -15,6 +15,6 @@ public interface JobCommentRepository extends JpaRepository<JobFairComment, Inte
     List<JobFairComment> findAllByUserIdAndState(Integer userId, Integer state);
 
     //通过id和状态找顶级评论
-    Optional<JobFairComment> findByIdAndState(Integer id, Integer state);
+    JobFairComment findByIdAndState(Integer id, Integer state);
 
 }

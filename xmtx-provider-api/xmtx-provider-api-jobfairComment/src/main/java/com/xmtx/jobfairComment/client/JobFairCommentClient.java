@@ -1,10 +1,10 @@
 package com.xmtx.jobfairComment.client;
 
+import com.xmtx.jobfairComment.common.CommentCreateVO;
 import com.xmtx.jobfairComment.common.ResultVO;
+import com.xmtx.jobfairComment.common.SubCommentCreateVO;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @ Author     ：djq.
@@ -15,10 +15,18 @@ import org.springframework.web.bind.annotation.RequestParam;
  */
 @FeignClient(name = "xmtx-provider-common")
 public interface JobFairCommentClient {
+    @ResponseBody
     @PostMapping("/jobFairComment/comment")
-    ResultVO comment(@RequestParam("jobid") String jobid, @RequestParam("content") String content);
+    ResultVO comment(@RequestBody CommentCreateVO commentCreateVO);
+
+    @ResponseBody
+    @PostMapping("/subComment")
+    ResultVO subComment(@RequestBody SubCommentCreateVO subCommentCreateVO);
+
+    @ResponseBody
     @GetMapping("/jobFairComment/findUpCommentByJobid")
     ResultVO findUpCommentByJobid(@RequestParam("jobid") String jobid);
+
     @GetMapping("/jobFairComment/deleteComment")
     ResultVO deleteByUser(@RequestParam("id") String id);
 }

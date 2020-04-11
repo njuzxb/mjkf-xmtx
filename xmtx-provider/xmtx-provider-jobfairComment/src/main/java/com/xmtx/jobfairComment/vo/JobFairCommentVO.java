@@ -38,4 +38,6 @@ public class JobFairCommentVO {
     //@JsonProperty("reply")
     private List<JobFairSubCommentVO> rely;
 
+    private Integer subcommentcount;
+
 }

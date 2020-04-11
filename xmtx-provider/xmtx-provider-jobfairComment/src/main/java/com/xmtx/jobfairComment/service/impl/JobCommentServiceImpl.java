@@ -72,14 +72,15 @@ public class JobCommentServiceImpl implements JobCommentService {
     }
 
     /**
-     * 根据id查找
+     * 根据id查找相应的顶级评论
      * @param id
      */
     @Override
     public JobFairCommentVO findById(Integer id){
 
-        Optional<JobFairComment> optionalJobFairComment = jobCommentRepository.findByIdAndState(id, CommentStatusEnum.NORMAL.getCode());
-        JobFairComment jobFairComment = optionalJobFairComment.get();
+        //Optional<JobFairComment> optionalJobFairComment = jobCommentRepository.findByIdAndState(id, CommentStatusEnum.NORMAL.getCode());
+        JobFairComment jobFairComment = jobCommentRepository.findByIdAndState(id, CommentStatusEnum.NORMAL.getCode());
+        //JobFairComment jobFairComment = optionalJobFairComment.get();
         JobFairCommentVO jobFairCommentVO = transferToVO(jobFairComment);
         return jobFairCommentVO;
     }
@@ -124,10 +125,15 @@ public class JobCommentServiceImpl implements JobCommentService {
         JobFairCommentVO jobFairCommentVO = new JobFairCommentVO();
         BeanUtils.copyProperties(jobFairComment, jobFairCommentVO);
 
+        jobFairCommentVO.setJobid(jobFairComment.getJobId());
+        jobFairCommentVO.setUserid(jobFairComment.getUserId());
+        jobFairCommentVO.setUsername(jobFairComment.getUsername());
+
         List<JobFairSubCommentVO> subCommentList = findSubCommentById(jobFairComment.getId());
 
         //设置顶级评论下属二级评论
         jobFairCommentVO.setRely(subCommentList);
+        jobFairCommentVO.setSubcommentcount(subCommentList.size());
 
         return jobFairCommentVO;
     }
@@ -149,6 +155,8 @@ public class JobCommentServiceImpl implements JobCommentService {
 
             //设置顶级评论下属二级评论
             jobFairCommentVO.setRely(subCommentList);
+
+            jobFairCommentVO.setSubcommentcount(subCommentList.size());
 
             return jobFairCommentVO;
         }).collect(Collectors.toList());

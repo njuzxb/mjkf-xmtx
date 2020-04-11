@@ -111,6 +111,13 @@ public class JobSubCommentServiceImpl implements JobSubCommentService {
         List<JobFairSubCommentVO> jobFairSubCommentVOList = originList.stream().map(jobFairSubComment -> {
             JobFairSubCommentVO jobFairSubCommentVO = new JobFairSubCommentVO();
             BeanUtils.copyProperties(jobFairSubComment, jobFairSubCommentVO);
+
+            jobFairSubCommentVO.setCommentid(jobFairSubComment.getParentId());
+            jobFairSubCommentVO.setUserid(jobFairSubComment.getUserId());
+            jobFairSubCommentVO.setUsername(jobFairSubComment.getUsername());
+            jobFairSubCommentVO.setReplyuserid(jobFairSubComment.getUserId());
+            jobFairSubCommentVO.setReplyusername(jobFairSubComment.getReplyUsername());
+
             return jobFairSubCommentVO;
         }).collect(Collectors.toList());
 

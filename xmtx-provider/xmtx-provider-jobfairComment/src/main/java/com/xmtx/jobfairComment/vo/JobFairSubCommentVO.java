@@ -23,7 +23,7 @@ public class JobFairSubCommentVO {
     private Integer userid;
 
     //@JsonProperty("username")
-    private Integer username;
+    private String username;
 
     //@JsonProperty("content")
     private String content;

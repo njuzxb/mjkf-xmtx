@@ -1,4 +1,4 @@
-package com.xmtx.jobfairComment.vo;
+package com.xmtx.jobfairComment.common;
 
 import lombok.Data;
 

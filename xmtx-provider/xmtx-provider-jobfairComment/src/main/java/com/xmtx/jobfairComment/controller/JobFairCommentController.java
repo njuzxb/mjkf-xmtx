@@ -90,12 +90,12 @@ public class JobFairCommentController {
         jobFairSubComment.setUsername(subCommentCreateVO.getUsername());
 
         //找到父级评论的信息
-        //JobFairCommentVO parentComment = jobCommentService.findById(subCommentCreateVO.getParentId());
-        //jobFairSubComment.setReplyUserId(parentComment.getUserId());
-        //jobFairSubComment.setReplyUsername(parentComment.getUsername());
+        JobFairCommentVO parentComment = jobCommentService.findById(subCommentCreateVO.getCommentid());
+        jobFairSubComment.setReplyUserId(parentComment.getUserid());
+        jobFairSubComment.setReplyUsername(parentComment.getUsername());
 
-        jobFairSubComment.setReplyUserId(subCommentCreateVO.getReplyuserid());
-        jobFairSubComment.setReplyUsername(subCommentCreateVO.getReplyusername());
+        //jobFairSubComment.setReplyUserId(subCommentCreateVO.getReplyuserid());
+        //jobFairSubComment.setReplyUsername(subCommentCreateVO.getReplyusername());
 
         jobFairSubComment.setPubtime(new Date());
         jobFairSubComment.setContent(subCommentCreateVO.getContent());
