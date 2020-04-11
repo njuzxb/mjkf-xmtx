@@ -26,7 +26,7 @@ public class BrowsingHistoryController {
 
     // 查询TOPN并存入redis
     // 改为定时任务:每10分钟自动去统计24小时内浏览量最高的TOP10招聘信息,并存入redis
-    @Scheduled(fixedDelay = 60000 * 1)  // 单位是毫秒，测试时设置1分钟
+    @Scheduled(fixedDelay = 60000 * 30)  // 单位是毫秒，测试时设置1分钟
     public  void findTopNBrowsingHistory(){
         List<TopNDTO> listTopN = browsingHistoryService.getTopNBrowsingCount();
         System.err.println(JSON.toJSONString(listTopN));
