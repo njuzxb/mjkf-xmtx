@@ -1,22 +1,22 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : localhost_3306
-Source Server Version : 50516
+Source Server         : mysql
+Source Server Version : 50729
 Source Host           : localhost:3306
 Source Database       : db_mj4x
 
 Target Server Type    : MYSQL
-Target Server Version : 50516
+Target Server Version : 50729
 File Encoding         : 65001
 
-Date: 2020-02-17 13:41:28
+Date: 2020-04-10 17:39:28
 */
 
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
--- Table structure for `admin`
+-- Table structure for admin
 -- ----------------------------
 DROP TABLE IF EXISTS `admin`;
 CREATE TABLE `admin` (
@@ -26,18 +26,23 @@ CREATE TABLE `admin` (
   `salt` varchar(255) DEFAULT NULL COMMENT '盐_用于哈希加密',
   `name` varchar(255) DEFAULT NULL COMMENT '姓名',
   `enabled` tinyint(1) DEFAULT NULL COMMENT '权限',
-  `db_source` int(11) DEFAULT NULL COMMENT '源数据库',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of admin
+-- Table structure for browsing_history
 -- ----------------------------
-INSERT INTO `admin` VALUES ('1', 'first', '123', '0', 'zxb', '1', null);
-INSERT INTO `admin` VALUES ('2', 'wait', '123', '0', 'zxb', '0', null);
+DROP TABLE IF EXISTS `browsing_history`;
+CREATE TABLE `browsing_history` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `jobid` bigint(20) NOT NULL,
+  `userid` bigint(20) NOT NULL,
+  `gmt_browsing` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Table structure for `enterprise_info`
+-- Table structure for enterprise_info
 -- ----------------------------
 DROP TABLE IF EXISTS `enterprise_info`;
 CREATE TABLE `enterprise_info` (
@@ -52,12 +57,7 @@ CREATE TABLE `enterprise_info` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of enterprise_info
--- ----------------------------
-INSERT INTO `enterprise_info` VALUES ('1', '1', '1', '1', '1', '1', null);
-
--- ----------------------------
--- Table structure for `job_fair`
+-- Table structure for job_fair
 -- ----------------------------
 DROP TABLE IF EXISTS `job_fair`;
 CREATE TABLE `job_fair` (
@@ -77,11 +77,7 @@ CREATE TABLE `job_fair` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of job_fair
--- ----------------------------
-
--- ----------------------------
--- Table structure for `job_fair_comment`
+-- Table structure for job_fair_comment
 -- ----------------------------
 DROP TABLE IF EXISTS `job_fair_comment`;
 CREATE TABLE `job_fair_comment` (
@@ -96,28 +92,20 @@ CREATE TABLE `job_fair_comment` (
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of job_fair_comment
--- ----------------------------
-INSERT INTO `job_fair_comment` VALUES ('3', '1', 'test', '招聘会现场可以投简历吗？', '2020-02-16', '0', '0');
-
--- ----------------------------
--- Table structure for `user`
+-- Table structure for user
 -- ----------------------------
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` char(255) NOT NULL,
   `password` varchar(255) DEFAULT NULL,
-  `salt` varchar(255) DEFAULT NULL COMMENT '盐_用于哈希加密',
   `name` varchar(255) DEFAULT NULL COMMENT '姓名',
-  `school` varchar(255) DEFAULT NULL COMMENT '院校',
   `phone` varchar(255) DEFAULT NULL COMMENT '电话',
   `email` varchar(255) DEFAULT NULL COMMENT '邮箱',
-  `birthday` date DEFAULT NULL COMMENT '生日',
+  `gmt_create` date DEFAULT NULL COMMENT '宣讲会时间',
+  `gmt_modified` date DEFAULT NULL COMMENT '宣讲会时间',
+  `eid` int(11) DEFAULT NULL,
+  `is_enterprise` tinyint(1) DEFAULT NULL COMMENT '权限',
   `enabled` tinyint(1) DEFAULT NULL COMMENT '权限',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of user
--- ----------------------------
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;

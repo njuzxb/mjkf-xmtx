@@ -7,7 +7,6 @@
       <module fileurl="file://$PROJECT_DIR$/xmtx-eureka/xmtx-eureka.iml" filepath="$PROJECT_DIR$/xmtx-eureka/xmtx-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider.iml" filepath="$PROJECT_DIR$/xmtx-provider/xmtx-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/xmtx-provider-admin.iml" filepath="$PROJECT_DIR$/xmtx-provider/xmtx-provider-admin/xmtx-provider-admin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api.iml" filepath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-history/xmtx-provider-api-history.iml" filepath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-history/xmtx-provider-api-history.iml" />
       <module fileurl="file://$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-jobfair/xmtx-provider-api-jobfair.iml" filepath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-jobfair/xmtx-provider-api-jobfair.iml" />
       <module fileurl="file://$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-jobfairComment/xmtx-provider-api-jobfairComment.iml" filepath="$PROJECT_DIR$/xmtx-provider-api/xmtx-provider-api-jobfairComment/xmtx-provider-api-jobfairComment.iml" />
