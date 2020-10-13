@@ -26,7 +26,7 @@
         <mysql-connector-java.version>8.0.15</mysql-connector-java.version>
         <druid.version>1.1.21</druid.version>
         <mybatis-spring-boot-starter.version>2.1.0</mybatis-spring-boot-starter.version>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
         <lombok.version>1.16.18</lombok.version>
         <log4j.version>1.2.17</log4j.version>
         <logback-core.version>1.2.3</logback-core.version>
